@@ -156,8 +156,8 @@ const configs = {
     // Aircraft proxy — Vercel function that fetches adsb.lol and returns {atisData, flightData}
     flightUrl: 'https://mini-nyc-3d.vercel.app/api/opensky',
 
-    // Default data URL — serves from the Vercel deployment (build/data/)
-    dataUrl: 'https://mini-nyc-3d.vercel.app/data',
+    // Default data URL — served from GitHub Pages (same origin, no CORS issues)
+    dataUrl: 'https://hardmoneysniper.github.io/mini-nyc-3d/data',
 
     // Default data sources
     dataSources: [],
