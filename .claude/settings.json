@@ -41,7 +41,32 @@
       "Bash(Copy-Item assets/osm-liberty.json build/data)",
       "Bash(ls -la build/data/features.json.gz)",
       "Bash(sort -t= -k3)",
-      "Bash(Copy-Item \"dist/mini-nyc-3d.min.js\" \"build/mini-nyc-3d.min.js\" -Force)"
+      "Bash(Copy-Item \"dist/mini-nyc-3d.min.js\" \"build/mini-nyc-3d.min.js\" -Force)",
+      "Bash(curl -s \"https://mini-nyc-3d-7s1abktqf-ayanam1re1.vercel.app/api/opensky\")",
+      "Bash(curl -sL \"https://mini-nyc-3d-7s1abktqf-ayanam1re1.vercel.app/api/opensky\")",
+      "Bash(cat .npmignore)",
+      "Bash(cat .vercelignore)",
+      "Bash(node -e \"const p=require\\('./package.json'\\); console.log\\('type:', p.type\\); console.log\\('main:', p.main\\);\")",
+      "Bash(vercel ls *)",
+      "Bash(vercel inspect *)",
+      "Bash(vercel logs *)",
+      "Bash(curl -s \"https://opensky-network.org/api/states/all?lamin=40.5&lomin=-74.5&lamax=41.2&lomax=-73.0\")",
+      "Bash(curl -sI \"https://mini-nyc-3d-66gk9x33x-ayanam1re1.vercel.app/\")",
+      "Bash(curl -s \"https://mini-nyc-3d-7822ekl6o-ayanam1re1.vercel.app/api/opensky\")",
+      "Bash(curl -s \"https://api.adsb.fi/v1/aircraft?bbox=40.5,-74.5,41.2,-73.0\")",
+      "Bash(curl -sv \"https://api.adsb.fi/v1/aircraft?bbox=40.5,-74.5,41.2,-73.0\")",
+      "Bash(curl -s \"https://api.adsb.fi/v1/aircraft\")",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(list\\(d.keys\\(\\)\\)\\); ac=d.get\\('ac',d.get\\('aircraft',[]\\)\\); print\\('count:',len\\(ac\\)\\); print\\(json.dumps\\(ac[0] if ac else {}, indent=2\\)\\)\")",
+      "Bash(curl -s \"https://api.adsb.fi/v1/\")",
+      "Bash(curl -s \"https://api.adsb.fi/\")",
+      "Bash(curl -s \"https://api.adsb.lol/v2/lat/40.73/lon/-73.94/dist/50\")",
+      "Bash(curl -s \"https://api.adsb.lol/api/0/aircraft\")",
+      "Bash(curl -s \"https://mini-nyc-3d-q0wfu4ey1-ayanam1re1.vercel.app/api/opensky?debug=1\")",
+      "Bash(curl -sv \"https://mini-nyc-3d-q0wfu4ey1-ayanam1re1.vercel.app/api/opensky?debug=1\")",
+      "Bash(curl -s \"https://mini-nyc-3d.vercel.app/api/opensky?debug=1\")",
+      "Bash(git rm *)",
+      "Bash(echo \"exit: $?\")",
+      "PowerShell(New-Item -ItemType Directory -Path \"f:\\\\Cornell Tech\\\\mini-nyc-3d\\\\.github\\\\workflows\" -Force)"
     ]
   }
 }
