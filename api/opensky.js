@@ -132,9 +132,9 @@ async function fetchRoute(callsign) {
 
 // Filter states to candidates near NYC airports within altitude/distance thresholds.
 function filterCandidates(states) {
-    const ALTITUDE_MAX   = 700;  // m — only final-approach / initial-climb
+    const ALTITUDE_MAX   = 1500; // m — arrivals: ILS ~700m; departures climb fast so need higher ceiling
     const ARRIVAL_DIST   = 25;   // km — ILS glideslope established by ~15 km
-    const DEPARTURE_DIST = 20;   // km
+    const DEPARTURE_DIST = 35;   // km — departures move away from airport quickly
 
     const candidates = [];
     const seen = new Set();
@@ -217,13 +217,15 @@ function buildFlightData(candidates, routeMap, nowMs) {
 
         const isArrival = routeDestIsNYC
             || (!hasRoute && vertRate < -2.0 && nearestDist <= ARRIVAL_DIST);
+        // Require alt > 200m for unrouted departures — prevents go-arounds (plane aborts
+        // landing close to runway then climbs) from being misclassified as new departures.
         const isDeparture = routeOriginIsNYC
-            || (!hasRoute && vertRate > 2.0 && nearestDist <= DEPARTURE_DIST);
+            || (!hasRoute && vertRate > 2.0 && nearestDist <= DEPARTURE_DIST && alt > 200);
 
         const arrDist = routeDestIsNYC   ? effectiveArrDist : nearestDist;
         const depDist = routeOriginIsNYC ? effectiveDepDist : nearestDist;
 
-        if (isArrival && arrDist <= ARRIVAL_DIST && alt > 50 && alt <= 700) {
+        if (isArrival && arrDist <= ARRIVAL_DIST && alt > 50 && alt <= 700) { // arrivals: keep tight ceiling (ILS glideslope)
             const rwys = AIRPORT_RUNWAYS[effectiveArrIcao];
             const timeToLandMs = estimateTimeMs(arrDist, alt, vertRate, APPROACH_KMH);
 
@@ -237,7 +239,7 @@ function buildFlightData(candidates, routeMap, nowMs) {
             if (route) flight.or = airportObj(route.originIata, route.originName);
             flights.push(flight);
 
-        } else if (isDeparture && depDist <= DEPARTURE_DIST && alt <= 700) {
+        } else if (isDeparture && depDist <= DEPARTURE_DIST && alt <= 1500) { // departures: higher ceiling, they climb fast
             const rwys = AIRPORT_RUNWAYS[effectiveDepIcao];
             const timeAloftMs = alt > 50
                 ? estimateTimeMs(depDist, alt, vertRate, CLIMB_KMH)

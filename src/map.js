@@ -2638,6 +2638,15 @@ export default class extends Evented {
                 }
             }
 
+            // If a departure just appeared for the same aircraft+airport that has an
+            // active arrival, stop the arrival first — prevents the "lands and takes off"
+            // visual where both animations play simultaneously at the same airport.
+            for (const flightRef of flightData) {
+                if (!flightRef.dp) continue;
+                const arrFlight = flightLookup.get(flightRef.id.replace(/-dep$/, '-arr'));
+                if (arrFlight) me.stopFlight(arrFlight);
+            }
+
             me.refreshFlights();
             me.aboutPanel.updateContent();
         }).catch(error => {
