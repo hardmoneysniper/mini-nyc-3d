@@ -131,7 +131,7 @@ const configs = {
         // MTA GTFS-RT base URL — each feed appended as a path segment
         mta: 'https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/',
 
-        // OpenSky Network — flight positions over NYC airports
+        // Aircraft positions over NYC airports (adsb.lol aggregator, via Vercel proxy)
         opensky: 'https://opensky-network.org/api/states/all'
 
     },
@@ -153,11 +153,11 @@ const configs = {
     // OpenSky bounding box covering JFK, LGA, and EWR approach zones
     openskyBbox: {lamin: 40.5, lomin: -74.5, lamax: 41.1, lomax: -73.5},
 
-    // OpenSky proxy — Vercel function that handles OAuth and returns {atisData, flightData, openskyStates}
-    flightUrl: '/api/opensky',
+    // Aircraft proxy — Vercel function that fetches adsb.lol and returns {atisData, flightData}
+    flightUrl: 'https://mini-nyc-3d.vercel.app/api/opensky',
 
-    // Default data URL — serves from the same Vercel deployment (build/data/)
-    dataUrl: '/data',
+    // Default data URL — serves from the Vercel deployment (build/data/)
+    dataUrl: 'https://mini-nyc-3d.vercel.app/data',
 
     // Default data sources
     dataSources: [],

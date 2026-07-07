@@ -1,9 +1,21 @@
 {
     "version": 2,
     "outputDirectory": "build",
+    "regions": ["iad1"],
     "functions": {
         "api/*.js": {
-            "maxDuration": 10
+            "maxDuration": 30
         }
-    }
+    },
+    "headers": [
+        {
+            "source": "/(.*)",
+            "headers": [
+                {
+                    "key": "Content-Security-Policy",
+                    "value": "default-src 'self' https: data: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' blob: https:; worker-src blob:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; connect-src 'self' https:; font-src 'self' data: https:"
+                }
+            ]
+        }
+    ]
 }
