@@ -6,3 +6,6 @@
 secrets
 .DS_Store
 .eslintcache
+.env
+.vercel
+credentials.json

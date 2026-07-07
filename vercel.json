@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "outputDirectory": "build",
+    "functions": {
+        "api/*.js": {
+            "maxDuration": 10
+        }
+    }
+}

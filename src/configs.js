@@ -98,14 +98,14 @@ const configs = {
     // Fade duration when an object is added or removed
     fadeDuration: 1000,
 
-    // Origin of coordinates (around Tokyo station)
-    defaultCenter: [139.7670, 35.6814],
+    // Origin of coordinates (around Penn Station / Midtown Manhattan)
+    defaultCenter: [-73.9934, 40.7506],
 
     // Default zoom level
-    defaultZoom: 14,
+    defaultZoom: 13,
 
-    // Default bearing (rotation) of the map
-    defaultBearing: 0,
+    // Default bearing (rotation) of the map — aligns with Manhattan street grid
+    defaultBearing: 29,
 
     // Default pitch in degrees
     defaultPitch: 60,
@@ -128,43 +128,54 @@ const configs = {
     // API URL
     apiUrl: {
 
-        // ODPT URL
-        odpt: 'https://api.odpt.org/api/v4/'
+        // MTA GTFS-RT base URL — each feed appended as a path segment
+        mta: 'https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/',
+
+        // OpenSky Network — flight positions over NYC airports
+        opensky: 'https://opensky-network.org/api/states/all'
 
     },
 
-    // TID URL
-    tidUrl: 'https://mini-tokyo.appspot.com/tid',
+    // MTA GTFS-RT feed paths (appended to apiUrl.mta)
+    mtaFeeds: [
+        'nyct%2Fgtfs-ace',
+        'nyct%2Fgtfs-bdfm',
+        'nyct%2Fgtfs-g',
+        'nyct%2Fgtfs-jz',
+        'nyct%2Fgtfs-nqrw',
+        'nyct%2Fgtfs-l',
+        'nyct%2Fgtfs',
+        'nyct%2Fgtfs-si',
+        'lirr%2Fgtfs-lirr',
+        'mnr%2Fgtfs-mnr'
+    ],
 
-    // Train information URL
-    trainInfoUrl: 'https://mini-tokyo.appspot.com/traininfo',
+    // OpenSky bounding box covering JFK, LGA, and EWR approach zones
+    openskyBbox: {lamin: 40.5, lomin: -74.5, lamax: 41.1, lomax: -73.5},
 
-    // ATIS URL
-    atisUrl: 'https://mini-tokyo.appspot.com/atisinfo',
+    // OpenSky proxy — Vercel function that handles OAuth and returns {atisData, flightData, openskyStates}
+    flightUrl: '/api/opensky',
 
-    // Flight URL
-    flightUrl: 'https://mini-tokyo.appspot.com/flight',
-
-    // Default data URL
-    dataUrl: 'https://minitokyo3d.com/data',
+    // Default data URL — serves from the same Vercel deployment (build/data/)
+    dataUrl: '/data',
 
     // Default data sources
     dataSources: [],
 
-    // Route search URL
-    searchUrl: 'https://search.minitokyo3d.com/api/v1/routes',
+    // Route search URL — placeholder, replace with your own backend
+    searchUrl: '',
 
     // Timestamp when the static data was last updated
-    lastStaticUpdate: '2026-05-28 15:00:00',
+    lastStaticUpdate: '2026-06-23 00:00:00',
 
-    // String to show in an Mapbox's AttributionControl
-    customAttribution: '<a href="https://github.com/nagix/mini-tokyo-3d">© Akihiko Kusanagi</a>',
+    // String to show in Mapbox's AttributionControl
+    customAttribution: '<a href="https://github.com/hardmoneysniper/mini-nyc-3d">Mini NYC 3D</a> | Based on <a href="https://github.com/nagix/mini-tokyo-3d">Mini Tokyo 3D</a> © Akihiko Kusanagi',
 
     // Copyright string
-    copyright: '© 2019-2026 Akihiko Kusanagi',
+    copyright: '© 2025-2026 hardmoneysniper | Based on Mini Tokyo 3D © 2019-2026 Akihiko Kusanagi',
 
     // Share URL
-    shareUrl: 'https://minitokyo3d.com',
+    shareUrl: 'https://github.com/hardmoneysniper/mini-nyc-3d',
 
     // Supported events
     events: [

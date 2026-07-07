@@ -20,7 +20,7 @@ export default class extends Panel {
         const me = this;
 
         if (me.isOpen()) {
-            const {dict, gtfs, lastDynamicUpdate} = me._map,
+            const {dict, gtfs} = me._map,
                 gtfsArray = [...gtfs.values()];
 
             me.setHTML([
@@ -30,14 +30,6 @@ export default class extends Panel {
                 `<div class="card-body">${configs.lastStaticUpdate}</div>`,
                 `<div class="card-title">${dict['dynamic-update']}</div>`,
                 '<div class="card-body">',
-                lastDynamicUpdate['Toei'] || 'N/A',
-                ` (${dict['toei']})<br>`,
-                lastDynamicUpdate['HND-JAT'] || 'N/A',
-                ` (${dict['hnd-jat']})<br>`,
-                lastDynamicUpdate['HND-TIAT'] || 'N/A',
-                ` (${dict['hnd-tiat']})<br>`,
-                lastDynamicUpdate['NAA'] || 'N/A',
-                ` (${dict['naa']})<br>`,
                 gtfsArray.filter(({date}) => date).map(({date, agency}) => `${date} (${agency})`).join('<br>'),
                 '</div>',
                 gtfsArray.length > 0 ? [

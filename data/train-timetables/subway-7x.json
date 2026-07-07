@@ -1,0 +1,8317 @@
+[
+	{
+		"id": "MTA.Subway.037500_7..S95R.Weekday",
+		"t": "MTA.Subway.037500_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_037500_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "06:15"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "06:17"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "06:23"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "06:26"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "06:27"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "06:28"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "06:30"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "06:31"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "06:32"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "06:34"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "06:36"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "06:38"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "06:40"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "06:40"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "06:45"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "06:46"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "06:48"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "06:52"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.038300_7..S95R.Weekday",
+		"t": "MTA.Subway.038300_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_038300_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "06:23"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "06:25"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "06:31"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "06:34"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "06:35"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "06:37"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "06:39"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "06:40"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "06:41"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "06:42"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "06:45"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "06:46"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "06:48"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "06:49"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "06:54"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "06:55"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "06:56"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "07:00"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.038800_7..S95R.Weekday",
+		"t": "MTA.Subway.038800_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_038800_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "06:28"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "06:30"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "06:36"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "06:39"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "06:40"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "06:42"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "06:44"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "06:45"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "06:46"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "06:47"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "06:50"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "06:51"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "06:53"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "06:54"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "06:59"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "07:00"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "07:02"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "07:05"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.039250_7..S95R.Weekday",
+		"t": "MTA.Subway.039250_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_039250_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "06:32"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "06:35"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "06:41"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "06:44"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "06:45"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "06:47"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "06:49"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "06:50"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "06:51"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "06:52"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "06:55"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "06:56"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "06:58"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "06:59"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "07:04"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "07:05"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "07:07"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "07:10"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.039750_7..S95R.Weekday",
+		"t": "MTA.Subway.039750_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_039750_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "06:37"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "06:40"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "06:46"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "06:49"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "06:50"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "06:52"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "06:54"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "06:55"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "06:56"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "06:57"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "07:00"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "07:01"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "07:03"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "07:04"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "07:09"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "07:10"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "07:12"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "07:15"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.040250_7..S95R.Weekday",
+		"t": "MTA.Subway.040250_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_040250_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "06:42"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "06:45"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "06:51"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "06:54"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "06:55"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "06:57"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "06:59"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "07:00"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "07:01"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "07:02"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "07:05"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "07:06"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "07:08"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "07:09"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "07:14"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "07:15"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "07:17"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "07:20"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.040750_7..S95R.Weekday",
+		"t": "MTA.Subway.040750_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_040750_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "06:47"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "06:50"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "06:56"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "06:59"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "07:00"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "07:02"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "07:04"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "07:05"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "07:06"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "07:07"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "07:10"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "07:11"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "07:13"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "07:14"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "07:19"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "07:20"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "07:22"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "07:25"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.041250_7..S95R.Weekday",
+		"t": "MTA.Subway.041250_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_041250_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "06:52"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "06:55"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "07:01"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "07:04"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "07:05"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "07:07"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "07:09"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "07:10"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "07:11"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "07:12"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "07:15"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "07:16"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "07:18"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "07:19"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "07:24"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "07:25"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "07:27"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "07:31"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.041750_7..S95R.Weekday",
+		"t": "MTA.Subway.041750_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_041750_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "06:57"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "07:00"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "07:06"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "07:09"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "07:10"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "07:12"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "07:14"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "07:15"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "07:16"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "07:17"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "07:20"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "07:21"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "07:23"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "07:24"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "07:29"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "07:30"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "07:32"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "07:35"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.042250_7..S95R.Weekday",
+		"t": "MTA.Subway.042250_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_042250_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "07:02"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "07:05"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "07:11"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "07:14"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "07:15"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "07:17"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "07:19"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "07:20"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "07:21"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "07:22"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "07:25"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "07:26"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "07:28"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "07:29"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "07:34"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "07:36"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "07:37"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "07:41"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.042750_7..S95R.Weekday",
+		"t": "MTA.Subway.042750_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_042750_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "07:07"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "07:10"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "07:16"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "07:19"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "07:20"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "07:22"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "07:24"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "07:25"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "07:26"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "07:27"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "07:30"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "07:31"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "07:33"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "07:34"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "07:39"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "07:41"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "07:42"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "07:46"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.043250_7..S95R.Weekday",
+		"t": "MTA.Subway.043250_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_043250_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "07:12"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "07:15"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "07:21"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "07:24"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "07:25"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "07:27"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "07:29"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "07:30"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "07:31"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "07:32"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "07:35"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "07:36"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "07:38"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "07:39"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "07:44"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "07:46"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "07:47"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "07:51"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.043750_7..S95R.Weekday",
+		"t": "MTA.Subway.043750_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_043750_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "07:17"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "07:20"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "07:26"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "07:29"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "07:30"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "07:32"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "07:34"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "07:35"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "07:36"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "07:37"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "07:40"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "07:41"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "07:43"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "07:44"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "07:49"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "07:51"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "07:52"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "07:56"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.044250_7..S95R.Weekday",
+		"t": "MTA.Subway.044250_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_044250_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "07:22"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "07:25"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "07:31"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "07:34"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "07:35"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "07:37"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "07:39"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "07:40"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "07:41"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "07:42"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "07:45"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "07:46"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "07:48"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "07:49"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "07:54"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "07:56"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "07:57"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "08:01"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.044750_7..S95R.Weekday",
+		"t": "MTA.Subway.044750_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_044750_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "07:27"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "07:30"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "07:36"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "07:39"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "07:40"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "07:42"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "07:44"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "07:45"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "07:46"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "07:47"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "07:50"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "07:51"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "07:53"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "07:54"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "07:59"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "08:01"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "08:02"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "08:06"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.045150_7..S95R.Weekday",
+		"t": "MTA.Subway.045150_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_045150_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "07:31"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "07:34"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "07:41"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "07:44"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "07:45"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "07:46"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "07:48"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "07:49"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "07:50"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "07:52"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "07:54"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "07:56"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "07:58"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "07:59"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "08:04"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "08:05"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "08:07"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "08:10"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.045750_7..S95R.Weekday",
+		"t": "MTA.Subway.045750_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_045750_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "07:37"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "07:40"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "07:45"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "07:48"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "07:49"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "07:50"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "07:52"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "07:53"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "07:54"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "07:56"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "07:58"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "08:00"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "08:02"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "08:03"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "08:08"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "08:09"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "08:11"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "08:14"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.046150_7..S95R.Weekday",
+		"t": "MTA.Subway.046150_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_046150_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "07:41"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "07:44"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "07:49"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "07:52"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "07:53"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "07:54"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "07:56"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "07:57"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "07:58"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "08:00"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "08:02"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "08:04"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "08:06"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "08:07"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "08:12"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "08:13"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "08:15"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "08:18"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.046550_7..S95R.Weekday",
+		"t": "MTA.Subway.046550_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_046550_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "07:45"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "07:48"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "07:53"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "07:56"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "07:57"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "07:58"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "08:00"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "08:01"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "08:02"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "08:04"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "08:06"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "08:08"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "08:10"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "08:11"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "08:16"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "08:17"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "08:19"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "08:22"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.046950_7..S95R.Weekday",
+		"t": "MTA.Subway.046950_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_046950_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "07:49"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "07:52"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "07:57"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "08:00"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "08:01"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "08:02"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "08:04"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "08:05"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "08:06"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "08:08"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "08:10"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "08:12"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "08:14"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "08:15"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "08:20"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "08:21"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "08:23"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "08:26"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.047350_7..S95R.Weekday",
+		"t": "MTA.Subway.047350_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_047350_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "07:53"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "07:56"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "08:01"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "08:04"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "08:05"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "08:06"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "08:08"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "08:09"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "08:10"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "08:12"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "08:14"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "08:16"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "08:18"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "08:19"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "08:24"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "08:25"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "08:27"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "08:30"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.047750_7..S95R.Weekday",
+		"t": "MTA.Subway.047750_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_047750_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "07:57"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "08:00"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "08:05"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "08:08"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "08:09"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "08:10"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "08:12"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "08:13"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "08:14"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "08:16"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "08:18"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "08:20"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "08:22"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "08:23"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "08:28"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "08:29"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "08:31"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "08:34"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.048150_7..S95R.Weekday",
+		"t": "MTA.Subway.048150_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_048150_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "08:01"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "08:04"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "08:09"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "08:12"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "08:13"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "08:14"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "08:16"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "08:17"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "08:18"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "08:20"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "08:22"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "08:24"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "08:26"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "08:27"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "08:32"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "08:34"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "08:35"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "08:39"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.048550_7..S95R.Weekday",
+		"t": "MTA.Subway.048550_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_048550_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "08:05"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "08:08"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "08:13"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "08:16"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "08:17"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "08:18"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "08:20"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "08:21"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "08:22"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "08:24"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "08:26"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "08:28"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "08:30"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "08:31"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "08:36"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "08:38"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "08:39"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "08:43"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.048950_7..S95R.Weekday",
+		"t": "MTA.Subway.048950_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_048950_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "08:09"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "08:12"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "08:17"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "08:20"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "08:21"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "08:22"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "08:24"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "08:25"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "08:26"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "08:28"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "08:30"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "08:32"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "08:34"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "08:35"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "08:40"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "08:42"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "08:43"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "08:47"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.049350_7..S95R.Weekday",
+		"t": "MTA.Subway.049350_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_049350_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "08:13"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "08:16"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "08:21"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "08:24"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "08:25"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "08:26"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "08:28"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "08:29"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "08:30"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "08:32"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "08:34"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "08:36"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "08:38"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "08:39"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "08:44"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "08:46"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "08:48"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "08:51"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.049750_7..S95R.Weekday",
+		"t": "MTA.Subway.049750_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_049750_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "08:17"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "08:20"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "08:25"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "08:28"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "08:29"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "08:30"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "08:32"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "08:33"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "08:34"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "08:36"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "08:38"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "08:40"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "08:42"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "08:43"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "08:48"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "08:50"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "08:52"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "08:55"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.050000_7..S95R.Weekday",
+		"t": "MTA.Subway.050000_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_050000_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "08:20"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "08:23"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "08:29"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "08:32"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "08:33"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "08:34"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "08:36"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "08:37"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "08:38"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "08:40"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "08:42"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "08:44"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "08:46"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "08:47"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "08:52"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "08:54"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "08:56"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "08:59"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.050700_7..S95R.Weekday",
+		"t": "MTA.Subway.050700_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_050700_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "08:27"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "08:30"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "08:34"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "08:37"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "08:38"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "08:39"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "08:41"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "08:42"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "08:43"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "08:45"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "08:47"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "08:49"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "08:51"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "08:52"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "08:57"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "08:59"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "09:02"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "09:05"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.051150_7..S95R.Weekday",
+		"t": "MTA.Subway.051150_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_051150_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "08:31"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "08:34"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "08:40"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "08:43"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "08:44"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "08:45"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "08:47"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "08:48"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "08:49"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "08:51"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "08:53"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "08:55"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "08:57"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "08:58"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "09:03"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "09:05"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "09:07"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "09:10"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.051750_7..S95R.Weekday",
+		"t": "MTA.Subway.051750_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_051750_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "08:37"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "08:40"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "08:46"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "08:49"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "08:50"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "08:51"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "08:53"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "08:54"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "08:55"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "08:57"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "08:59"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "09:01"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "09:03"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "09:04"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "09:09"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "09:11"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "09:12"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "09:16"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.052350_7..S95R.Weekday",
+		"t": "MTA.Subway.052350_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_052350_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "08:43"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "08:46"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "08:52"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "08:55"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "08:56"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "08:57"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "08:59"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "09:00"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "09:01"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "09:03"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "09:05"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "09:07"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "09:09"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "09:10"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "09:15"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "09:16"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "09:18"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "09:21"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.052800_7..S95R.Weekday",
+		"t": "MTA.Subway.052800_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_052800_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "08:48"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "08:51"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "08:58"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "09:01"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "09:02"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "09:03"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "09:05"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "09:06"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "09:07"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "09:09"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "09:11"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "09:13"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "09:15"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "09:16"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "09:21"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "09:22"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "09:24"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "09:28"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.053400_7..S95R.Weekday",
+		"t": "MTA.Subway.053400_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_053400_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "08:54"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "08:57"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "09:04"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "09:07"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "09:08"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "09:09"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "09:11"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "09:12"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "09:13"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "09:15"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "09:17"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "09:19"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "09:21"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "09:22"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "09:27"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "09:28"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "09:30"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "09:33"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.053700_7..S95R.Weekday",
+		"t": "MTA.Subway.053700_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_053700_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "08:57"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "09:00"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "09:07"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "09:10"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "09:11"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "09:12"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "09:14"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "09:15"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "09:16"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "09:18"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "09:20"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "09:22"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "09:24"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "09:25"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "09:30"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "09:31"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "09:33"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "09:36"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.054300_7..S95R.Weekday",
+		"t": "MTA.Subway.054300_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_054300_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "09:03"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "09:06"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "09:13"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "09:16"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "09:17"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "09:18"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "09:20"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "09:21"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "09:22"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "09:24"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "09:26"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "09:28"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "09:30"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "09:31"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "09:36"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "09:37"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "09:39"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "09:42"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.055200_7..S95R.Weekday",
+		"t": "MTA.Subway.055200_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_055200_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "09:12"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "09:14"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "09:19"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "09:22"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "09:23"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "09:25"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "09:27"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "09:28"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "09:29"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "09:30"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "09:33"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "09:34"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "09:36"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "09:37"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "09:42"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "09:44"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "09:46"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "09:49"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.055900_7..S95R.Weekday",
+		"t": "MTA.Subway.055900_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_055900_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "09:19"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "09:21"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "09:26"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "09:29"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "09:30"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "09:32"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "09:34"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "09:35"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "09:36"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "09:37"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "09:40"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "09:41"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "09:43"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "09:44"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "09:49"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "09:51"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "09:52"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "09:56"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.056600_7..S95R.Weekday",
+		"t": "MTA.Subway.056600_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_056600_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "09:26"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "09:28"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "09:33"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "09:36"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "09:37"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "09:39"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "09:41"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "09:42"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "09:43"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "09:44"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "09:47"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "09:48"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "09:50"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "09:51"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "09:56"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "09:58"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "09:59"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "10:03"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.057300_7..S95R.Weekday",
+		"t": "MTA.Subway.057300_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_057300_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "09:33"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "09:35"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "09:40"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "09:43"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "09:44"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "09:46"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "09:48"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "09:49"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "09:50"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "09:51"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "09:54"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "09:55"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "09:57"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "09:58"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "10:03"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "10:05"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "10:08"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "10:11"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.058100_7..S95R.Weekday",
+		"t": "MTA.Subway.058100_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_058100_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "09:41"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "09:43"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "09:48"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "09:51"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "09:52"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "09:53"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "09:55"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "09:56"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "09:57"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "09:59"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "10:03"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "10:05"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "10:07"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "10:08"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "10:13"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "10:14"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "10:16"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "10:19"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.058950_7..S95R.Weekday",
+		"t": "MTA.Subway.058950_7..S95R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_058950_7..S95R",
+		"y": "MTA.Local",
+		"d": "Downtown",
+		"os": [
+			"MTA.Subway.701"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.701",
+				"d": "09:49"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "09:52"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "09:56"
+			},
+			{
+				"s": "MTA.Subway.710",
+				"d": "09:59"
+			},
+			{
+				"s": "MTA.Subway.711",
+				"d": "10:00"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "10:01"
+			},
+			{
+				"s": "MTA.Subway.713",
+				"d": "10:03"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "10:04"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "10:05"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "10:07"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "10:13"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "10:15"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "10:17"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "10:18"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "10:23"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "10:24"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "10:26"
+			},
+			{
+				"s": "MTA.Subway.726",
+				"d": "10:29"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.088600_7..N27R.Weekday",
+		"t": "MTA.Subway.088600_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_088600_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "14:46"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "14:48"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "14:50"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "14:51"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "14:56"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "14:57"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "14:59"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "15:01"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "15:03"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "15:04"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "15:06"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "15:09"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "15:14"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "15:18"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "15:22"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.089600_7..N27R.Weekday",
+		"t": "MTA.Subway.089600_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_089600_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "14:56"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "14:58"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "15:00"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "15:01"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "15:06"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "15:07"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "15:09"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "15:11"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "15:13"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "15:14"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "15:16"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "15:19"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "15:24"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "15:28"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "15:32"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.090450_7..N27R.Weekday",
+		"t": "MTA.Subway.090450_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_090450_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "15:04"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "15:07"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "15:08"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "15:10"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "15:15"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "15:16"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "15:18"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "15:19"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "15:22"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "15:23"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "15:24"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "15:27"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "15:32"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "15:37"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "15:40"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.091250_7..N27R.Weekday",
+		"t": "MTA.Subway.091250_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_091250_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "15:12"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "15:15"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "15:16"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "15:18"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "15:23"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "15:24"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "15:26"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "15:27"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "15:30"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "15:31"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "15:32"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "15:35"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "15:40"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "15:45"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "15:48"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.092050_7..N27R.Weekday",
+		"t": "MTA.Subway.092050_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_092050_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "15:20"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "15:23"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "15:24"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "15:26"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "15:31"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "15:32"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "15:34"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "15:35"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "15:38"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "15:39"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "15:40"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "15:43"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "15:48"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "15:53"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "15:56"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.092850_7..N27R.Weekday",
+		"t": "MTA.Subway.092850_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_092850_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "15:28"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "15:31"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "15:32"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "15:34"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "15:39"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "15:40"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "15:42"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "15:43"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "15:46"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "15:47"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "15:48"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "15:51"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "15:56"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "16:01"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "16:04"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.093650_7..N27R.Weekday",
+		"t": "MTA.Subway.093650_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_093650_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "15:36"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "15:39"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "15:40"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "15:42"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "15:47"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "15:48"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "15:50"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "15:51"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "15:54"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "15:55"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "15:56"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "15:59"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "16:04"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "16:09"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "16:12"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.094450_7..N27R.Weekday",
+		"t": "MTA.Subway.094450_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_094450_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "15:44"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "15:47"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "15:48"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "15:50"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "15:55"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "15:56"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "15:58"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "15:59"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "16:02"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "16:03"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "16:04"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "16:07"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "16:12"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "16:17"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "16:20"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.095250_7..N27R.Weekday",
+		"t": "MTA.Subway.095250_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_095250_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "15:52"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "15:55"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "15:56"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "15:58"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "16:03"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "16:04"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "16:06"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "16:07"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "16:10"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "16:11"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "16:12"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "16:15"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "16:20"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "16:25"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "16:28"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.096050_7..N27R.Weekday",
+		"t": "MTA.Subway.096050_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_096050_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "16:00"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "16:03"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "16:04"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "16:06"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "16:11"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "16:12"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "16:14"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "16:15"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "16:18"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "16:19"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "16:20"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "16:23"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "16:28"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "16:35"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "16:38"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.096850_7..N27R.Weekday",
+		"t": "MTA.Subway.096850_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_096850_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "16:08"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "16:11"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "16:12"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "16:14"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "16:19"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "16:20"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "16:22"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "16:24"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "16:26"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "16:27"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "16:29"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "16:32"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "16:37"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "16:41"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "16:45"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.097450_7..N27R.Weekday",
+		"t": "MTA.Subway.097450_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_097450_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "16:14"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "16:17"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "16:18"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "16:20"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "16:25"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "16:26"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "16:28"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "16:30"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "16:32"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "16:33"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "16:35"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "16:38"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "16:43"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "16:49"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "16:52"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.098050_7..N27R.Weekday",
+		"t": "MTA.Subway.098050_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_098050_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "16:20"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "16:23"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "16:24"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "16:26"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "16:31"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "16:32"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "16:34"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "16:36"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "16:38"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "16:39"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "16:41"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "16:44"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "16:49"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "16:53"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "16:57"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.098650_7..N27R.Weekday",
+		"t": "MTA.Subway.098650_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_098650_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "16:26"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "16:29"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "16:30"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "16:32"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "16:37"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "16:38"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "16:40"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "16:42"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "16:44"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "16:45"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "16:47"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "16:50"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "16:55"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "16:59"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "17:03"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.099250_7..N27R.Weekday",
+		"t": "MTA.Subway.099250_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_099250_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "16:32"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "16:35"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "16:36"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "16:38"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "16:43"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "16:44"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "16:46"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "16:48"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "16:50"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "16:51"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "16:53"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "16:56"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "17:01"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "17:05"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "17:09"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.099850_7..N27R.Weekday",
+		"t": "MTA.Subway.099850_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_099850_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "16:38"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "16:41"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "16:42"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "16:44"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "16:49"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "16:50"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "16:52"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "16:54"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "16:56"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "16:57"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "16:59"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "17:02"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "17:07"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "17:11"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "17:15"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.100450_7..N27R.Weekday",
+		"t": "MTA.Subway.100450_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_100450_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "16:44"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "16:47"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "16:48"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "16:50"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "16:55"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "16:56"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "16:58"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "17:00"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "17:02"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "17:03"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "17:05"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "17:08"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "17:13"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "17:17"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "17:21"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.101050_7..N27R.Weekday",
+		"t": "MTA.Subway.101050_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_101050_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "16:50"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "16:53"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "16:55"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "16:56"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "17:02"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "17:03"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "17:04"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "17:06"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "17:09"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "17:10"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "17:11"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "17:14"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "17:19"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "17:24"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "17:27"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.101650_7..N27R.Weekday",
+		"t": "MTA.Subway.101650_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_101650_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "16:56"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "16:59"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "17:01"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "17:02"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "17:08"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "17:09"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "17:10"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "17:12"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "17:15"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "17:16"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "17:17"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "17:20"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "17:25"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "17:30"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "17:33"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.102150_7..N27R.Weekday",
+		"t": "MTA.Subway.102150_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_102150_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "17:01"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "17:04"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "17:06"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "17:07"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "17:13"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "17:14"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "17:15"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "17:17"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "17:20"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "17:21"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "17:22"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "17:25"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "17:30"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "17:36"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "17:39"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.102650_7..N27R.Weekday",
+		"t": "MTA.Subway.102650_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_102650_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "17:06"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "17:09"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "17:11"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "17:12"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "17:18"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "17:19"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "17:20"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "17:22"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "17:25"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "17:26"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "17:27"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "17:30"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "17:35"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "17:43"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "17:46"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.103200_7..N27R.Weekday",
+		"t": "MTA.Subway.103200_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_103200_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "17:12"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "17:15"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "17:16"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "17:18"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "17:23"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "17:24"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "17:26"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "17:28"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "17:30"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "17:31"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "17:33"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "17:36"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "17:41"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "17:45"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "17:49"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.103700_7..N27R.Weekday",
+		"t": "MTA.Subway.103700_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_103700_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "17:17"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "17:20"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "17:21"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "17:23"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "17:28"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "17:29"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "17:31"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "17:33"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "17:35"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "17:36"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "17:38"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "17:41"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "17:46"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "17:50"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "17:54"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.104200_7..N27R.Weekday",
+		"t": "MTA.Subway.104200_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_104200_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "17:22"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "17:25"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "17:26"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "17:28"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "17:33"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "17:34"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "17:36"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "17:38"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "17:40"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "17:41"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "17:43"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "17:46"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "17:51"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "17:55"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "17:59"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.104750_7..N27R.Weekday",
+		"t": "MTA.Subway.104750_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_104750_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "17:27"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "17:30"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "17:32"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "17:33"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "17:39"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "17:40"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "17:41"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "17:43"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "17:46"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "17:47"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "17:48"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "17:51"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "17:56"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "18:01"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "18:04"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.105150_7..N27R.Weekday",
+		"t": "MTA.Subway.105150_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_105150_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "17:31"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "17:34"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "17:36"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "17:37"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "17:43"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "17:44"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "17:45"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "17:47"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "17:50"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "17:51"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "17:52"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "17:55"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "18:00"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "18:05"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "18:08"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.105550_7..N27R.Weekday",
+		"t": "MTA.Subway.105550_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_105550_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "17:35"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "17:38"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "17:40"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "17:41"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "17:47"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "17:48"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "17:49"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "17:51"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "17:54"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "17:55"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "17:56"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "17:59"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "18:04"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "18:09"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "18:12"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.105950_7..N27R.Weekday",
+		"t": "MTA.Subway.105950_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_105950_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "17:39"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "17:42"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "17:44"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "17:45"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "17:51"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "17:52"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "17:53"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "17:55"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "17:58"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "17:59"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "18:00"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "18:03"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "18:08"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "18:13"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "18:16"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.106350_7..N27R.Weekday",
+		"t": "MTA.Subway.106350_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_106350_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "17:43"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "17:46"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "17:48"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "17:49"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "17:55"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "17:56"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "17:57"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "17:59"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "18:02"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "18:03"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "18:04"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "18:07"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "18:12"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "18:17"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "18:20"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.106750_7..N27R.Weekday",
+		"t": "MTA.Subway.106750_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_106750_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "17:47"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "17:50"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "17:52"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "17:53"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "17:59"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "18:00"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "18:01"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "18:03"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "18:06"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "18:07"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "18:08"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "18:11"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "18:16"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "18:21"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "18:24"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.107150_7..N27R.Weekday",
+		"t": "MTA.Subway.107150_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_107150_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "17:51"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "17:54"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "17:56"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "17:57"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "18:03"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "18:04"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "18:05"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "18:07"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "18:10"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "18:11"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "18:12"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "18:15"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "18:20"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "18:25"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "18:28"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.107650_7..N27R.Weekday",
+		"t": "MTA.Subway.107650_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_107650_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "17:56"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "17:59"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "18:01"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "18:02"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "18:08"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "18:09"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "18:10"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "18:12"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "18:15"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "18:16"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "18:17"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "18:20"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "18:25"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "18:30"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "18:33"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.108250_7..N27R.Weekday",
+		"t": "MTA.Subway.108250_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_108250_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "18:02"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "18:05"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "18:07"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "18:08"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "18:13"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "18:14"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "18:16"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "18:18"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "18:20"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "18:21"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "18:23"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "18:26"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "18:31"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "18:35"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "18:39"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.108850_7..N27R.Weekday",
+		"t": "MTA.Subway.108850_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_108850_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "18:08"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "18:11"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "18:12"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "18:14"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "18:19"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "18:20"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "18:22"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "18:23"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "18:26"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "18:27"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "18:28"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "18:31"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "18:36"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "18:41"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "18:44"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.109450_7..N27R.Weekday",
+		"t": "MTA.Subway.109450_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_109450_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "18:14"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "18:17"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "18:18"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "18:20"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "18:25"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "18:26"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "18:28"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "18:29"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "18:32"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "18:33"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "18:34"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "18:37"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "18:42"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "18:47"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "18:50"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.110050_7..N27R.Weekday",
+		"t": "MTA.Subway.110050_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_110050_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "18:20"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "18:23"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "18:24"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "18:26"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "18:31"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "18:32"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "18:34"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "18:35"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "18:38"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "18:39"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "18:40"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "18:43"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "18:48"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "18:53"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "18:56"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.110650_7..N27R.Weekday",
+		"t": "MTA.Subway.110650_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_110650_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "18:26"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "18:29"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "18:30"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "18:32"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "18:37"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "18:38"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "18:40"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "18:41"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "18:44"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "18:45"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "18:46"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "18:49"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "18:54"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "18:59"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "19:03"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.111250_7..N27R.Weekday",
+		"t": "MTA.Subway.111250_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_111250_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "18:32"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "18:35"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "18:36"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "18:38"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "18:43"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "18:44"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "18:46"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "18:47"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "18:50"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "18:51"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "18:52"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "18:55"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "19:00"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "19:05"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "19:09"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.111850_7..N27R.Weekday",
+		"t": "MTA.Subway.111850_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_111850_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "18:38"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "18:41"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "18:42"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "18:44"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "18:49"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "18:50"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "18:52"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "18:53"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "18:56"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "18:57"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "18:58"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "19:01"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "19:06"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "19:11"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "19:15"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.112550_7..N27R.Weekday",
+		"t": "MTA.Subway.112550_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_112550_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "18:45"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "18:48"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "18:49"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "18:51"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "18:55"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "18:56"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "18:58"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "19:00"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "19:02"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "19:03"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "19:05"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "19:08"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "19:12"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "19:18"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "19:21"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.113150_7..N27R.Weekday",
+		"t": "MTA.Subway.113150_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_113150_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "18:51"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "18:54"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "18:55"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "18:57"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "19:01"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "19:02"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "19:04"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "19:06"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "19:08"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "19:09"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "19:11"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "19:14"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "19:18"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "19:25"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "19:29"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.113750_7..N27R.Weekday",
+		"t": "MTA.Subway.113750_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_113750_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "18:57"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "19:00"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "19:01"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "19:03"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "19:07"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "19:08"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "19:10"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "19:12"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "19:14"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "19:15"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "19:17"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "19:20"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "19:24"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "19:29"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "19:32"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.114350_7..N27R.Weekday",
+		"t": "MTA.Subway.114350_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_114350_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "19:03"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "19:06"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "19:07"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "19:09"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "19:13"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "19:14"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "19:16"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "19:18"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "19:20"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "19:21"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "19:23"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "19:26"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "19:30"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "19:35"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "19:38"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.114950_7..N27R.Weekday",
+		"t": "MTA.Subway.114950_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_114950_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "19:09"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "19:12"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "19:13"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "19:15"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "19:19"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "19:20"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "19:22"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "19:24"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "19:26"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "19:27"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "19:29"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "19:32"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "19:36"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "19:41"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "19:44"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.115550_7..N27R.Weekday",
+		"t": "MTA.Subway.115550_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_115550_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "19:15"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "19:18"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "19:19"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "19:21"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "19:25"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "19:26"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "19:28"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "19:30"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "19:32"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "19:33"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "19:35"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "19:38"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "19:42"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "19:47"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "19:50"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.116150_7..N27R.Weekday",
+		"t": "MTA.Subway.116150_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_116150_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "19:21"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "19:24"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "19:25"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "19:27"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "19:31"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "19:32"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "19:34"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "19:36"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "19:38"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "19:39"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "19:41"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "19:44"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "19:48"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "19:53"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "19:56"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.116750_7..N27R.Weekday",
+		"t": "MTA.Subway.116750_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_116750_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "19:27"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "19:30"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "19:31"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "19:33"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "19:37"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "19:38"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "19:40"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "19:42"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "19:44"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "19:45"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "19:47"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "19:50"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "19:54"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "19:59"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "20:02"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.117350_7..N27R.Weekday",
+		"t": "MTA.Subway.117350_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_117350_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "19:33"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "19:36"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "19:37"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "19:39"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "19:43"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "19:44"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "19:46"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "19:48"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "19:50"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "19:51"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "19:53"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "19:56"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "20:00"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "20:05"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "20:08"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.117950_7..N27R.Weekday",
+		"t": "MTA.Subway.117950_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_117950_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "19:39"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "19:42"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "19:43"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "19:45"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "19:49"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "19:50"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "19:52"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "19:54"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "19:56"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "19:57"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "19:59"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "20:02"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "20:06"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "20:11"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "20:14"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.118450_7..N27R.Weekday",
+		"t": "MTA.Subway.118450_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_118450_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "19:44"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "19:47"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "19:48"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "19:50"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "19:54"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "19:55"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "19:57"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "19:59"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "20:01"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "20:02"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "20:04"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "20:07"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "20:11"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "20:18"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "20:21"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.119250_7..N27R.Weekday",
+		"t": "MTA.Subway.119250_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_119250_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "19:52"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "19:55"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "19:56"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "19:58"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "20:02"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "20:03"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "20:05"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "20:07"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "20:09"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "20:10"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "20:12"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "20:15"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "20:19"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "20:25"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "20:28"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.120050_7..N27R.Weekday",
+		"t": "MTA.Subway.120050_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_120050_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "20:00"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "20:03"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "20:04"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "20:06"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "20:10"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "20:11"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "20:13"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "20:15"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "20:17"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "20:18"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "20:20"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "20:23"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "20:27"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "20:32"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "20:35"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.120850_7..N27R.Weekday",
+		"t": "MTA.Subway.120850_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_120850_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "20:08"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "20:11"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "20:12"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "20:14"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "20:18"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "20:19"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "20:21"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "20:23"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "20:25"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "20:26"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "20:28"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "20:31"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "20:35"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "20:40"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "20:43"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.121650_7..N27R.Weekday",
+		"t": "MTA.Subway.121650_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_121650_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "20:16"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "20:19"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "20:20"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "20:22"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "20:26"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "20:27"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "20:29"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "20:31"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "20:33"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "20:34"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "20:36"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "20:39"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "20:43"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "20:48"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "20:51"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.122450_7..N27R.Weekday",
+		"t": "MTA.Subway.122450_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_122450_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "20:24"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "20:27"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "20:28"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "20:30"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "20:34"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "20:35"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "20:37"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "20:39"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "20:41"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "20:42"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "20:44"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "20:47"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "20:51"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "20:56"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "20:59"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.123250_7..N27R.Weekday",
+		"t": "MTA.Subway.123250_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_123250_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "20:32"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "20:35"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "20:36"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "20:38"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "20:42"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "20:43"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "20:45"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "20:47"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "20:49"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "20:50"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "20:52"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "20:55"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "20:59"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "21:04"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "21:07"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.124050_7..N27R.Weekday",
+		"t": "MTA.Subway.124050_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_124050_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "20:40"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "20:43"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "20:44"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "20:46"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "20:50"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "20:51"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "20:53"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "20:55"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "20:57"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "20:58"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "21:00"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "21:03"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "21:07"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "21:14"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "21:17"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.124850_7..N27R.Weekday",
+		"t": "MTA.Subway.124850_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_124850_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "20:48"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "20:51"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "20:52"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "20:54"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "20:58"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "20:59"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "21:01"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "21:03"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "21:05"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "21:06"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "21:08"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "21:11"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "21:15"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "21:20"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "21:23"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.125650_7..N27R.Weekday",
+		"t": "MTA.Subway.125650_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_125650_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "20:56"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "20:59"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "21:00"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "21:02"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "21:06"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "21:07"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "21:09"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "21:11"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "21:13"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "21:14"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "21:16"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "21:19"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "21:23"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "21:28"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "21:31"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.126400_7..N27R.Weekday",
+		"t": "MTA.Subway.126400_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_126400_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "21:04"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "21:06"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "21:08"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "21:09"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "21:14"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "21:15"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "21:17"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "21:18"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "21:21"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "21:22"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "21:23"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "21:26"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "21:31"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "21:35"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "21:39"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.127100_7..N27R.Weekday",
+		"t": "MTA.Subway.127100_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_127100_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "21:11"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "21:13"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "21:15"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "21:16"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "21:21"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "21:22"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "21:24"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "21:25"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "21:28"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "21:29"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "21:30"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "21:33"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "21:38"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "21:43"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "21:46"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.127800_7..N27R.Weekday",
+		"t": "MTA.Subway.127800_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_127800_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "21:18"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "21:20"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "21:22"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "21:23"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "21:28"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "21:29"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "21:31"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "21:32"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "21:35"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "21:36"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "21:37"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "21:40"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "21:45"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "21:49"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "21:53"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.128500_7..N27R.Weekday",
+		"t": "MTA.Subway.128500_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_128500_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "21:25"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "21:27"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "21:29"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "21:30"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "21:35"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "21:36"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "21:38"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "21:39"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "21:42"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "21:43"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "21:44"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "21:47"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "21:52"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "21:58"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "22:02"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.129250_7..N27R.Weekday",
+		"t": "MTA.Subway.129250_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_129250_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "21:32"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "21:35"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "21:36"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "21:38"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "21:42"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "21:43"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "21:45"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "21:47"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "21:49"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "21:50"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "21:52"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "21:55"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "21:59"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "22:04"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "22:07"
+			}
+		]
+	},
+	{
+		"id": "MTA.Subway.130050_7..N27R.Weekday",
+		"t": "MTA.Subway.130050_7..N27R",
+		"r": "MTA.Subway.7X",
+		"n": "L0S1-7-1064-S300_130050_7..N27R",
+		"y": "MTA.Local",
+		"d": "Uptown",
+		"os": [
+			"MTA.Subway.726"
+		],
+		"tt": [
+			{
+				"s": "MTA.Subway.726",
+				"d": "21:40"
+			},
+			{
+				"s": "MTA.Subway.725",
+				"d": "21:43"
+			},
+			{
+				"s": "MTA.Subway.724",
+				"d": "21:44"
+			},
+			{
+				"s": "MTA.Subway.723",
+				"d": "21:46"
+			},
+			{
+				"s": "MTA.Subway.721",
+				"d": "21:50"
+			},
+			{
+				"s": "MTA.Subway.720",
+				"d": "21:51"
+			},
+			{
+				"s": "MTA.Subway.719",
+				"d": "21:53"
+			},
+			{
+				"s": "MTA.Subway.718",
+				"d": "21:55"
+			},
+			{
+				"s": "MTA.Subway.716",
+				"d": "21:57"
+			},
+			{
+				"s": "MTA.Subway.715",
+				"d": "21:58"
+			},
+			{
+				"s": "MTA.Subway.714",
+				"d": "22:00"
+			},
+			{
+				"s": "MTA.Subway.712",
+				"d": "22:03"
+			},
+			{
+				"s": "MTA.Subway.707",
+				"d": "22:07"
+			},
+			{
+				"s": "MTA.Subway.702",
+				"d": "22:12"
+			},
+			{
+				"s": "MTA.Subway.701",
+				"d": "22:15"
+			}
+		]
+	}
+]

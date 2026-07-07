@@ -1,4 +1,48 @@
 [{
+	"id": "MTA",
+	"title": {
+		"en": "MTA New York City Transit",
+		"es": "MTA Tránsito de Nueva York",
+		"fr": "MTA Transit de New York",
+		"zh-Hans": "纽约市交通局",
+		"zh-Hant": "紐約市交通局",
+		"ko": "MTA 뉴욕 시 교통국"
+	},
+	"color": "#0039A6"
+}, {
+	"id": "LIRR",
+	"title": {
+		"en": "Long Island Rail Road",
+		"es": "Ferrocarril de Long Island",
+		"fr": "Long Island Rail Road",
+		"zh-Hans": "长岛铁路",
+		"zh-Hant": "長島鐵路",
+		"ko": "롱아일랜드 철도"
+	},
+	"color": "#003DA5"
+}, {
+	"id": "MNR",
+	"title": {
+		"en": "Metro-North Railroad",
+		"es": "Ferrocarril Metro-North",
+		"fr": "Chemin de fer Metro-North",
+		"zh-Hans": "地铁北铁路",
+		"zh-Hant": "地鐵北鐵路",
+		"ko": "메트로 노스 철도"
+	},
+	"color": "#009B3A"
+}, {
+	"id": "PATH",
+	"title": {
+		"en": "PATH",
+		"es": "PATH",
+		"fr": "PATH",
+		"zh-Hans": "PATH",
+		"zh-Hant": "PATH",
+		"ko": "PATH"
+	},
+	"color": "#003DA5"
+}, {
 	"id": "AAL",
 	"title": {
 		"ja": "アメリカン航空",

@@ -703,6 +703,17 @@
 	},
 	"direction": "N"
 }, {
+	"id": "HPN",
+	"title": {
+		"ja": "ニューヨーク(HPN)",
+		"en": "New York Westchester",
+		"fr": "New York Westchester",
+		"ko": "뉴욕(HPN)",
+		"zh-Hans": "纽约(HPN)",
+		"zh-Hant": "紐約(HPN)"
+	},
+	"direction": "N"
+}, {
 	"id": "HRB",
 	"title": {
 		"ja": "ハルビン",
@@ -791,6 +802,17 @@
 	},
 	"direction": "S"
 }, {
+	"id": "ISP",
+	"title": {
+		"ja": "ニューヨーク(ISP)",
+		"en": "New York Long Island MacArthur",
+		"fr": "New York Long Island MacArthur",
+		"ko": "뉴욕(ISP)",
+		"zh-Hans": "纽约(ISP)",
+		"zh-Hant": "紐約(ISP)"
+	},
+	"direction": "N"
+}, {
 	"id": "IST",
 	"title": {
 		"ja": "イスタンブール",
@@ -854,6 +876,17 @@
 		"ko": "뉴욕(JFK)",
 		"zh-Hans": "纽约(JFK)",
 		"zh-Hant": "紐約(JFK)"
+	},
+	"direction": "N"
+}, {
+	"id": "LGA",
+	"title": {
+		"ja": "ニューヨーク(LGA)",
+		"en": "New York LaGuardia",
+		"fr": "New York LaGuardia",
+		"ko": "뉴욕(LGA)",
+		"zh-Hans": "纽约(LGA)",
+		"zh-Hant": "紐約(LGA)"
 	},
 	"direction": "N"
 }, {

@@ -13772,7 +13772,7 @@
             "type": "fill-extrusion",
             "source": "composite",
             "source-layer": "building",
-            "minzoom": 15,
+            "minzoom": 13,
             "filter": [
                 "all",
                 [

@@ -206,7 +206,7 @@ export default class {
 
             objectType = 1;
             routeIndex = me.computeRenderer.getRouteIndex(feature.properties.id);
-            colorIndex = me.computeRenderer.getColorIndex(a.id);
+            colorIndex = me.computeRenderer.getColorIndex(a ? a.id : 'AAL');
             sectionIndex = 0;
             nextSectionIndex = 1;
         } else {

@@ -41,8 +41,15 @@ export default async function() {
         stationIDLookup[titleJa].push(id);
         stations.push(titleJa);
     }
-    (await Promise.all(stationLists.map(stations =>
+    // Only fetch thumbnails for stations that have Japanese titles — the
+    // Wikipedia API is Japanese-only and fails silently for English-only entries.
+    const filteredStationLists = stationLists.map(batch =>
+        batch.filter(t => t !== 'undefined駅' && t !== 'undefined')
+    ).filter(batch => batch.length > 0);
+
+    (await Promise.all(filteredStationLists.map(stations =>
         loadJSON(`${WIKIPEDIA_URL}?${WIKIPEDIA_PARAMS}&titles=${stations.join('|')}`)
+            .catch(() => ({query: {pages: {}}}))
     ))).forEach((result) => {
         const {pages} = result.query;
 
@@ -50,7 +57,7 @@ export default async function() {
             const {title, thumbnail} = pages[id];
 
             if (thumbnail) {
-                for (const id of stationIDLookup[title]) {
+                for (const id of (stationIDLookup[title] || [])) {
                     lookup[id].thumbnail = thumbnail.source;
                 }
             } else if (lookup[id] && lookup[id].coord) {

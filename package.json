@@ -1,10 +1,10 @@
 {
-  "name": "mini-tokyo-3d",
-  "version": "4.0.0-beta.2",
-  "description": "A real-time 3D digital map of Tokyo's public transport system",
-  "main": "dist/mini-tokyo-3d.js",
-  "module": "dist/mini-tokyo-3d.esm.js",
-  "style": "dist/mini-tokyo-3d.css",
+  "name": "mini-nyc-3d",
+  "version": "0.1.0",
+  "description": "A real-time 3D digital map of New York City's public transport system",
+  "main": "dist/mini-nyc-3d.js",
+  "module": "dist/mini-nyc-3d.esm.js",
+  "style": "dist/mini-nyc-3d.css",
   "dependencies": {
     "@deck.gl/core": "^8.9.36",
     "@deck.gl/geo-layers": "^8.9.36",
@@ -33,9 +33,12 @@
     "fflate": "^0.8.2",
     "geobuf": "^3.0.2",
     "gtfs-realtime-bindings": "^1.1.1",
+    "adm-zip": "^0.5.16",
+    "csv-parse": "^5.6.0",
     "japanese-holidays": "^1.0.10",
     "mapbox-gl": "3.24.0",
     "mapbox-gl-animated-popup": "^0.4.0",
+    "node.js": "^0.0.1-security",
     "pbf": "^4.0.1",
     "suncalc": "^1.9.0",
     "swiper": "^12.1.0",
@@ -66,7 +69,9 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "build-pages": "rm -rf build; cp -r public build; cp .npmignore dist/mini-tokyo-3d.min.* build; mkdir -p build/assets; cp assets/dictionary-*.json assets/style.json build/assets",
+    "build-pages": "rm -rf build; cp -r public build; cp .npmignore dist/mini-nyc-3d.min.* build; mkdir -p build/assets; cp assets/dictionary-*.json assets/style.json build/assets",
+    "fetch-gtfs": "node scripts/convert-mta-gtfs.js",
+    "build-airways": "node scripts/build-airway-coords.js",
     "build-data": "rm -rf build/data; mkdir -p build/data; cp assets/dictionary-*.json assets/osm-liberty.json build/data; node dist/loader",
     "build-all": "run-s build build-pages build-data docs",
     "docs": "vuepress build docs --no-cache",
@@ -75,19 +80,21 @@
   },
   "files": [
     "build/",
-    "dist/mini-tokyo-3d.*",
+    "dist/mini-nyc-3d.*",
     "src/"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nagix/mini-tokyo-3d.git"
+    "url": "git+https://github.com/hardmoneysniper/mini-nyc-3d.git"
   },
-  "author": "Akihiko Kusanagi",
+  "author": "hardmoneysniper",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nagix/mini-tokyo-3d/issues"
+    "url": "https://github.com/hardmoneysniper/mini-nyc-3d/issues"
   },
-  "homepage": "https://minitokyo3d.com",
-  "jsdelivr": "dist/mini-tokyo-3d.min.js",
-  "unpkg": "dist/mini-tokyo-3d.min.js"
+  "homepage": "https://github.com/hardmoneysniper/mini-nyc-3d",
+  "allowScripts": {
+    "esbuild@0.14.7": true,
+    "protobufjs@7.6.4": true
+  }
 }

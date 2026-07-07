@@ -16,7 +16,13 @@ export function loadJSON(url) {
                 res.on('data', chunk => {
                     body += chunk;
                 });
-                res.on('end', () => resolve(JSON.parse(body)));
+                res.on('end', () => {
+                    try {
+                        resolve(JSON.parse(body));
+                    } catch (e) {
+                        reject(new Error(`JSON parse failed for ${url}: ${e.message}`));
+                    }
+                });
             }).on('error', error => reject(error));
         } else {
             fs.promises.readFile(url).then(

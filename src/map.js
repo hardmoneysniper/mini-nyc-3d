@@ -14,15 +14,9 @@ import * as helpersGeojson from './helpers/helpers-geojson';
 import * as helpersMapbox from './helpers/helpers-mapbox';
 import {GeoJsonLayer, ThreeLayer, Tile3DLayer, TrafficLayer} from './layers';
 import {loadBusData, loadDynamicBusData, loadDynamicFlightData, loadDynamicTrainData, loadStaticData, loadTimetableData, updateOdptUrl} from './loader';
-import {AboutPanel, BusPanel, LayerPanel, SharePanel, StationPanel, TrackingModePanel, TrainPanel} from './panels';
+import {AboutPanel, BusPanel, FlightPanel, LayerPanel, SharePanel, StationPanel, TrackingModePanel, TrainPanel} from './panels';
 import Plugin from './plugin';
 import nearestCloserPointOnLine from './turf/nearest-closer-point-on-line';
-
-const RAILWAY_NAMBOKU = 'TokyoMetro.Namboku',
-    RAILWAY_MITA = 'Toei.Mita',
-    RAILWAY_ARAKAWA = 'Toei.Arakawa';
-
-const AIRLINES_FOR_ANA_CODE_SHARE = ['ADO', 'SFJ', 'SNJ'];
 
 const DEGREE_TO_RADIAN = Math.PI / 180;
 
@@ -148,12 +142,8 @@ export default class extends Evented {
             });
         });
 
-        const clockPromise = options.center === configs.defaultCenter ?
-            new Promise(resolve => {
-                resolve(me.clock);
-            }) :
-            helpersMapbox.fetchTimezoneOffset(options.center, options.accessToken)
-                .then(offset => me.clock.setTimezoneOffset(offset));
+        const clockPromise = helpersMapbox.fetchTimezoneOffset(options.center, options.accessToken)
+            .then(offset => me.clock.setTimezoneOffset(offset));
 
         Promise.all([
             loadStaticData(me.dataUrl, me.lang, clockPromise)
@@ -879,10 +869,11 @@ export default class extends Evented {
             colorData = [];
 
         for (const {id, color} of me.railways.getAll()) {
-            routeData.push({
-                id,
-                feature: [13, 14, 15, 16, 17, 18].map(zoom => me.featureLookup.get(`${id}.${zoom}`))
-            });
+            const features = [13, 14, 15, 16, 17, 18].map(zoom => me.featureLookup.get(`${id}.${zoom}`));
+
+            if (features.some(f => f)) {
+                routeData.push({id, feature: features});
+            }
             colorData.push({id, color});
         }
         for (const [id, feature] of me.featureLookup) {
@@ -1227,6 +1218,13 @@ export default class extends Evented {
             }
         });
 
+        // Immediately seed realtime data once everything is ready, without
+        // waiting for the first 15-second realtimeCheckInterval tick.
+        if (me.clockMode === 'realtime') {
+            me.refreshRealtimeTrainData();
+            me.refreshRealtimeFlightData();
+        }
+
         me.initialized = true;
         me.fire({type: 'initialized'});
     }
@@ -1344,6 +1342,10 @@ export default class extends Evented {
             railway = train.r;
 
         if (me.checkActiveTrains(train) || (railway.status && railway.dynamic && !me.realtimeTrains.has(train.id)) || railway.suspended) {
+            return;
+        }
+        // Skip railways with no route geometry in featureLookup
+        if (!me.featureLookup.get(`${railway.id}.18`)) {
             return;
         }
         if (!me.setSectionData(train, options.index)) {
@@ -1499,7 +1501,8 @@ export default class extends Evented {
             now = me.clock.getTimeOffset();
 
         for (const flight of me.flightLookup.values()) {
-            if (flight.entry <= now && now <= flight.end) {
+            if (flight.entry <= now && now <= flight.end &&
+                !(flight._endedAt && now - flight._endedAt < 3 * 60 * 1000)) {
                 me.flightStart(flight);
             }
         }
@@ -1535,6 +1538,7 @@ export default class extends Evented {
 
         flight.animationID = animation.start({
             complete: () => {
+                flight._endedAt = me.clock.getTimeOffset();
                 me.stopFlight(flight);
             },
             duration: flight.end - now,
@@ -1844,7 +1848,7 @@ export default class extends Evented {
         const me = this,
             title = (type || {}).title || {};
 
-        return title[me.lang] || title.en;
+        return title[me.lang] || title.en || '';
     }
 
     getLocalizedStationTitle(array) {
@@ -1953,23 +1957,29 @@ export default class extends Evented {
         const me = this,
             dict = me.dict,
             {a: airline, n: flightNumber, ds: destination} = flight,
-            tailcolor = airline.tailcolor || '#FFFFFF',
+            tailcolor = (airline && airline.tailcolor) || '#FFFFFF',
+            callsign = Array.isArray(flightNumber) ? flightNumber[0] : (flightNumber || ''),
             scheduledTime = helpers.valueOrDefault(flight.sdt, flight.sat),
             estimatedTime = helpers.valueOrDefault(flight.edt, flight.eat),
             actualTime = helpers.valueOrDefault(flight.adt, flight.aat),
-            delayed = (estimatedTime !== undefined || actualTime !== undefined) && scheduledTime !== helpers.valueOrDefault(estimatedTime, actualTime);
+            delayed = (estimatedTime !== undefined || actualTime !== undefined) && scheduledTime !== helpers.valueOrDefault(estimatedTime, actualTime),
+            airportObj = destination || flight.or;
 
         return [
             '<div class="desc-header">',
             `<div style="background-color: ${tailcolor};"></div>`,
-            `<div><strong>${me.getLocalizedOperatorTitle(airline)}</strong>`,
-            `<br>${flightNumber[0]} `,
-            dict[destination ? 'to' : 'from'].replace('$1', me.getLocalizedAirportTitle(destination || flight.or)),
+            '<div><strong>',
+            airline ? me.getLocalizedOperatorTitle(airline) : callsign,
+            '</strong>',
+            callsign ? `<br>${callsign} ` : '',
+            airportObj ? dict[destination ? 'to' : 'from'].replace('$1', me.getLocalizedAirportTitle(airportObj)) : '',
             '</div></div>',
-            `<strong>${dict['status']}:</strong> ${me.getLocalizedFlightStatusTitle(flight.s)}`,
-            '<br><strong>',
-            dict[destination ? 'scheduled-departure-time' : 'scheduled-arrival-time'],
-            `:</strong> ${helpers.getTimeString(scheduledTime)}`,
+            flight.s ? `<strong>${dict['status']}:</strong> ${me.getLocalizedFlightStatusTitle(flight.s)}<br>` : '',
+            scheduledTime !== undefined ? [
+                '<strong>',
+                dict[destination ? 'scheduled-departure-time' : 'scheduled-arrival-time'],
+                `:</strong> ${helpers.getTimeString(scheduledTime)}`
+            ].join('') : '',
             delayed ? '<span class="desc-caution">' : '',
             estimatedTime !== undefined ? [
                 '<br><strong>',
@@ -1981,7 +1991,7 @@ export default class extends Evented {
                 `:</strong> ${helpers.getTimeString(actualTime)}`
             ].join('') : '',
             delayed ? '</span>' : '',
-            flightNumber.length > 1 ? `<br><strong>${dict['code-share']}:</strong> ${flightNumber.slice(1).join(' ')}` : ''
+            Array.isArray(flightNumber) && flightNumber.length > 1 ? `<br><strong>${dict['code-share']}:</strong> ${flightNumber.slice(1).join(' ')}` : ''
         ].join('');
     }
 
@@ -2383,7 +2393,7 @@ export default class extends Evented {
     refreshRealtimeTrainData() {
         const me = this;
 
-        loadDynamicTrainData(me.secrets).then(({trainData, trainInfoData}) => {
+        loadDynamicTrainData().then(({trainData, trainInfoData}) => {
             const {activeTrainLookup, standbyTrainLookup, realtimeTrains, dataReferences} = me,
                 now = me.clock.getTimeOffset();
 
@@ -2465,16 +2475,6 @@ export default class extends Evented {
                     continue;
                 }
 
-                // Exclude Namboku line trains that connect to/from Mita line
-                if (r === RAILWAY_NAMBOKU && (os[0].startsWith(RAILWAY_MITA) || ds[0].startsWith(RAILWAY_MITA))) {
-                    continue;
-                }
-
-                // Exclude Arakawa line trains
-                if (r === RAILWAY_ARAKAWA) {
-                    continue;
-                }
-
                 // Start train without timetable
                 me.trainStart(new Train({id, r, n, y, d, os, ds, ts, fs, delay, carComposition}, dataReferences));
             }
@@ -2499,15 +2499,12 @@ export default class extends Evented {
     refreshRealtimeFlightData() {
         const me = this;
 
-        loadDynamicFlightData(me.secrets).then(({atisData, flightData}) => {
+        loadDynamicFlightData().then(({atisData, flightData}) => {
             const flightLookup = me.flightLookup,
                 {landing, departure} = atisData,
                 pattern = [landing.join('/'), departure.join('/')].join(' '),
                 codeShareFlights = {},
                 flightQueue = {};
-            let arrRoutes = {},
-                depRoutes = {},
-                north = true;
 
             if (me.flightPattern !== pattern) {
                 me.flightPattern = pattern;
@@ -2517,70 +2514,15 @@ export default class extends Evented {
                 }
             }
 
-            if (helpers.includes(landing, ['R16L', 'R16R'])) { // South wind, good weather, rush hour
-                arrRoutes = {S: 'R16L', N: 'R16R'};
-                depRoutes = {S: '22', N: '16R'};
-                north = false;
-            } else if (helpers.includes(landing, ['L22', 'L23'])) { // South wind, good weather
-                arrRoutes = {S: 'L23', N: 'L22'};
-                depRoutes = {S: 'O16R', N: '16L'};
-                north = false;
-            } else if (helpers.includes(landing, ['I16L', 'I16R'])) { // South wind, bad weather, rush hour
-                arrRoutes = {S: 'I16L', N: 'I16R'};
-                depRoutes = {S: '22', N: '16R'};
-                north = false;
-            } else if (helpers.includes(landing, ['I22', 'I23'])) { // South wind, bad weather
-                arrRoutes = {S: 'I23', N: 'I22'};
-                depRoutes = {S: '16R', N: '16L'};
-                north = false;
-            } else if (helpers.includes(landing, ['I34L', 'H34R'])) { // North wind, good weather
-                arrRoutes = {S: 'IX34L', N: 'H34R'};
-                depRoutes = {S: '05', N: '34R'};
-                north = true;
-            } else if (helpers.includes(landing, ['I34L', 'I34R'])) { // North wind, bad weather
-                arrRoutes = {S: 'IZ34L', N: 'H34R'};
-                depRoutes = {S: '05', N: '34R'};
-                north = true;
-            } else if (landing.length !== 1) {
-                console.log(`Unexpected RWY: ${landing}`);
-            } else { // Midnight
-                if (helpers.includes(landing, 'I23')) {
-                    arrRoutes = {S: 'IY23', N: 'IY23'};
-                    north = false;
-                } else if (helpers.includes(landing, 'L23')) {
-                    arrRoutes = {S: 'LY23', N: 'LY23'};
-                    north = false;
-                } else if (helpers.includes(landing, 'I34L')) {
-                    arrRoutes = {S: 'IX34L', N: 'IX34L'};
-                    north = true;
-                } else if (helpers.includes(landing, 'I34R')) {
-                    arrRoutes = {S: 'IY34R', N: 'IY34R'};
-                    north = true;
-                } else if (helpers.includes(landing, 'L22')) { // Special
-                    arrRoutes = {S: 'L22', N: 'L22'};
-                    north = false;
-                } else {
-                    console.log(`Unexpected LDG RWY: ${landing[0]}`);
-                }
-                if (helpers.includes(departure, '16L')) {
-                    depRoutes = {S: 'N16L', N: 'N16L'};
-                } else if (helpers.includes(departure, '05')) {
-                    depRoutes = {S: 'N05', N: 'N05'};
-                } else if (helpers.includes(departure, '16R')) { // Special
-                    depRoutes = {S: '16R', N: '16R'};
-                } else {
-                    console.log(`Unexpected DEP RWY: ${departure[0]}`);
-                }
+            // Parse ATIS arrays ["KJFK.13L", "KLGA.31", "KEWR.22L"] into per-airport maps
+            const arrRwy = {}, depRwy = {};
+            for (const r of landing) {
+                const dot = r.indexOf('.');
+                if (dot > 0) arrRwy[r.slice(0, dot)] = r.slice(dot + 1);
             }
-
-            // Create code share flight lookup
-            for (const flightRef of flightData) {
-                if (helpers.includes(AIRLINES_FOR_ANA_CODE_SHARE, flightRef.a)) {
-                    const {dp, ds, sdt, or, ar, sat} = flightRef,
-                        key = `${dp || or}.${ds || ar}.${sdt || sat}`;
-
-                    codeShareFlights[key] = flightRef;
-                }
+            for (const r of departure) {
+                const dot = r.indexOf('.');
+                if (dot > 0) depRwy[r.slice(0, dot)] = r.slice(dot + 1);
             }
 
             for (const flightRef of flightData) {
@@ -2589,27 +2531,15 @@ export default class extends Evented {
                     status = flightRef.s,
                     {maxFlightSpeed: maxSpeed, flightAcceleration: acceleration} = configs;
 
-                // Check code share flight
-                if (id.match(/NH\d{4}$/)) {
-                    const key = `${dp || or}.${ds || ar}.${sdt || sat}`,
-                        codeShareFlight = codeShareFlights[key];
-
-                    if (codeShareFlight) {
-                        codeShareFlight.n.push(...n);
-                        continue;
-                    }
-                }
-
                 if (!flight) {
                     if (helpers.includes(['Cancelled', 'PostponedTomorrow'], status)) {
                         continue;
                     }
-                    const airport = me.airports.get(ds || or),
-                        direction = airport ? airport.direction : 'S',
-                        route = dp === 'NRT' ? `NRT.${north ? '34L' : '16R'}.Dep` :
-                        ar === 'NRT' ? `NRT.${north ? '34R' : '16L'}.Arr` :
-                        dp === 'HND' ? `HND.${depRoutes[direction]}.Dep` :
-                        ar === 'HND' ? `HND.${arrRoutes[direction]}.Arr` : undefined,
+                    const NYC = ['JFK', 'LGA', 'EWR', 'HPN', 'ISP'],
+                        isDep = NYC.includes(dp),
+                        icao  = isDep ? `K${dp}` : NYC.includes(ar) ? `K${ar}` : null,
+                        rwy   = isDep ? depRwy[icao] : arrRwy[icao],
+                        route = icao && rwy ? `${icao}.${rwy}.${isDep ? 'Dep' : 'Arr'}` : undefined,
                         feature = me.featureLookup.get(route);
 
                     if (feature) {
@@ -3139,6 +3069,9 @@ export default class extends Evented {
                 } else if (object.trip) {
                     me.detailPanel = new BusPanel({object});
                     me.detailPanel.addTo(me);
+                } else if (object.type === 'flight') {
+                    me.detailPanel = new FlightPanel({object});
+                    me.detailPanel.addTo(me);
                 }
 
                 trafficLayer.trackObject(object);
@@ -3370,10 +3303,12 @@ export default class extends Evented {
                     colors[me.getLocalizedRailwayTitle(railway)] = railway.color;
                 }
                 popup.setHTML([
-                    '<div class="thumbnail-image-container">',
-                    '<div class="ball-pulse"><div></div><div></div><div></div></div>',
-                    `<div class="thumbnail-image" style="background-image: url(\'${stations[0].thumbnail}\');"></div>`,
-                    '</div>',
+                    stations[0].thumbnail ? [
+                        '<div class="thumbnail-image-container">',
+                        '<div class="ball-pulse"><div></div><div></div><div></div></div>',
+                        `<div class="thumbnail-image" style="background-image: url(\'${stations[0].thumbnail}\');"></div>`,
+                        '</div>'
+                    ].join('') : '',
                     '<div class="railway-list">',
                     Object.keys(railwayColors).map(stationTitle => {
                         const railwayTitles = Object.keys(railwayColors[stationTitle])

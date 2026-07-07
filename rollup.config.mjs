@@ -13,9 +13,10 @@ import {createFilter} from '@rollup/pluginutils';
 
 const pkg = JSON.parse(fs.readFileSync('package.json'));
 const banner = `/*!
- * Mini Tokyo 3D v${pkg.version}
+ * Mini NYC 3D v${pkg.version}
  * ${pkg.homepage}
- * (c) 2019-${new Date().getFullYear()} ${pkg.author}
+ * (c) 2025-${new Date().getFullYear()} ${pkg.author}
+ * Based on Mini Tokyo 3D by Akihiko Kusanagi (MIT License)
  * Released under the ${pkg.license} license
  */`;
 
