@@ -15,36 +15,12 @@ const MIME = {
 };
 
 // ---------------------------------------------------------------------------
-// OpenSky proxy — OAuth2 authenticated, mirrors api/opensky.js for local dev
+// Aircraft proxy — mirrors api/aircraft.js for local dev
 //
-//   • Auth:     OAuth2 client credentials → Bearer token; realm: opensky-network
-//               Falls back to anonymous if credentials are missing; verified at startup
-//   • Credits:  4000/day authenticated; bbox costs 1 credit/call
-//               30s cache → 2880 calls/day = 72% of daily quota
-//   • Routes:   api.adsbdb.com callsign lookup (free), 4-hour in-memory cache
-//   • ATIS:     aviationweather.gov METAR fallback, overridden by live headings
+//   • States:  api.adsb.lol (free, no authentication required)
+//   • Routes:  api.adsbdb.com callsign lookup (free), 4-hour in-memory cache
+//   • ATIS:    aviationweather.gov METAR fallback, overridden by live headings
 // ---------------------------------------------------------------------------
-
-// Load credentials from .env then credentials.json at startup
-let _clientId = '', _clientSecret = '';
-(function loadCreds() {
-    try {
-        const lines = fs.readFileSync(path.join(__dirname, '.env'), 'utf8').split(/\r?\n/);
-        for (const line of lines) {
-            const m = line.match(/^(OPENSKY_CLIENT_ID|OPENSKY_CLIENT_SECRET)=(.+)$/);
-            if (!m) continue;
-            if (m[1] === 'OPENSKY_CLIENT_ID')     _clientId     = m[2].trim();
-            if (m[1] === 'OPENSKY_CLIENT_SECRET')  _clientSecret = m[2].trim();
-        }
-    } catch { /* no .env */ }
-    if (!_clientId || !_clientSecret) {
-        try {
-            const c = JSON.parse(fs.readFileSync(path.join(__dirname, 'credentials.json'), 'utf8'));
-            if (!_clientId)     _clientId     = c.clientId     || '';
-            if (!_clientSecret) _clientSecret = c.clientSecret || '';
-        } catch { /* no credentials.json — anonymous fallback */ }
-    }
-})();
 
 const NYC_AIRPORTS = {
     KJFK: {lat: 40.6413, lng: -73.7781, iata: 'JFK'},
@@ -87,6 +63,12 @@ const DEFAULT_RUNWAYS = {
     KISP: {landing: '24',  departure: '06'}
 };
 
+// IATA→ICAO lookup for fast reverse mapping
+const IATA_TO_ICAO = Object.fromEntries(
+    Object.entries(NYC_AIRPORTS).map(([icao, ap]) => [ap.iata, icao])
+);
+const NYC_IATAS = new Set(Object.values(NYC_AIRPORTS).map(ap => ap.iata));
+
 function bestRunway(bearing, runways) {
     let best = runways[0].name, bestDiff = Infinity;
     for (const {name, h} of runways) {
@@ -123,6 +105,10 @@ function airportObj(iata, name) {
     return {id: iata, title: {en: name}};
 }
 
+// adsb.lol reports altitude in feet and vertical rate in ft/min
+const FT_TO_M     = 1 / 3.28084;
+const FTMIN_TO_MS = 0.00508;
+
 // ---------------------------------------------------------------------------
 // HTTP helpers
 // ---------------------------------------------------------------------------
@@ -144,63 +130,6 @@ function httpsGet(url, extraHeaders) {
         req.on('error', reject);
         req.setTimeout(3000, () => { req.destroy(); reject(new Error('timeout')); });
     });
-}
-
-
-// ---------------------------------------------------------------------------
-// OAuth2 token manager — caches token in memory, refreshes 30s before expiry
-// ---------------------------------------------------------------------------
-const TOKEN_URL = 'https://auth.opensky-network.org/auth/realms/opensky-network/protocol/openid-connect/token';
-let _token = null, _tokenExpiresAt = 0;
-
-function httpsPost(url, formBody) {
-    return new Promise((resolve, reject) => {
-        const u = new URL(url);
-        const opts = {
-            hostname: u.hostname,
-            path: u.pathname + u.search,
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'Content-Length': Buffer.byteLength(formBody),
-                'User-Agent': 'mini-nyc-3d/0.1.0'
-            }
-        };
-        const req = https.request(opts, r => {
-            let d = '';
-            r.on('data', c => d += c);
-            r.on('end', () => {
-                try { resolve({status: r.statusCode, body: JSON.parse(d)}); }
-                catch { resolve({status: r.statusCode, body: null}); }
-            });
-        });
-        req.on('error', reject);
-        req.setTimeout(5000, () => { req.destroy(); reject(new Error('timeout')); });
-        req.write(formBody);
-        req.end();
-    });
-}
-
-async function getToken() {
-    const now = Date.now();
-    if (_token && now < _tokenExpiresAt) return _token;
-    if (!_clientId || !_clientSecret) return null;
-    try {
-        const formBody = `grant_type=client_credentials` +
-            `&client_id=${encodeURIComponent(_clientId)}` +
-            `&client_secret=${encodeURIComponent(_clientSecret)}`;
-        const {status, body} = await httpsPost(TOKEN_URL, formBody);
-        if (status !== 200 || !body?.access_token) {
-            console.error('[opensky] token error:', status, body?.error || '');
-            return null;
-        }
-        _token = body.access_token;
-        _tokenExpiresAt = now + ((body.expires_in || 1800) - 30) * 1000;
-        return _token;
-    } catch (e) {
-        console.error('[opensky] token error:', e.message);
-        return null;
-    }
 }
 
 // ---------------------------------------------------------------------------
@@ -231,34 +160,46 @@ async function lookupRoute(callsign) {
 }
 
 // ---------------------------------------------------------------------------
-// State cache — 30-second TTL → 2880 calls/day = 72% of 4000-credit/day quota
+// State cache — 30-second TTL
 // ---------------------------------------------------------------------------
 let cachedStates = [], statesExpiresAt = 0;
 let cachedAtis   = null, atisExpiresAt = 0;
 
-const STATES_URL = 'https://opensky-network.org/api/states/all?lamin=40.5&lomin=-74.5&lamax=41.2&lomax=-73.0';
+// 50 nm radius centred between JFK/LGA/EWR covers all five NYC-area airports
+const STATES_URL = 'https://api.adsb.lol/v2/lat/40.77/lon/-73.90/dist/50';
 const METAR_URL  = 'https://aviationweather.gov/api/data/metar?ids=KJFK,KLGA,KEWR,KHPN,KISP&format=json&taf=false&hours=1';
 
 async function fetchStates() {
     const now = Date.now();
     if (now < statesExpiresAt) return cachedStates;
-    const token = await getToken();
-    const headers = token ? {Authorization: `Bearer ${token}`} : {};
-    const {status, body} = await httpsGet(STATES_URL, headers);
+    const {status, body} = await httpsGet(STATES_URL);
     if (status !== 200) throw new Error(`States ${status}`);
-    cachedStates = (body?.states || [])
-        .filter(s => s[5] != null && s[6] != null)
-        .map(s => ({
-            icao24: s[0], callsign: (s[1] || '').trim(),
-            lon: s[5], lat: s[6], baroAlt: s[7], onGround: s[8],
-            heading: s[10], vertRate: s[11], geoAlt: s[13]
-        }));
+    // adsb.lol returns objects (not arrays); altitude in feet, rate in ft/min
+    cachedStates = (body?.ac || [])
+        .filter(s => s.lat != null && s.lon != null)
+        .map(s => {
+            const onGround = s.alt_baro === 'ground' || s.gnd === 1;
+            const altFt    = typeof s.alt_baro === 'number' ? s.alt_baro : null;
+            return {
+                icao24:   s.hex,
+                callsign: (s.flight || '').trim(),
+                lon:      s.lon,
+                lat:      s.lat,
+                baroAlt:  altFt != null ? altFt * FT_TO_M : null,
+                onGround,
+                heading:  s.track,
+                vertRate: typeof s.baro_rate === 'number' ? s.baro_rate * FTMIN_TO_MS : null,
+                geoAlt:   typeof s.alt_geom === 'number'  ? s.alt_geom  * FT_TO_M    : null
+            };
+        });
     statesExpiresAt = now + 30 * 1000;
     return cachedStates;
 }
 
 function filterCandidates(states) {
-    const ALTITUDE_MAX = 700, ARRIVAL_DIST = 25, DEPARTURE_DIST = 20;
+    const ALTITUDE_MAX   = 1500; // m — arrivals: ILS ~700m; departures climb fast so need higher ceiling
+    const ARRIVAL_DIST   = 25;   // km — ILS glideslope established by ~15 km
+    const DEPARTURE_DIST = 35;   // km — departures move away from airport quickly
     const candidates = [], seen = new Set();
     for (const s of states) {
         if (s.onGround) continue;
@@ -291,41 +232,75 @@ async function lookupAllRoutes(candidates) {
 }
 
 function buildFlightData(candidates, routeMap, nowMs) {
-    const flights = [], headingVotes = {};
-    const APPROACH_KMH = 268, CLIMB_KMH = 370;
+    const flights = [];
+    const headingVotes = {};
+    const APPROACH_KMH = 268;  // ~145 kt
+    const CLIMB_KMH    = 370;  // ~200 kt
+
     for (const {s, nearestIcao, nearestIata, nearestDist, alt, id,
                 ARRIVAL_DIST, DEPARTURE_DIST} of candidates) {
-        const vertRate = s.vertRate ?? 0, heading = s.heading;
-        const cs    = s.callsign || s.icao24;
-        const route = routeMap.get(cs) ?? null;
-        const rwys  = AIRPORT_RUNWAYS[nearestIcao];
+        const vertRate = s.vertRate ?? 0;
+        const heading  = s.heading;
+        const cs       = (s.callsign || s.icao24).trim();
+        const route    = routeMap.get(cs) ?? null;
+        const hasRoute = route != null;
 
-        const routeIsArrival   = route?.destIata   === nearestIata;
-        const routeIsDeparture = route?.originIata === nearestIata;
-        if (route && !routeIsArrival && !routeIsDeparture) continue;
+        // When route is known, use its actual NYC airport rather than nearest geographic airport.
+        // This fixes cases where a plane is closer to LGA but route says it's going to JFK.
+        const routeDestIsNYC   = hasRoute && NYC_IATAS.has(route.destIata);
+        const routeOriginIsNYC = hasRoute && NYC_IATAS.has(route.originIata);
 
-        const isArrival   = routeIsArrival   || (!route && vertRate < -2.0 && nearestDist <= ARRIVAL_DIST);
-        const isDeparture = routeIsDeparture || (!route && vertRate > 2.0  && nearestDist <= DEPARTURE_DIST);
+        if (hasRoute && !routeDestIsNYC && !routeOriginIsNYC) continue;
 
-        function vote(type) {
-            if (heading == null || !rwys) return;
-            const rwy = bestRunway(heading, rwys[type]);
-            if (!headingVotes[nearestIcao]) headingVotes[nearestIcao] = {landing:{}, departure:{}};
-            headingVotes[nearestIcao][type][rwy] = (headingVotes[nearestIcao][type][rwy] ?? 0) + 1;
-        }
+        const effectiveArrIata = routeDestIsNYC   ? route.destIata   : nearestIata;
+        const effectiveDepIata = routeOriginIsNYC ? route.originIata : nearestIata;
+        const effectiveArrIcao = IATA_TO_ICAO[effectiveArrIata] ?? nearestIcao;
+        const effectiveDepIcao = IATA_TO_ICAO[effectiveDepIata] ?? nearestIcao;
 
-        if (isArrival && nearestDist <= ARRIVAL_DIST && alt > 50) {
-            const t = estimateTimeMs(nearestDist, alt, vertRate, APPROACH_KMH);
-            vote('landing');
-            const f = {id: `${id}-arr`, n: cs, ar: nearestIata, sat: toEastern(nowMs + t)};
-            if (route) f.or = airportObj(route.originIata, route.originName);
-            flights.push(f);
-        } else if (isDeparture && nearestDist <= DEPARTURE_DIST) {
-            const t = alt > 50 ? estimateTimeMs(nearestDist, alt, vertRate, CLIMB_KMH) : 30_000;
-            vote('departure');
-            const f = {id: `${id}-dep`, n: cs, dp: nearestIata, sdt: toEastern(nowMs - t)};
-            if (route) f.ds = airportObj(route.destIata, route.destName);
-            flights.push(f);
+        const effectiveArrDist = haversineKm(s.lat, s.lon,
+            NYC_AIRPORTS[effectiveArrIcao].lat, NYC_AIRPORTS[effectiveArrIcao].lng);
+        const effectiveDepDist = haversineKm(s.lat, s.lon,
+            NYC_AIRPORTS[effectiveDepIcao].lat, NYC_AIRPORTS[effectiveDepIcao].lng);
+
+        const isArrival = routeDestIsNYC
+            || (!hasRoute && vertRate < -2.0 && nearestDist <= ARRIVAL_DIST);
+        // Require alt > 200m for unrouted departures — prevents go-arounds (plane aborts
+        // landing close to runway then climbs) from being misclassified as new departures.
+        const isDeparture = routeOriginIsNYC
+            || (!hasRoute && vertRate > 2.0 && nearestDist <= DEPARTURE_DIST && alt > 200);
+
+        const arrDist = routeDestIsNYC   ? effectiveArrDist : nearestDist;
+        const depDist = routeOriginIsNYC ? effectiveDepDist : nearestDist;
+
+        if (isArrival && arrDist <= ARRIVAL_DIST && alt > 50 && alt <= 700) { // arrivals: keep tight ceiling (ILS glideslope)
+            const rwys = AIRPORT_RUNWAYS[effectiveArrIcao];
+            const timeToLandMs = estimateTimeMs(arrDist, alt, vertRate, APPROACH_KMH);
+
+            if (heading != null && rwys) {
+                const rwy = bestRunway(heading, rwys.landing);
+                if (!headingVotes[effectiveArrIcao]) headingVotes[effectiveArrIcao] = {landing: {}, departure: {}};
+                headingVotes[effectiveArrIcao].landing[rwy] = (headingVotes[effectiveArrIcao].landing[rwy] ?? 0) + 1;
+            }
+
+            const flight = {id: `${id}-arr`, n: cs, ar: effectiveArrIata, sat: toEastern(nowMs + timeToLandMs)};
+            if (route) flight.or = airportObj(route.originIata, route.originName);
+            flights.push(flight);
+
+        } else if (isDeparture && depDist <= DEPARTURE_DIST && alt <= 1500) { // departures: higher ceiling, they climb fast
+            const rwys = AIRPORT_RUNWAYS[effectiveDepIcao];
+            const timeAloftMs = alt > 50
+                ? estimateTimeMs(depDist, alt, vertRate, CLIMB_KMH)
+                : 30_000;
+
+            if (heading != null && rwys) {
+                const rwy = bestRunway(heading, rwys.departure);
+                if (!headingVotes[effectiveDepIcao]) headingVotes[effectiveDepIcao] = {landing: {}, departure: {}};
+                headingVotes[effectiveDepIcao].departure[rwy] = (headingVotes[effectiveDepIcao].departure[rwy] ?? 0) + 1;
+            }
+
+            const flight = {id: `${id}-dep`, n: cs, dp: effectiveDepIata, sdt: toEastern(nowMs - timeAloftMs)};
+            if (route) flight.ds = airportObj(route.destIata, route.destName);
+            flights.push(flight);
         }
     }
     return {flights, headingVotes};
@@ -385,7 +360,7 @@ async function fetchAtis(headingVotes = {}) {
     return {landing, departure};
 }
 
-async function handleOpenSky(res) {
+async function handleAircraft(res) {
     try {
         const states     = await fetchStates();
         const candidates = filterCandidates(states);
@@ -400,10 +375,10 @@ async function handleOpenSky(res) {
 
         res.writeHead(200, {'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'});
         res.end(JSON.stringify({atisData, flightData}));
-        console.log(`  /api/opensky → ${arrDep} | TTL ${ttlSec}s | routes: ${routes} | votes: ${votes}`);
+        console.log(`  /api/aircraft → ${arrDep} | TTL ${ttlSec}s | routes: ${routes} | votes: ${votes}`);
         console.log(`  ATIS L=[${atisData.landing.join(',')}] D=[${atisData.departure.join(',')}]`);
     } catch (err) {
-        console.error('  [opensky] error:', err.message);
+        console.error('  [aircraft] error:', err.message);
         const atisData = await fetchAtis().catch(() => ({landing: [], departure: []}));
         res.writeHead(200, {'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'});
         res.end(JSON.stringify({atisData, flightData: []}));
@@ -416,7 +391,7 @@ async function handleOpenSky(res) {
 
 http.createServer((req, res) => {
     const url = req.url.split('?')[0];
-    if (url === '/api/opensky') { handleOpenSky(res); return; }
+    if (url === '/api/aircraft') { handleAircraft(res); return; }
 
     let filePath = path.join(BUILD_DIR, url === '/' ? 'index.html' : url);
     if (!fs.existsSync(filePath)) filePath = path.join(BUILD_DIR, 'index.html');
@@ -432,15 +407,7 @@ http.createServer((req, res) => {
         console.log(`  GET ${url} → 404`);
     }
 }).listen(PORT, () => {
-    const authMode = _clientId ? `auth (${_clientId})` : 'anonymous fallback';
     console.log('Mini NYC 3D → http://localhost:3000');
-    console.log(`Routes: api.adsbdb.com (free, 4h cache) | States: OpenSky ${authMode} (30s cache, ~2880 calls/day)`);
-    if (_clientId) {
-        getToken().then(token => {
-            console.log(token
-                ? '  [auth] OpenSky OAuth2 token OK'
-                : '  [auth] OpenSky OAuth2 token FAILED — requests will use anonymous API');
-        });
-    }
+    console.log('Routes: api.adsbdb.com (free, 4h cache) | States: adsb.lol (free, no auth, 30s cache)');
     console.log('Watching requests...\n');
 });

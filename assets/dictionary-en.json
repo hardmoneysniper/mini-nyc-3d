@@ -90,7 +90,7 @@
 	"transfer-and-wait": "Transfer & wait for $1 min",
 	"cannot-find-train": "Cannot find a train that arrives that day",
 
-	"description": "<h3>About Mini NYC 3D</h3><p>This real-time 3D map shows NYC subway, LIRR, and Metro-North train positions derived from <a href=\"https://api.mta.info\" target=\"_blank\">MTA open data feeds</a>. Flight data is provided by <a href=\"https://opensky-network.org\" target=\"_blank\">OpenSky Network</a>. The accuracy and completeness of the data are not guaranteed.</p><p>Source code is available on <a href=\"https://github.com/hardmoneysniper/mini-nyc-3d\" target=\"_blank\">GitHub</a>. Based on <a href=\"https://minitokyo3d.com\" target=\"_blank\">Mini Tokyo 3D</a> by Akihiko Kusanagi (MIT License).</p>",
+	"description": "<h3>About Mini NYC 3D</h3><p>This real-time 3D map shows NYC subway, LIRR, and Metro-North train positions derived from <a href=\"https://api.mta.info\" target=\"_blank\">MTA open data feeds</a>. Flight data is provided by <a href=\"https://adsb.lol\" target=\"_blank\">adsb.lol</a>. The accuracy and completeness of the data are not guaranteed.</p><p>Source code is available on <a href=\"https://github.com/hardmoneysniper/mini-nyc-3d\" target=\"_blank\">GitHub</a>. Based on <a href=\"https://minitokyo3d.com\" target=\"_blank\">Mini Tokyo 3D</a> by Akihiko Kusanagi (MIT License).</p>",
 	"about": "About Mini NYC 3D",
 	"static-update": "Latest update on static data",
 	"dynamic-update": "Latest update on dynamic data",

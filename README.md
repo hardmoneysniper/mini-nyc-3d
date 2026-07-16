@@ -44,7 +44,7 @@ Korean | Yes | Yes | -
 
 ## About Data
 
-Transit data is sourced from the [MTA open data feeds](https://api.mta.info/) — no API key required. This covers real-time train positions, timetables, and service status for the NYC Subway, LIRR, and Metro-North. Flight data for JFK, LGA, and EWR is provided by the [OpenSky Network](https://opensky-network.org) (optional).
+Transit data is sourced from the [MTA open data feeds](https://api.mta.info/) — no API key required. This covers real-time train positions, timetables, and service status for the NYC Subway, LIRR, and Metro-North. Flight data for JFK, LGA, and EWR is provided by [adsb.lol](https://adsb.lol) — also no API key required.
 
 > **Planned for v2:** PATH and NJ Transit real-time data via the [511NY Open Data API](https://511ny.org/developers).
 
@@ -53,7 +53,7 @@ Transit data is sourced from the [MTA open data feeds](https://api.mta.info/) �
 The latest LTS version of Node.js is required.
 
 1. Get a [Mapbox](https://account.mapbox.com/auth/signup/) access token (select **Map Loads for Web**).
-2. Optionally register at [OpenSky Network](https://opensky-network.org/index.php?option=com_users&view=registration) for flight data and set `OPENSKY_CLIENT_ID` / `OPENSKY_CLIENT_SECRET` in a `.env` file (see `.env.example`).
+2. Aircraft data needs no signup (adsb.lol is unauthenticated). NJ Transit rail data does — see "NJ Transit setup" below.
 
 From the root directory:
 
