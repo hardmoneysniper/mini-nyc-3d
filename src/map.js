@@ -1949,7 +1949,7 @@ export default class extends Evented {
                 arrivalTime !== undefined ? ` ${helpers.getTimeString(arrivalTime + delay)}` : ''
             ].join('') : '',
             delay >= 60000 ? `<br>${dict['delay'].replace('$1', Math.floor(delay / 60000))}</span>` : '',
-            status && lang === 'ja' ? `<br><span class="desc-caution"><strong>${status}:</strong> ${railway.text}</span>` : ''
+            status ? `<br><span class="desc-caution"><strong>${status}:</strong> ${railway.text}</span>` : ''
         ].join('');
     }
 
@@ -2401,12 +2401,12 @@ export default class extends Evented {
 
             for (const trainInfoRef of trainInfoData) {
                 const railway = me.railways.get(trainInfoRef.railway),
-                    status = trainInfoRef.status;
+                    status = trainInfoRef.status,
+                    localizedStatus = status && (status[me.lang] || status.en);
 
-                // Train information text is provided in Japanese only
-                if (railway && status && status.ja) {
-                    railway.status = status.ja;
-                    railway.text = trainInfoRef.text.ja;
+                if (railway && localizedStatus) {
+                    railway.status = localizedStatus;
+                    railway.text = trainInfoRef.text[me.lang] || trainInfoRef.text.en;
                 }
 
                 if (trainInfoRef.suspended) {
