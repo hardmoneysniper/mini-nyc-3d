@@ -25,6 +25,8 @@ const fs    = require('fs');
 const path  = require('path');
 const AdmZip = require('adm-zip');
 const {parse} = require('csv-parse/sync');
+const {readJSON, writeJSON, mergeArrayById, mergeStationGroups} = require('./lib/gtfs-merge');
+const {buildServiceCalendar} = require('./lib/gtfs-calendar');
 
 // ---------------------------------------------------------------------------
 // Feed definitions
@@ -114,20 +116,6 @@ function normTrip(rawId, service) {
     return `MTA.${service}.${id}`;
 }
 
-/** Map GTFS calendar row to our calendar type string */
-function calType(row) {
-    const sat = row.saturday === '1';
-    const sun = row.sunday   === '1';
-    if (sat && sun) return 'SaturdayHoliday';
-    if (sat)        return 'Saturday';
-    if (sun)        return 'Holiday';
-    return 'Weekday';
-}
-
-function writeJSON(filePath, data) {
-    fs.writeFileSync(filePath, JSON.stringify(data, null, '\t'), 'utf8');
-}
-
 // ---------------------------------------------------------------------------
 // Per-feed processor
 // ---------------------------------------------------------------------------
@@ -151,45 +139,9 @@ async function processFeed({service, url, carComposition}) {
     console.log(`[${service}] ${stopTimes.length.toLocaleString()} stop-time rows loaded.`);
 
     // --- calendar lookup: service_id → type ---
-    const svcCal = new Map();
-    for (const row of calendar) svcCal.set(row.service_id, calType(row));
-
-    // For feeds that only use calendar_dates.txt (e.g. MNR), derive calendar type
-    // from the day-of-week of the service date, but keep only ONE representative
-    // date per calendar type (the nearest upcoming date) to avoid trip explosion.
-    if (calendarDates.length > 0 && svcCal.size === 0) {
-        const today = new Date();
-        today.setHours(0, 0, 0, 0);
-
-        // Build date → [service_id] map (exception_type 1 = added)
-        const dateToSids = new Map();
-        for (const row of calendarDates) {
-            if (row.exception_type !== '1') continue;
-            const d = row.date; // 'YYYYMMDD'
-            if (!dateToSids.has(d)) dateToSids.set(d, []);
-            dateToSids.get(d).push(row.service_id);
-        }
-
-        // For each calendar type pick the first upcoming date
-        const repSids = new Set();
-        const found = {Weekday: false, Saturday: false, Holiday: false};
-
-        for (const dateStr of [...dateToSids.keys()].sort()) {
-            const year = +dateStr.slice(0, 4), mon = +dateStr.slice(4, 6) - 1, day = +dateStr.slice(6, 8);
-            const d = new Date(year, mon, day);
-            if (d < today) continue; // skip past dates
-            const dow = d.getDay(); // 0=Sun, 6=Sat
-            const type = dow === 0 ? 'Holiday' : dow === 6 ? 'Saturday' : 'Weekday';
-            if (!found[type]) {
-                found[type] = true;
-                for (const sid of dateToSids.get(dateStr)) svcCal.set(sid, type);
-                repSids.add(dateStr);
-            }
-            if (found.Weekday && found.Saturday && found.Holiday) break;
-        }
-        console.log(`[${service}] calendar_dates: representative dates selected: ${[...repSids].join(', ')}`);
-        // Mark this feed as calendar_dates-only so the timetable loop can skip non-representative trips
-        svcCal._calendarDatesOnly = true;
+    const {svcCal, repDates} = buildServiceCalendar(calendar, calendarDates);
+    if (repDates.length > 0) {
+        console.log(`[${service}] calendar_dates: representative dates selected: ${repDates.join(', ')}`);
     }
 
     // --- stop_times grouped by trip, sorted by sequence ---
@@ -394,29 +346,29 @@ async function main() {
         }
     }
 
-    // railways.json
-    writeJSON('data/railways.json', allRailways);
-    console.log(`\nWrote data/railways.json        (${allRailways.length} railways)`);
+    // railways.json — merge-write: keep any non-MTA (e.g. NJT) entries already on disk
+    const mergedRailways = mergeArrayById(readJSON('data/railways.json', []), allRailways, 'MTA');
+    writeJSON('data/railways.json', mergedRailways);
+    console.log(`\nWrote data/railways.json        (${allRailways.length} MTA railways, ${mergedRailways.length} total)`);
 
     // stations.json
-    writeJSON('data/stations.json', allStations);
-    console.log(`Wrote data/stations.json        (${allStations.length} stations)`);
+    const mergedStations = mergeArrayById(readJSON('data/stations.json', []), allStations, 'MTA');
+    writeJSON('data/stations.json', mergedStations);
+    console.log(`Wrote data/stations.json        (${allStations.length} MTA stations, ${mergedStations.length} total)`);
 
     // station-groups.json
-    writeJSON('data/station-groups.json', allStationGroups);
-    console.log(`Wrote data/station-groups.json  (${allStationGroups.length} groups)`);
+    const mergedGroups = mergeStationGroups(readJSON('data/station-groups.json', []), allStationGroups, 'MTA');
+    writeJSON('data/station-groups.json', mergedGroups);
+    console.log(`Wrote data/station-groups.json  (${allStationGroups.length} MTA groups, ${mergedGroups.length} total)`);
 
-    // coordinates.json — preserve existing airways, replace railways with NYC shapes
-    let existingAirways = [];
-    try {
-        const existing = JSON.parse(fs.readFileSync('data/coordinates.json', 'utf8'));
-        existingAirways = existing.airways || [];
-    } catch { /* file absent or invalid — start fresh */ }
+    // coordinates.json — preserve existing airways, merge railways with NYC shapes
+    const existingCoords = readJSON('data/coordinates.json', {airways: [], railways: []});
+    const mergedShapes = mergeArrayById(existingCoords.railways || [], allRailwayShapes, 'MTA');
     writeJSON('data/coordinates.json', {
-        airways:  existingAirways,
-        railways: allRailwayShapes
+        airways:  existingCoords.airways || [],
+        railways: mergedShapes
     });
-    console.log(`Wrote data/coordinates.json     (${allRailwayShapes.length} railway shapes, ${existingAirways.length} airways preserved)`);
+    console.log(`Wrote data/coordinates.json     (${allRailwayShapes.length} MTA shapes, ${mergedShapes.length} total, ${(existingCoords.airways || []).length} airways preserved)`);
 
     // train-timetables/*.json — clear only files belonging to feeds that succeeded,
     // then write the new ones. This prevents partial failures from wiping data for
