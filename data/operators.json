@@ -43,6 +43,17 @@
 	},
 	"color": "#003DA5"
 }, {
+	"id": "NJT",
+	"title": {
+		"en": "NJ Transit",
+		"es": "NJ Transit",
+		"fr": "NJ Transit",
+		"zh-Hans": "新泽西公交",
+		"zh-Hant": "新澤西公交",
+		"ko": "NJ 트랜짓"
+	},
+	"color": "#0039A6"
+}, {
 	"id": "AAL",
 	"title": {
 		"ja": "アメリカン航空",
