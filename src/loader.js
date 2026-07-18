@@ -230,9 +230,9 @@ export function loadDynamicTrainData() {
 }
 
 /**
- * Load the dynamic data for flights.
- * Flight data requires an authenticated OpenSky proxy backend — returns empty stubs
- * until configs.atisUrl and configs.flightUrl point to a working endpoint.
+ * Load the dynamic data for flights via the aircraft proxy (adsb.lol,
+ * no authentication required). Returns empty stubs if configs.flightUrl
+ * is not configured.
  * @returns {Object} Loaded data
  */
 export function loadDynamicFlightData() {
