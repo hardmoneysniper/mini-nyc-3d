@@ -46,9 +46,14 @@ async function fetchToken() {
     return body.UserToken;
 }
 
-async function getToken(forceRefresh) {
+// `staleToken` is the token value the caller observed as rejected ("Invalid
+// token."). On a forced refresh, if `_token` no longer matches it, a sibling
+// call already refreshed the cache in the meantime — reuse that instead of
+// burning another real getToken call against NJT's 10/day cap.
+async function getToken(forceRefresh, staleToken) {
     const now = Date.now();
     if (!forceRefresh && _token && now - _tokenObtainedAt < TOKEN_TTL_MS) return _token;
+    if (forceRefresh && staleToken !== undefined && staleToken !== _token) return _token;
     if (!_tokenPromise) {
         _tokenPromise = fetchToken()
             .then(token => { _token = token; _tokenObtainedAt = Date.now(); _tokenPromise = null; return token; })
@@ -68,7 +73,7 @@ async function fetchProto(pathName) {
     if (contentType.includes('application/json')) {
         const body = await res.json().catch(() => null);
         if (body?.errorMessage?.includes('Invalid token')) {
-            token = await getToken(true);
+            token = await getToken(true, token);
             res = await postForm(pathName, {token});
         } else {
             throw new Error(`NJT ${pathName} failed: ${body?.errorMessage || res.status}`);
