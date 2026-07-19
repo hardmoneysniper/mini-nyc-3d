@@ -2,8 +2,11 @@
 /**
  * scripts/convert-mta-gtfs.js
  *
- * Downloads MTA GTFS static feeds and converts them into the
- * mini-nyc-3d data format consumed by the build pipeline.
+ * Converts MTA GTFS static feeds into the mini-nyc-3d data format consumed
+ * by the build pipeline. Subway and MNR read from local GTFS snapshots
+ * (data/gtfs_subway/, data/metro_north/); LIRR live-downloads (its local
+ * snapshot is incomplete — routes/shapes/stops only, no trip schedule data).
+ * See the FEEDS definition below for why.
  *
  * Usage:
  *   node scripts/convert-mta-gtfs.js
@@ -30,11 +33,24 @@ const {buildServiceCalendar} = require('./lib/gtfs-calendar');
 
 // ---------------------------------------------------------------------------
 // Feed definitions
+//
+// Subway and MNR read from local GTFS snapshots (data/gtfs_subway/,
+// data/metro_north/) rather than a live download — both are complete
+// (routes/trips/stop_times/shapes/stops all present) and, for Subway,
+// current (feed_info.txt covers today). Mixing a live download's trips.txt
+// with an older local shapes.txt would risk shape_id collisions across feed
+// generations (the same numeric ID can mean a different physical path in a
+// different feed version), so when local data is used it's used for
+// everything in that feed, not spliced with live data.
+//
+// LIRR's local snapshot (data/lirr/) only has routes/shapes/stops — no
+// trips.txt or stop_times.txt — so it can't stand in for a full conversion;
+// LIRR keeps live-downloading.
 // ---------------------------------------------------------------------------
 const FEEDS = [
     {
         service: 'Subway',
-        url: 'https://web.mta.info/developers/data/nyct/subway/google_transit.zip',
+        localDir: 'data/gtfs_subway',
         carComposition: 10
     },
     {
@@ -44,7 +60,7 @@ const FEEDS = [
     },
     {
         service: 'MNR',
-        url: 'https://web.mta.info/developers/data/mnr/google_transit.zip',
+        localDir: 'data/metro_north',
         carComposition: 6
     }
 ];
@@ -102,6 +118,19 @@ function parseCSV(zip, filename, required = true) {
     });
 }
 
+function parseLocalCSV(dir, filename, required = true) {
+    const filePath = path.join(dir, filename);
+    if (!fs.existsSync(filePath)) {
+        if (required) throw new Error(`Missing GTFS file: ${filePath}`);
+        return [];
+    }
+    return parse(fs.readFileSync(filePath, 'utf8'), {
+        columns: true,
+        skip_empty_lines: true,
+        trim: true
+    });
+}
+
 /** Strip directional suffix N/S from NYC subway stop IDs (Subway only) */
 function normStop(rawId, service) {
     const id = service === 'Subway' ? rawId.replace(/[NS]$/, '') : rawId;
@@ -119,23 +148,30 @@ function normTrip(rawId, service) {
 // ---------------------------------------------------------------------------
 // Per-feed processor
 // ---------------------------------------------------------------------------
-async function processFeed({service, url, carComposition}) {
-    console.log(`\n[${service}] Downloading ${url} ...`);
-    const buf = await download(url);
-    console.log(`[${service}] ${(buf.length / 1e6).toFixed(1)} MB downloaded. Parsing...`);
-    const zip = new AdmZip(buf);
+async function processFeed({service, url, localDir, carComposition}) {
+    let readCSV;
+    if (localDir) {
+        console.log(`\n[${service}] Reading local GTFS snapshot from ${localDir}/ ...`);
+        readCSV = (filename, required) => parseLocalCSV(localDir, filename, required);
+    } else {
+        console.log(`\n[${service}] Downloading ${url} ...`);
+        const buf = await download(url);
+        console.log(`[${service}] ${(buf.length / 1e6).toFixed(1)} MB downloaded. Parsing...`);
+        const zip = new AdmZip(buf);
+        readCSV = (filename, required) => parseCSV(zip, filename, required);
+    }
 
-    const routes       = parseCSV(zip, 'routes.txt');
-    const stops        = parseCSV(zip, 'stops.txt');
-    const trips        = parseCSV(zip, 'trips.txt');
-    const calendar     = parseCSV(zip, 'calendar.txt', false);
-    const calendarDates = parseCSV(zip, 'calendar_dates.txt', false);
-    const transfers    = parseCSV(zip, 'transfers.txt', false);
-    const shapes       = parseCSV(zip, 'shapes.txt', false);
+    const routes       = readCSV('routes.txt');
+    const stops        = readCSV('stops.txt');
+    const trips        = readCSV('trips.txt');
+    const calendar     = readCSV('calendar.txt', false);
+    const calendarDates = readCSV('calendar_dates.txt', false);
+    const transfers    = readCSV('transfers.txt', false);
+    const shapes       = readCSV('shapes.txt', false);
 
     // stop_times.txt is the large one — warn then parse
     console.log(`[${service}] Parsing stop_times.txt (this may take a moment)...`);
-    const stopTimes = parseCSV(zip, 'stop_times.txt');
+    const stopTimes = readCSV('stop_times.txt');
     console.log(`[${service}] ${stopTimes.length.toLocaleString()} stop-time rows loaded.`);
 
     // --- calendar lookup: service_id → type ---
@@ -165,34 +201,92 @@ async function processFeed({service, url, carComposition}) {
     const trainType = TRAIN_TYPE[service];
 
     // --- railways + station order ---
+    //
+    // A single "representative trip" per route silently drops real branches:
+    // MTA's live GTFS assigns distinct shape_ids to genuinely different trip
+    // patterns on branching lines (Subway A -> Rockaway Park/Far Rockaway,
+    // LIRR Port Jefferson branching off at Hicksville, etc.), and picking
+    // only one representative trip means whichever branch that trip doesn't
+    // run never makes it into railways.json/coordinates.json at all.
+    //
+    // Fix: consider every distinct shape used by any trip on the route.
+    // Sort by station count (longest first), then greedily keep a shape only
+    // if it visits at least one station not already covered by a
+    // previously-kept shape. Routes with one physical track collapse back to
+    // a single entry (every later shape is a subset of the first); routes
+    // with genuine branches keep one entry per branch. This codebase's
+    // "sublines" are sequential segments of one continuous path (used to
+    // offset parallel track), not a fork, so a true branch needs its own
+    // railway id — the base (longest) branch keeps the plain route id so
+    // real-time GTFS-RT trip updates (route_id only, no shape_id) keep
+    // resolving to it; additional branches get <routeId>.b2, .b3, etc.
     const railways = [];
-    const routeStations = new Map(); // normRouteId → [normStopId, ...]
-    const routeShapeIds = new Map(); // normRouteId → shape_id (captured for shapes pass below)
+    const routeStations = new Map(); // railway id (incl. branch suffixes) -> [normStopId, ...]
+    const routeShapeSelections = new Map(); // railway id -> shape_id, for the shapes pass below
 
     for (const route of routes) {
-        const routeId    = normRoute(route.route_id, service);
         const routeTrips = tripsByRoute.get(route.route_id) || [];
 
-        // Use an upbound representative trip to capture canonical station order + shape
-        const repTrip = routeTrips.find(t => t.direction_id === '0') || routeTrips[0];
-        const stationList = [];
-        if (repTrip) {
-            for (const st of stsByTrip.get(repTrip.trip_id) || []) {
+        const repTripByShape = new Map();
+        for (const trip of routeTrips) {
+            if (!trip.shape_id || repTripByShape.has(trip.shape_id)) continue;
+            repTripByShape.set(trip.shape_id, trip);
+        }
+
+        const candidates = [];
+        for (const [shapeId, trip] of repTripByShape) {
+            const stationList = [];
+            for (const st of stsByTrip.get(trip.trip_id) || []) {
                 const sid = normStop(st.stop_id, service);
                 if (!stationList.includes(sid)) stationList.push(sid);
             }
-            if (repTrip.shape_id) routeShapeIds.set(routeId, repTrip.shape_id);
+            if (stationList.length > 0) candidates.push({shapeId, stationList});
         }
-        routeStations.set(routeId, stationList);
+        candidates.sort((a, b) => b.stationList.length - a.stationList.length);
 
-        railways.push({
-            id:            routeId,
-            title:         {en: route.route_long_name || route.route_short_name || route.route_id},
-            stations:      stationList,
-            ascending:     dirs[0],
-            descending:    dirs[1],
-            color:         route.route_color ? `#${route.route_color}` : '#888888',
-            carComposition
+        const covered = new Set();
+        const selected = [];
+        for (const cand of candidates) {
+            if (!cand.stationList.some(sid => !covered.has(sid))) continue;
+            cand.stationList.forEach(sid => covered.add(sid));
+            selected.push(cand);
+        }
+
+        if (selected.length === 0) {
+            // No trips at all right now (e.g. LIRR.11 Belmont Park — seasonal
+            // service the live GTFS omits entirely outside event dates).
+            // Keep the old behavior of emitting an empty placeholder rather
+            // than dropping the route, so a dedicated patch script (e.g.
+            // scripts/patch-lirr11-belmont.js) can still find and populate it.
+            const baseId = normRoute(route.route_id, service);
+            routeStations.set(baseId, []);
+            railways.push({
+                id:            baseId,
+                title:         {en: route.route_long_name || route.route_short_name || route.route_id},
+                stations:      [],
+                ascending:     dirs[0],
+                descending:    dirs[1],
+                color:         route.route_color ? `#${route.route_color}` : '#888888',
+                carComposition
+            });
+        }
+
+        selected.forEach((cand, i) => {
+            const baseId = normRoute(route.route_id, service);
+            const railwayId = i === 0 ? baseId : `${baseId}.b${i + 1}`;
+
+            routeStations.set(railwayId, cand.stationList);
+            routeShapeSelections.set(railwayId, cand.shapeId);
+
+            railways.push({
+                id:            railwayId,
+                title:         {en: route.route_long_name || route.route_short_name || route.route_id},
+                stations:      cand.stationList,
+                ascending:     dirs[0],
+                descending:    dirs[1],
+                color:         route.route_color ? `#${route.route_color}` : '#888888',
+                carComposition
+            });
         });
     }
 
@@ -260,14 +354,14 @@ async function processFeed({service, url, carComposition}) {
         arr.sort((a, b) => +a.shape_pt_sequence - +b.shape_pt_sequence);
     }
 
-    // Map route → shape (shape_ids captured in the routes loop above)
+    // Map railway (incl. branch suffixes) → shape (captured in the routes loop above)
     const railwayShapes = [];
-    for (const [routeId, shapeId] of routeShapeIds) {
+    for (const [railwayId, shapeId] of routeShapeSelections) {
         const pts = shapePoints.get(shapeId);
         if (!pts || pts.length === 0) continue;
 
         railwayShapes.push({
-            id: routeId,
+            id: railwayId,
             sublines: [{
                 type:   'main',
                 coords: pts.map(p => [parseFloat(p.shape_pt_lon), parseFloat(p.shape_pt_lat)])
