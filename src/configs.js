@@ -150,6 +150,10 @@ const configs = {
     // Aircraft proxy — Vercel function that fetches adsb.lol and returns {atisData, flightData}
     flightUrl: 'https://mini-nyc-3d.vercel.app/api/aircraft',
 
+    // NJT rail proxy — Vercel function that fetches NJT's authenticated GTFS-RT
+    // feeds and returns {trainData, trainInfoData} (same shape as MTA's realtime data)
+    njtUrl: 'https://mini-nyc-3d.vercel.app/api/njt',
+
     // Default data URL — served from GitHub Pages (same origin, no CORS issues)
     dataUrl: 'https://hardmoneysniper.github.io/mini-nyc-3d/data',
 

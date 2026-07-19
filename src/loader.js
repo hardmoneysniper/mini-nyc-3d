@@ -230,6 +230,21 @@ export function loadDynamicTrainData() {
 }
 
 /**
+ * Load the dynamic data for NJ Transit rail trains via the authenticated
+ * proxy (NJT's GTFS-RT feeds require a token unlike MTA's open feeds).
+ * @returns {Object} Loaded data — same shape as loadDynamicTrainData()
+ */
+export function loadDynamicNjtTrainData() {
+    if (!configs.njtUrl) {
+        return Promise.resolve({trainData: [], trainInfoData: []});
+    }
+    return loadJSON(configs.njtUrl).then(data => ({
+        trainData: data.trainData || [],
+        trainInfoData: data.trainInfoData || []
+    }));
+}
+
+/**
  * Load the dynamic data for flights via the aircraft proxy (adsb.lol,
  * no authentication required). Returns empty stubs if configs.flightUrl
  * is not configured.
