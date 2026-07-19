@@ -241,7 +241,10 @@ export function loadDynamicNjtTrainData() {
     return loadJSON(configs.njtUrl).then(data => ({
         trainData: data.trainData || [],
         trainInfoData: data.trainInfoData || []
-    }));
+    })).catch(err => {
+        console.warn('Failed to load NJT train data:', err);
+        return {trainData: [], trainInfoData: []};
+    });
 }
 
 /**
