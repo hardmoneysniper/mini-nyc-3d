@@ -81,6 +81,11 @@ async function fetchProto(pathName) {
     }
 
     const buffer = await res.arrayBuffer();
+    // NJT returns a genuinely empty (0-byte) body for a feed with no active
+    // entities (observed live on getAlerts) rather than a minimal valid
+    // FeedMessage — decode() throws "missing required 'header'" on an empty
+    // buffer, so treat 0 bytes as an empty feed instead of an error.
+    if (buffer.byteLength === 0) return {entity: []};
     return GtfsRealtimeBindings.transit_realtime.FeedMessage.decode(new Uint8Array(buffer));
 }
 
