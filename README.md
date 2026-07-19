@@ -46,20 +46,24 @@ Korean | Yes | Yes | -
 
 Transit data is sourced from the [MTA open data feeds](https://api.mta.info/) — no API key required. This covers real-time train positions, timetables, and service status for the NYC Subway, LIRR, and Metro-North. Flight data for JFK, LGA, and EWR is provided by [adsb.lol](https://adsb.lol) — also no API key required.
 
-> **Planned for v2:** PATH and NJ Transit real-time data via the [511NY Open Data API](https://511ny.org/developers).
+NJ Transit rail data (real-time positions, delays, and service alerts) is provided by [NJ Transit's GTFS/GTFSRT Web API](https://developer.njtransit.com/registration), which requires a free developer account.
+
+> **Planned for v2:** PATH real-time data via the [511NY Open Data API](https://511ny.org/developers).
 
 ## How to Build
 
 The latest LTS version of Node.js is required.
 
 1. Get a [Mapbox](https://account.mapbox.com/auth/signup/) access token (select **Map Loads for Web**).
-2. Aircraft data needs no signup (adsb.lol is unauthenticated). NJ Transit rail data does — see "NJ Transit setup" below.
+2. Aircraft data needs no signup (adsb.lol is unauthenticated).
+3. Register at [NJ Transit's developer portal](https://developer.njtransit.com/registration) for rail real-time data, and set `NJT_USERNAME` / `NJT_PASSWORD` in a `.env` file (see `.env.example`).
 
 From the root directory:
 
 ```bash
 npm install
-npm run fetch-gtfs   # downloads MTA GTFS and generates data/ JSON files (~5 min)
+npm run fetch-gtfs       # downloads MTA GTFS and generates data/ JSON files (~5 min)
+npm run fetch-njt-gtfs   # converts the local NJT rail GTFS in data/njt_rail_data/
 npm run build-all
 ```
 
