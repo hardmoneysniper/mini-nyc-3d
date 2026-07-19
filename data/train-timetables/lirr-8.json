@@ -1,46 +1,5 @@
 [
 	{
-		"id": "MTA.LIRR.GO201_26_1702.Weekday",
-		"t": "MTA.LIRR.GO201_26_1702",
-		"r": "MTA.LIRR.8",
-		"n": "1702",
-		"y": "MTA.Regional",
-		"d": "Outbound",
-		"os": [
-			"MTA.LIRR.102"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.102",
-				"d": "00:22"
-			},
-			{
-				"s": "MTA.LIRR.184",
-				"d": "00:28"
-			},
-			{
-				"s": "MTA.LIRR.219",
-				"d": "00:38"
-			},
-			{
-				"s": "MTA.LIRR.142",
-				"d": "00:40"
-			},
-			{
-				"s": "MTA.LIRR.124",
-				"d": "00:42"
-			},
-			{
-				"s": "MTA.LIRR.85",
-				"d": "00:44"
-			},
-			{
-				"s": "MTA.LIRR.216",
-				"d": "00:49"
-			}
-		]
-	},
-	{
 		"id": "MTA.LIRR.GO201_26_1705.Weekday",
 		"t": "MTA.LIRR.GO201_26_1705",
 		"r": "MTA.LIRR.8",
@@ -1770,7 +1729,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_7702.Holiday",
+		"id": "MTA.LIRR.GO201_26_7702.Saturday",
 		"t": "MTA.LIRR.GO201_26_7702",
 		"r": "MTA.LIRR.8",
 		"n": "7702",
@@ -3306,8 +3265,8 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_7767.Holiday",
-		"t": "MTA.LIRR.GO201_26_7767",
+		"id": "MTA.LIRR.GO201_26_7767_1.Holiday",
+		"t": "MTA.LIRR.GO201_26_7767_1",
 		"r": "MTA.LIRR.8",
 		"n": "7767",
 		"y": "MTA.Regional",
@@ -3342,21 +3301,29 @@
 			},
 			{
 				"s": "MTA.LIRR.102",
-				"d": "21:29"
+				"d": "21:31"
+			},
+			{
+				"s": "MTA.LIRR.349",
+				"d": "21:50"
 			}
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_7768.Holiday",
-		"t": "MTA.LIRR.GO201_26_7768",
+		"id": "MTA.LIRR.GO201_26_7768_1.Holiday",
+		"t": "MTA.LIRR.GO201_26_7768_1",
 		"r": "MTA.LIRR.8",
 		"n": "7768",
 		"y": "MTA.Regional",
 		"d": "Outbound",
 		"os": [
-			"MTA.LIRR.102"
+			"MTA.LIRR.349"
 		],
 		"tt": [
+			{
+				"s": "MTA.LIRR.349",
+				"d": "21:57"
+			},
 			{
 				"s": "MTA.LIRR.102",
 				"d": "22:19"
@@ -3388,8 +3355,8 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_7769.Holiday",
-		"t": "MTA.LIRR.GO201_26_7769",
+		"id": "MTA.LIRR.GO201_26_7769_1.Holiday",
+		"t": "MTA.LIRR.GO201_26_7769_1",
 		"r": "MTA.LIRR.8",
 		"n": "7769",
 		"y": "MTA.Regional",
@@ -3424,21 +3391,29 @@
 			},
 			{
 				"s": "MTA.LIRR.102",
-				"d": "22:29"
+				"d": "22:31"
+			},
+			{
+				"s": "MTA.LIRR.349",
+				"d": "22:51"
 			}
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_7770.Holiday",
-		"t": "MTA.LIRR.GO201_26_7770",
+		"id": "MTA.LIRR.GO201_26_7770_1.Holiday",
+		"t": "MTA.LIRR.GO201_26_7770_1",
 		"r": "MTA.LIRR.8",
 		"n": "7770",
 		"y": "MTA.Regional",
 		"d": "Outbound",
 		"os": [
-			"MTA.LIRR.102"
+			"MTA.LIRR.349"
 		],
 		"tt": [
+			{
+				"s": "MTA.LIRR.349",
+				"d": "22:57"
+			},
 			{
 				"s": "MTA.LIRR.102",
 				"d": "23:19"
@@ -3470,8 +3445,8 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_7771.Holiday",
-		"t": "MTA.LIRR.GO201_26_7771",
+		"id": "MTA.LIRR.GO201_26_7771_1.Holiday",
+		"t": "MTA.LIRR.GO201_26_7771_1",
 		"r": "MTA.LIRR.8",
 		"n": "7771",
 		"y": "MTA.Regional",
@@ -3506,13 +3481,62 @@
 			},
 			{
 				"s": "MTA.LIRR.102",
-				"d": "23:29"
+				"d": "23:31"
+			},
+			{
+				"s": "MTA.LIRR.349",
+				"d": "23:51"
 			}
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_7773.Holiday",
-		"t": "MTA.LIRR.GO201_26_7773",
+		"id": "MTA.LIRR.GO201_26_7772.Holiday",
+		"t": "MTA.LIRR.GO201_26_7772",
+		"r": "MTA.LIRR.8",
+		"n": "7772",
+		"y": "MTA.Regional",
+		"d": "Outbound",
+		"os": [
+			"MTA.LIRR.349"
+		],
+		"tt": [
+			{
+				"s": "MTA.LIRR.349",
+				"d": "23:48"
+			},
+			{
+				"s": "MTA.LIRR.102",
+				"d": "24:11"
+			},
+			{
+				"s": "MTA.LIRR.184",
+				"d": "24:17"
+			},
+			{
+				"s": "MTA.LIRR.219",
+				"d": "24:27"
+			},
+			{
+				"s": "MTA.LIRR.142",
+				"d": "24:29"
+			},
+			{
+				"s": "MTA.LIRR.124",
+				"d": "24:31"
+			},
+			{
+				"s": "MTA.LIRR.85",
+				"d": "24:33"
+			},
+			{
+				"s": "MTA.LIRR.216",
+				"d": "24:38"
+			}
+		]
+	},
+	{
+		"id": "MTA.LIRR.GO201_26_7773_1.Holiday",
+		"t": "MTA.LIRR.GO201_26_7773_1",
 		"r": "MTA.LIRR.8",
 		"n": "7773",
 		"y": "MTA.Regional",
@@ -3547,7 +3571,11 @@
 			},
 			{
 				"s": "MTA.LIRR.102",
-				"d": "24:25"
+				"d": "24:27"
+			},
+			{
+				"s": "MTA.LIRR.349",
+				"d": "24:47"
 			}
 		]
 	}

@@ -1,6 +1,6 @@
 [
 	{
-		"id": "NJT.2005.Holiday",
+		"id": "NJT.2005.Saturday",
 		"t": "NJT.2005",
 		"r": "NJT.8",
 		"n": "2005",
@@ -65,7 +65,7 @@
 		]
 	},
 	{
-		"id": "NJT.2008.Holiday",
+		"id": "NJT.2008.Saturday",
 		"t": "NJT.2008",
 		"r": "NJT.8",
 		"n": "2008",
@@ -130,7 +130,7 @@
 		]
 	},
 	{
-		"id": "NJT.2010.Holiday",
+		"id": "NJT.2010.Saturday",
 		"t": "NJT.2010",
 		"r": "NJT.8",
 		"n": "2010",
@@ -195,7 +195,7 @@
 		]
 	},
 	{
-		"id": "NJT.2012.Holiday",
+		"id": "NJT.2012.Saturday",
 		"t": "NJT.2012",
 		"r": "NJT.8",
 		"n": "2012",
@@ -260,7 +260,7 @@
 		]
 	},
 	{
-		"id": "NJT.2014.Holiday",
+		"id": "NJT.2014.Saturday",
 		"t": "NJT.2014",
 		"r": "NJT.8",
 		"n": "2014",
@@ -325,7 +325,7 @@
 		]
 	},
 	{
-		"id": "NJT.2016.Holiday",
+		"id": "NJT.2016.Saturday",
 		"t": "NJT.2016",
 		"r": "NJT.8",
 		"n": "2016",
@@ -390,7 +390,7 @@
 		]
 	},
 	{
-		"id": "NJT.2018.Holiday",
+		"id": "NJT.2018.Saturday",
 		"t": "NJT.2018",
 		"r": "NJT.8",
 		"n": "2018",
@@ -455,7 +455,7 @@
 		]
 	},
 	{
-		"id": "NJT.2020.Holiday",
+		"id": "NJT.2020.Saturday",
 		"t": "NJT.2020",
 		"r": "NJT.8",
 		"n": "2020",
@@ -520,7 +520,7 @@
 		]
 	},
 	{
-		"id": "NJT.2022.Holiday",
+		"id": "NJT.2022.Saturday",
 		"t": "NJT.2022",
 		"r": "NJT.8",
 		"n": "2022",
@@ -585,7 +585,7 @@
 		]
 	},
 	{
-		"id": "NJT.2024.Holiday",
+		"id": "NJT.2024.Saturday",
 		"t": "NJT.2024",
 		"r": "NJT.8",
 		"n": "2024",
@@ -650,7 +650,7 @@
 		]
 	},
 	{
-		"id": "NJT.2026.Holiday",
+		"id": "NJT.2026.Saturday",
 		"t": "NJT.2026",
 		"r": "NJT.8",
 		"n": "2026",
@@ -715,7 +715,7 @@
 		]
 	},
 	{
-		"id": "NJT.2028.Holiday",
+		"id": "NJT.2028.Saturday",
 		"t": "NJT.2028",
 		"r": "NJT.8",
 		"n": "2028",
@@ -780,7 +780,7 @@
 		]
 	},
 	{
-		"id": "NJT.2030.Holiday",
+		"id": "NJT.2030.Saturday",
 		"t": "NJT.2030",
 		"r": "NJT.8",
 		"n": "2030",
@@ -845,7 +845,7 @@
 		]
 	},
 	{
-		"id": "NJT.2032.Holiday",
+		"id": "NJT.2032.Saturday",
 		"t": "NJT.2032",
 		"r": "NJT.8",
 		"n": "2032",
@@ -910,7 +910,7 @@
 		]
 	},
 	{
-		"id": "NJT.2034.Holiday",
+		"id": "NJT.2034.Saturday",
 		"t": "NJT.2034",
 		"r": "NJT.8",
 		"n": "2034",
@@ -975,7 +975,7 @@
 		]
 	},
 	{
-		"id": "NJT.2036.Holiday",
+		"id": "NJT.2036.Saturday",
 		"t": "NJT.2036",
 		"r": "NJT.8",
 		"n": "2036",
@@ -1040,7 +1040,7 @@
 		]
 	},
 	{
-		"id": "NJT.2038.Holiday",
+		"id": "NJT.2038.Saturday",
 		"t": "NJT.2038",
 		"r": "NJT.8",
 		"n": "2038",
@@ -1105,7 +1105,7 @@
 		]
 	},
 	{
-		"id": "NJT.2040.Holiday",
+		"id": "NJT.2040.Saturday",
 		"t": "NJT.2040",
 		"r": "NJT.8",
 		"n": "2040",
@@ -1170,7 +1170,7 @@
 		]
 	},
 	{
-		"id": "NJT.2042.Holiday",
+		"id": "NJT.2042.Saturday",
 		"t": "NJT.2042",
 		"r": "NJT.8",
 		"n": "2042",
@@ -3528,7 +3528,7 @@
 		]
 	},
 	{
-		"id": "NJT.2090.Holiday",
+		"id": "NJT.2090.Saturday",
 		"t": "NJT.2090",
 		"r": "NJT.8",
 		"n": "2090",
@@ -3593,7 +3593,7 @@
 		]
 	},
 	{
-		"id": "NJT.2092.Holiday",
+		"id": "NJT.2092.Saturday",
 		"t": "NJT.2092",
 		"r": "NJT.8",
 		"n": "2092",
@@ -3658,7 +3658,7 @@
 		]
 	},
 	{
-		"id": "NJT.2094.Holiday",
+		"id": "NJT.2094.Saturday",
 		"t": "NJT.2094",
 		"r": "NJT.8",
 		"n": "2094",
@@ -3788,7 +3788,7 @@
 		]
 	},
 	{
-		"id": "NJT.2099.Holiday",
+		"id": "NJT.2099.Saturday",
 		"t": "NJT.2099",
 		"r": "NJT.8",
 		"n": "2099",
@@ -3853,7 +3853,7 @@
 		]
 	},
 	{
-		"id": "NJT.2101.Holiday",
+		"id": "NJT.2101.Saturday",
 		"t": "NJT.2101",
 		"r": "NJT.8",
 		"n": "2101",
@@ -3918,7 +3918,7 @@
 		]
 	},
 	{
-		"id": "NJT.2103.Holiday",
+		"id": "NJT.2103.Saturday",
 		"t": "NJT.2103",
 		"r": "NJT.8",
 		"n": "2103",
@@ -3983,7 +3983,7 @@
 		]
 	},
 	{
-		"id": "NJT.2105.Holiday",
+		"id": "NJT.2105.Saturday",
 		"t": "NJT.2105",
 		"r": "NJT.8",
 		"n": "2105",
@@ -4048,7 +4048,7 @@
 		]
 	},
 	{
-		"id": "NJT.2107.Holiday",
+		"id": "NJT.2107.Saturday",
 		"t": "NJT.2107",
 		"r": "NJT.8",
 		"n": "2107",
@@ -4113,7 +4113,7 @@
 		]
 	},
 	{
-		"id": "NJT.2109.Holiday",
+		"id": "NJT.2109.Saturday",
 		"t": "NJT.2109",
 		"r": "NJT.8",
 		"n": "2109",
@@ -4178,7 +4178,7 @@
 		]
 	},
 	{
-		"id": "NJT.2111.Holiday",
+		"id": "NJT.2111.Saturday",
 		"t": "NJT.2111",
 		"r": "NJT.8",
 		"n": "2111",
@@ -4243,7 +4243,7 @@
 		]
 	},
 	{
-		"id": "NJT.2113.Holiday",
+		"id": "NJT.2113.Saturday",
 		"t": "NJT.2113",
 		"r": "NJT.8",
 		"n": "2113",
@@ -4308,7 +4308,7 @@
 		]
 	},
 	{
-		"id": "NJT.2115.Holiday",
+		"id": "NJT.2115.Saturday",
 		"t": "NJT.2115",
 		"r": "NJT.8",
 		"n": "2115",
@@ -4373,7 +4373,7 @@
 		]
 	},
 	{
-		"id": "NJT.2117.Holiday",
+		"id": "NJT.2117.Saturday",
 		"t": "NJT.2117",
 		"r": "NJT.8",
 		"n": "2117",
@@ -4438,7 +4438,7 @@
 		]
 	},
 	{
-		"id": "NJT.2119.Holiday",
+		"id": "NJT.2119.Saturday",
 		"t": "NJT.2119",
 		"r": "NJT.8",
 		"n": "2119",
@@ -4503,7 +4503,7 @@
 		]
 	},
 	{
-		"id": "NJT.2121.Holiday",
+		"id": "NJT.2121.Saturday",
 		"t": "NJT.2121",
 		"r": "NJT.8",
 		"n": "2121",
@@ -4568,7 +4568,7 @@
 		]
 	},
 	{
-		"id": "NJT.2123.Holiday",
+		"id": "NJT.2123.Saturday",
 		"t": "NJT.2123",
 		"r": "NJT.8",
 		"n": "2123",
@@ -4633,7 +4633,7 @@
 		]
 	},
 	{
-		"id": "NJT.2125.Holiday",
+		"id": "NJT.2125.Saturday",
 		"t": "NJT.2125",
 		"r": "NJT.8",
 		"n": "2125",
@@ -4698,7 +4698,7 @@
 		]
 	},
 	{
-		"id": "NJT.2127.Holiday",
+		"id": "NJT.2127.Saturday",
 		"t": "NJT.2127",
 		"r": "NJT.8",
 		"n": "2127",
@@ -4763,7 +4763,7 @@
 		]
 	},
 	{
-		"id": "NJT.2129.Holiday",
+		"id": "NJT.2129.Saturday",
 		"t": "NJT.2129",
 		"r": "NJT.8",
 		"n": "2129",

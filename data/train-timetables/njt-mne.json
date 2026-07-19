@@ -277,7 +277,7 @@
 		]
 	},
 	{
-		"id": "NJT.1697.Holiday",
+		"id": "NJT.1697.Saturday",
 		"t": "NJT.1697",
 		"r": "NJT.7",
 		"n": "1697",
@@ -366,7 +366,7 @@
 		]
 	},
 	{
-		"id": "NJT.1699.Holiday",
+		"id": "NJT.1699.Saturday",
 		"t": "NJT.1699",
 		"r": "NJT.7",
 		"n": "1699",
@@ -455,7 +455,7 @@
 		]
 	},
 	{
-		"id": "NJT.1701.Holiday",
+		"id": "NJT.1701.Saturday",
 		"t": "NJT.1701",
 		"r": "NJT.7",
 		"n": "1701",
@@ -633,7 +633,7 @@
 		]
 	},
 	{
-		"id": "NJT.1705.Holiday",
+		"id": "NJT.1705.Saturday",
 		"t": "NJT.1705",
 		"r": "NJT.7",
 		"n": "1705",
@@ -722,7 +722,7 @@
 		]
 	},
 	{
-		"id": "NJT.1707.Holiday",
+		"id": "NJT.1707.Saturday",
 		"t": "NJT.1707",
 		"r": "NJT.7",
 		"n": "1707",
@@ -989,7 +989,7 @@
 		]
 	},
 	{
-		"id": "NJT.1713.Holiday",
+		"id": "NJT.1713.Saturday",
 		"t": "NJT.1713",
 		"r": "NJT.7",
 		"n": "1713",
@@ -1078,7 +1078,7 @@
 		]
 	},
 	{
-		"id": "NJT.1715.Holiday",
+		"id": "NJT.1715.Saturday",
 		"t": "NJT.1715",
 		"r": "NJT.7",
 		"n": "1715",
@@ -1171,7 +1171,7 @@
 		]
 	},
 	{
-		"id": "NJT.1717.Holiday",
+		"id": "NJT.1717.Saturday",
 		"t": "NJT.1717",
 		"r": "NJT.7",
 		"n": "1717",
@@ -1264,7 +1264,7 @@
 		]
 	},
 	{
-		"id": "NJT.1719.Holiday",
+		"id": "NJT.1719.Saturday",
 		"t": "NJT.1719",
 		"r": "NJT.7",
 		"n": "1719",
@@ -1450,7 +1450,7 @@
 		]
 	},
 	{
-		"id": "NJT.1723.Holiday",
+		"id": "NJT.1723.Saturday",
 		"t": "NJT.1723",
 		"r": "NJT.7",
 		"n": "1723",
@@ -1543,7 +1543,7 @@
 		]
 	},
 	{
-		"id": "NJT.1725.Holiday",
+		"id": "NJT.1725.Saturday",
 		"t": "NJT.1725",
 		"r": "NJT.7",
 		"n": "1725",
@@ -1636,7 +1636,7 @@
 		]
 	},
 	{
-		"id": "NJT.1727.Holiday",
+		"id": "NJT.1727.Saturday",
 		"t": "NJT.1727",
 		"r": "NJT.7",
 		"n": "1727",
@@ -1729,7 +1729,7 @@
 		]
 	},
 	{
-		"id": "NJT.1729.Holiday",
+		"id": "NJT.1729.Saturday",
 		"t": "NJT.1729",
 		"r": "NJT.7",
 		"n": "1729",
@@ -1822,7 +1822,7 @@
 		]
 	},
 	{
-		"id": "NJT.1731.Holiday",
+		"id": "NJT.1731.Saturday",
 		"t": "NJT.1731",
 		"r": "NJT.7",
 		"n": "1731",
@@ -6753,7 +6753,7 @@
 		]
 	},
 	{
-		"id": "NJT.1859.Holiday",
+		"id": "NJT.1859.Saturday",
 		"t": "NJT.1859",
 		"r": "NJT.7",
 		"n": "1859",
@@ -6846,7 +6846,7 @@
 		]
 	},
 	{
-		"id": "NJT.1862.Holiday",
+		"id": "NJT.1862.Saturday",
 		"t": "NJT.1862",
 		"r": "NJT.7",
 		"n": "1862",
@@ -7036,7 +7036,7 @@
 		]
 	},
 	{
-		"id": "NJT.1868.Holiday",
+		"id": "NJT.1868.Saturday",
 		"t": "NJT.1868",
 		"r": "NJT.7",
 		"n": "1868",
@@ -7214,7 +7214,7 @@
 		]
 	},
 	{
-		"id": "NJT.1872.Holiday",
+		"id": "NJT.1872.Saturday",
 		"t": "NJT.1872",
 		"r": "NJT.7",
 		"n": "1872",
@@ -7303,7 +7303,7 @@
 		]
 	},
 	{
-		"id": "NJT.1874.Holiday",
+		"id": "NJT.1874.Saturday",
 		"t": "NJT.1874",
 		"r": "NJT.7",
 		"n": "1874",
@@ -7392,7 +7392,7 @@
 		]
 	},
 	{
-		"id": "NJT.1876.Holiday",
+		"id": "NJT.1876.Saturday",
 		"t": "NJT.1876",
 		"r": "NJT.7",
 		"n": "1876",
@@ -7481,7 +7481,7 @@
 		]
 	},
 	{
-		"id": "NJT.1878.Holiday",
+		"id": "NJT.1878.Saturday",
 		"t": "NJT.1878",
 		"r": "NJT.7",
 		"n": "1878",
@@ -7748,7 +7748,7 @@
 		]
 	},
 	{
-		"id": "NJT.1884.Holiday",
+		"id": "NJT.1884.Saturday",
 		"t": "NJT.1884",
 		"r": "NJT.7",
 		"n": "1884",
@@ -7837,7 +7837,7 @@
 		]
 	},
 	{
-		"id": "NJT.1886.Holiday",
+		"id": "NJT.1886.Saturday",
 		"t": "NJT.1886",
 		"r": "NJT.7",
 		"n": "1886",
@@ -8023,7 +8023,7 @@
 		]
 	},
 	{
-		"id": "NJT.1890.Holiday",
+		"id": "NJT.1890.Saturday",
 		"t": "NJT.1890",
 		"r": "NJT.7",
 		"n": "1890",
@@ -8116,7 +8116,7 @@
 		]
 	},
 	{
-		"id": "NJT.1892.Holiday",
+		"id": "NJT.1892.Saturday",
 		"t": "NJT.1892",
 		"r": "NJT.7",
 		"n": "1892",
@@ -8209,7 +8209,7 @@
 		]
 	},
 	{
-		"id": "NJT.1894.Holiday",
+		"id": "NJT.1894.Saturday",
 		"t": "NJT.1894",
 		"r": "NJT.7",
 		"n": "1894",
@@ -8302,7 +8302,7 @@
 		]
 	},
 	{
-		"id": "NJT.1896.Holiday",
+		"id": "NJT.1896.Saturday",
 		"t": "NJT.1896",
 		"r": "NJT.7",
 		"n": "1896",
@@ -8395,7 +8395,7 @@
 		]
 	},
 	{
-		"id": "NJT.1898.Holiday",
+		"id": "NJT.1898.Saturday",
 		"t": "NJT.1898",
 		"r": "NJT.7",
 		"n": "1898",
@@ -12292,7 +12292,7 @@
 		]
 	},
 	{
-		"id": "NJT.2002.Holiday",
+		"id": "NJT.2002.Saturday",
 		"t": "NJT.2002",
 		"r": "NJT.7",
 		"n": "2002",

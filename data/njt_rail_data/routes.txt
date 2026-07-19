@@ -1,0 +1,18 @@
+route_id,agency_id,route_short_name,route_long_name,route_type,route_url,route_color
+1,"NJT","ATLC","Atlantic City Rail Line",2,"",075AAA
+2,"NJT","BNTN","Montclair-Boonton Line",2,"",E66859
+3,"NJT","BNTNM","Montclair-Boonton Line",2,"",E66859
+4,"NJT","HBLR","Hudson-Bergen Light Rail",0,"",008080
+5,"NJT","MNBN","Main/Bergen County Line",2,"",FFD411
+6,"NJT","MNBNP","Port Jervis Line",2,"",FFD411
+7,"NJT","MNE","Morris & Essex Line",2,"",08A652
+8,"NJT","MNEG","Gladstone Branch",2,"",A4C9AA
+9,"NJT","MRL","Meadowlands Rail Line",2,"",C1AA72
+10,"NJT","NEC","Northeast Corridor",2,"",DD3439
+11,"NJT","NJCL","North Jersey Coast Line",2,"",03A3DF
+12,"NJT","NJCLL","North Jersey Coast Line",2,"",03A3DF
+13,"NJT","NLR","Newark Light Rail",0,"",009AD1
+14,"NJT","PASC","Pascack Valley Line",2,"",94219A
+15,"NJT","PRIN","Princeton Shuttle",2,"",DD3439
+16,"NJT","RARV","Raritan Valley Line",2,"",F2A537
+17,"NJT","RVLN","Riverline Light Rail",0,"",00008B

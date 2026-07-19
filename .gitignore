@@ -10,3 +10,4 @@ secrets
 .vercel
 credentials.json
 .env*
+.superpowers/
