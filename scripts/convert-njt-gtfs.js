@@ -99,34 +99,80 @@ function main() {
     }
 
     // --- railways + station order ---
+    //
+    // NJT assigns a near-unique shape_id per trip even on routes that only
+    // ever run one physical track (e.g. NEC: 472 trips, 472 shapes) — those
+    // shapes are near-duplicates of each other and collapsing to one
+    // representative trip (the old approach) was correct for them. But a few
+    // routes are genuinely branching light rail — HBLR alone has 29 distinct
+    // shapes across 982 trips (real branches: West Side Avenue, Tonnelle
+    // Avenue, 8th Street, plus short-turn patterns), and picking only one
+    // representative trip silently dropped the other branches' track and
+    // stations from the map entirely.
+    //
+    // Fix: for each route, look at every distinct shape used by any trip.
+    // Sort by how many stations that shape's trip visits (longest first),
+    // then greedily keep a shape only if it visits at least one station not
+    // already covered by a previously-kept shape. Near-duplicate shapes
+    // (NEC's 472) collapse back down to just the first one, since every
+    // later shape is a subset of the first. Genuine branches (HBLR's West
+    // Side Ave / Tonnelle Ave / etc.) each introduce new stations and get
+    // kept. Each kept shape becomes its OWN railway entry — this codebase's
+    // "sublines" are sequential segments of one continuous path (used to
+    // offset parallel track), not a fork, so a true branch needs a separate
+    // railway id the way the subway already models distinct lines. The
+    // first (longest) kept shape reuses the plain NJT.<route_id> id so
+    // real-time trip updates (which only carry route_id, not shape_id)
+    // keep resolving to it; additional branches get NJT.<route_id>.b2, .b3, etc.
     const railways = [];
-    const routeStations = new Map();
-    const routeShapeIds = new Map();
+    const routeStations = new Map(); // railway id (incl. branch suffixes) -> station list
+    const routeShapeSelections = new Map(); // railway id -> shape_id, for the shapes pass below
 
     for (const route of routes) {
-        const routeId = normRoute(route.route_id);
         const routeTrips = tripsByRoute.get(route.route_id) || [];
         const isLightRail = LIGHT_RAIL_ROUTES.has(route.route_short_name);
 
-        const repTrip = routeTrips.find(t => t.direction_id === '0') || routeTrips[0];
-        const stationList = [];
-        if (repTrip) {
-            for (const st of stsByTrip.get(repTrip.trip_id) || []) {
+        const repTripByShape = new Map();
+        for (const trip of routeTrips) {
+            if (!trip.shape_id || repTripByShape.has(trip.shape_id)) continue;
+            repTripByShape.set(trip.shape_id, trip);
+        }
+
+        const candidates = [];
+        for (const [shapeId, trip] of repTripByShape) {
+            const stationList = [];
+            for (const st of stsByTrip.get(trip.trip_id) || []) {
                 const sid = normStop(st.stop_id);
                 if (!stationList.includes(sid)) stationList.push(sid);
             }
-            if (repTrip.shape_id) routeShapeIds.set(routeId, repTrip.shape_id);
+            if (stationList.length > 0) candidates.push({shapeId, stationList, headsign: trip.trip_headsign});
         }
-        routeStations.set(routeId, stationList);
+        candidates.sort((a, b) => b.stationList.length - a.stationList.length);
 
-        railways.push({
-            id: routeId,
-            title: {en: route.route_long_name || route.route_short_name},
-            stations: stationList,
-            ascending: DIRECTIONS[0],
-            descending: DIRECTIONS[1],
-            color: route.route_color ? `#${route.route_color}` : '#888888',
-            carComposition: isLightRail ? 2 : 8
+        const covered = new Set();
+        const selected = [];
+        for (const cand of candidates) {
+            if (!cand.stationList.some(sid => !covered.has(sid))) continue;
+            cand.stationList.forEach(sid => covered.add(sid));
+            selected.push(cand);
+        }
+
+        selected.forEach((cand, i) => {
+            const railwayId = i === 0 ? normRoute(route.route_id) : `${normRoute(route.route_id)}.b${i + 1}`;
+            const branchLabel = i > 0 && cand.headsign ? ` (${cand.headsign.replace(/^HBLR |^NLR /, '')})` : '';
+
+            routeStations.set(railwayId, cand.stationList);
+            routeShapeSelections.set(railwayId, cand.shapeId);
+
+            railways.push({
+                id: railwayId,
+                title: {en: (route.route_long_name || route.route_short_name) + branchLabel},
+                stations: cand.stationList,
+                ascending: DIRECTIONS[0],
+                descending: DIRECTIONS[1],
+                color: route.route_color ? `#${route.route_color}` : '#888888',
+                carComposition: isLightRail ? 2 : 8
+            });
         });
     }
 
@@ -194,11 +240,11 @@ function main() {
     }
 
     const railwayShapes = [];
-    for (const [routeId, shapeId] of routeShapeIds) {
+    for (const [railwayId, shapeId] of routeShapeSelections) {
         const pts = shapePoints.get(shapeId);
         if (!pts || pts.length === 0) continue;
         railwayShapes.push({
-            id: routeId,
+            id: railwayId,
             sublines: [{
                 type: 'main',
                 coords: pts.map(p => [parseFloat(p.shape_pt_lon), parseFloat(p.shape_pt_lat)])

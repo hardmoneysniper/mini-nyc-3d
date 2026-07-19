@@ -7348,8 +7348,19 @@
 		}
 	},
 	{
+		"id": "NJT.3",
+		"railway": "NJT.5",
+		"coord": [
+			-74.130957,
+			41.030902
+		],
+		"title": {
+			"en": "ALLENDALE"
+		}
+	},
+	{
 		"id": "NJT.4",
-		"railway": "NJT.12",
+		"railway": "NJT.11",
 		"coord": [
 			-74.006769,
 			40.237659
@@ -7370,14 +7381,36 @@
 		}
 	},
 	{
+		"id": "NJT.6",
+		"railway": "NJT.16",
+		"coord": [
+			-74.878569,
+			40.645173
+		],
+		"title": {
+			"en": "ANNANDALE"
+		}
+	},
+	{
 		"id": "NJT.8",
-		"railway": "NJT.12",
+		"railway": "NJT.11",
 		"coord": [
 			-74.014786,
 			40.215359
 		],
 		"title": {
 			"en": "ASBURY PARK"
+		}
+	},
+	{
+		"id": "NJT.11",
+		"railway": "NJT.11",
+		"coord": [
+			-74.27753,
+			40.57762
+		],
+		"title": {
+			"en": "AVENEL"
 		}
 	},
 	{
@@ -7393,7 +7426,7 @@
 	},
 	{
 		"id": "NJT.13",
-		"railway": "NJT.12",
+		"railway": "NJT.11",
 		"coord": [
 			-74.046183,
 			40.077178
@@ -7415,7 +7448,7 @@
 	},
 	{
 		"id": "NJT.15",
-		"railway": "NJT.12",
+		"railway": "NJT.11",
 		"coord": [
 			-74.027301,
 			40.18059
@@ -7447,6 +7480,17 @@
 		}
 	},
 	{
+		"id": "NJT.19",
+		"railway": "NJT.2",
+		"coord": [
+			-74.200043,
+			40.792709
+		],
+		"title": {
+			"en": "BLOOMFIELD"
+		}
+	},
+	{
 		"id": "NJT.20",
 		"railway": "NJT.2",
 		"coord": [
@@ -7458,8 +7502,19 @@
 		}
 	},
 	{
+		"id": "NJT.21",
+		"railway": "NJT.16",
+		"coord": [
+			-74.530617,
+			40.560929
+		],
+		"title": {
+			"en": "BOUND BROOK"
+		}
+	},
+	{
 		"id": "NJT.22",
-		"railway": "NJT.12",
+		"railway": "NJT.11",
 		"coord": [
 			-74.018891,
 			40.203751
@@ -7513,6 +7568,39 @@
 		}
 	},
 	{
+		"id": "NJT.27",
+		"railway": "NJT.7",
+		"coord": [
+			-74.384812,
+			40.740137
+		],
+		"title": {
+			"en": "CHATHAM"
+		}
+	},
+	{
+		"id": "NJT.29",
+		"railway": "NJT.5.b2",
+		"coord": [
+			-74.153206,
+			40.867998
+		],
+		"title": {
+			"en": "CLIFTON"
+		}
+	},
+	{
+		"id": "NJT.30",
+		"railway": "NJT.7",
+		"coord": [
+			-74.443435,
+			40.779038
+		],
+		"title": {
+			"en": "CONVENT"
+		}
+	},
+	{
 		"id": "NJT.31",
 		"railway": "NJT.16",
 		"coord": [
@@ -7521,6 +7609,28 @@
 		],
 		"title": {
 			"en": "ROSELLE PARK"
+		}
+	},
+	{
+		"id": "NJT.32",
+		"railway": "NJT.16",
+		"coord": [
+			-74.303226,
+			40.655523
+		],
+		"title": {
+			"en": "CRANFORD"
+		}
+	},
+	{
+		"id": "NJT.33",
+		"railway": "NJT.5.b2",
+		"coord": [
+			-74.131262,
+			40.831369
+		],
+		"title": {
+			"en": "DELAWANNA"
 		}
 	},
 	{
@@ -7543,6 +7653,17 @@
 		],
 		"title": {
 			"en": "DOVER"
+		}
+	},
+	{
+		"id": "NJT.36",
+		"railway": "NJT.16",
+		"coord": [
+			-74.463043,
+			40.590869
+		],
+		"title": {
+			"en": "DUNELLEN"
 		}
 	},
 	{
@@ -7569,7 +7690,7 @@
 	},
 	{
 		"id": "NJT.40",
-		"railway": "NJT.12",
+		"railway": "NJT.11",
 		"coord": [
 			-73.99762,
 			40.265292
@@ -7678,6 +7799,17 @@
 		}
 	},
 	{
+		"id": "NJT.50",
+		"railway": "NJT.2",
+		"coord": [
+			-74.204655,
+			40.80059
+		],
+		"title": {
+			"en": "GLEN RIDGE"
+		}
+	},
+	{
 		"id": "NJT.51",
 		"railway": "NJT.5",
 		"coord": [
@@ -7686,6 +7818,28 @@
 		],
 		"title": {
 			"en": "GLEN ROCK BORO HALL"
+		}
+	},
+	{
+		"id": "NJT.52",
+		"railway": "NJT.5.b2",
+		"coord": [
+			-74.133485,
+			40.962206
+		],
+		"title": {
+			"en": "GLEN ROCK MAIN LINE"
+		}
+	},
+	{
+		"id": "NJT.54",
+		"railway": "NJT.2",
+		"coord": [
+			-74.835352,
+			40.851444
+		],
+		"title": {
+			"en": "HACKETTSTOWN"
 		}
 	},
 	{
@@ -7700,6 +7854,17 @@
 		}
 	},
 	{
+		"id": "NJT.58",
+		"railway": "NJT.5.b2",
+		"coord": [
+			-74.152411,
+			40.942539
+		],
+		"title": {
+			"en": "HAWTHORNE"
+		}
+	},
+	{
 		"id": "NJT.59",
 		"railway": "NJT.11",
 		"coord": [
@@ -7708,6 +7873,17 @@
 		],
 		"title": {
 			"en": "HAZLET"
+		}
+	},
+	{
+		"id": "NJT.60",
+		"railway": "NJT.16",
+		"coord": [
+			-74.895863,
+			40.666884
+		],
+		"title": {
+			"en": "HIGH BRIDGE"
 		}
 	},
 	{
@@ -7766,6 +7942,17 @@
 		}
 	},
 	{
+		"id": "NJT.68",
+		"railway": "NJT.16",
+		"coord": [
+			-74.835766,
+			40.636903
+		],
+		"title": {
+			"en": "LEBANON"
+		}
+	},
+	{
 		"id": "NJT.69",
 		"railway": "NJT.2",
 		"coord": [
@@ -7821,6 +8008,17 @@
 		}
 	},
 	{
+		"id": "NJT.75",
+		"railway": "NJT.5.b2",
+		"coord": [
+			-74.122696,
+			40.814165
+		],
+		"title": {
+			"en": "LYNDHURST"
+		}
+	},
+	{
 		"id": "NJT.76",
 		"railway": "NJT.8",
 		"coord": [
@@ -7832,8 +8030,30 @@
 		}
 	},
 	{
+		"id": "NJT.77",
+		"railway": "NJT.7",
+		"coord": [
+			-74.415105,
+			40.757028
+		],
+		"title": {
+			"en": "MADISON"
+		}
+	},
+	{
+		"id": "NJT.78",
+		"railway": "NJT.5",
+		"coord": [
+			-74.14662,
+			41.094416
+		],
+		"title": {
+			"en": "MAHWAH"
+		}
+	},
+	{
 		"id": "NJT.79",
-		"railway": "NJT.12",
+		"railway": "NJT.11",
 		"coord": [
 			-74.047688,
 			40.120573
@@ -7920,6 +8140,17 @@
 		}
 	},
 	{
+		"id": "NJT.89",
+		"railway": "NJT.2",
+		"coord": [
+			-74.2025,
+			40.857536
+		],
+		"title": {
+			"en": "MONTCLAIR HEIGHTS"
+		}
+	},
+	{
 		"id": "NJT.90",
 		"railway": "NJT.14",
 		"coord": [
@@ -7928,6 +8159,61 @@
 		],
 		"title": {
 			"en": "MONTVALE"
+		}
+	},
+	{
+		"id": "NJT.91",
+		"railway": "NJT.7",
+		"coord": [
+			-74.478197,
+			40.828637
+		],
+		"title": {
+			"en": "MORRIS PLAINS"
+		}
+	},
+	{
+		"id": "NJT.92",
+		"railway": "NJT.7",
+		"coord": [
+			-74.474086,
+			40.797113
+		],
+		"title": {
+			"en": "MORRISTOWN"
+		}
+	},
+	{
+		"id": "NJT.93",
+		"railway": "NJT.2",
+		"coord": [
+			-74.730653,
+			40.907376
+		],
+		"title": {
+			"en": "MOUNT OLIVE"
+		}
+	},
+	{
+		"id": "NJT.94",
+		"railway": "NJT.7",
+		"coord": [
+			-74.481915,
+			40.875904
+		],
+		"title": {
+			"en": "MOUNT TABOR"
+		}
+	},
+	{
+		"id": "NJT.95",
+		"railway": "NJT.2",
+		"coord": [
+			-74.205306,
+			40.848715
+		],
+		"title": {
+			"en": "MOUNTAIN AVENUE"
 		}
 	},
 	{
@@ -7983,6 +8269,17 @@
 		],
 		"title": {
 			"en": "NANUET"
+		}
+	},
+	{
+		"id": "NJT.101",
+		"railway": "NJT.2",
+		"coord": [
+			-74.707317,
+			40.897552
+		],
+		"title": {
+			"en": "NETCONG"
 		}
 	},
 	{
@@ -8052,6 +8349,28 @@
 		}
 	},
 	{
+		"id": "NJT.108",
+		"railway": "NJT.16",
+		"coord": [
+			-74.683802,
+			40.59202
+		],
+		"title": {
+			"en": "NORTH BRANCH"
+		}
+	},
+	{
+		"id": "NJT.109",
+		"railway": "NJT.10",
+		"coord": [
+			-74.206165,
+			40.680265
+		],
+		"title": {
+			"en": "NORTH ELIZABETH"
+		}
+	},
+	{
 		"id": "NJT.110",
 		"railway": "NJT.14",
 		"coord": [
@@ -8104,6 +8423,28 @@
 		],
 		"title": {
 			"en": "PARK RIDGE"
+		}
+	},
+	{
+		"id": "NJT.115",
+		"railway": "NJT.5.b2",
+		"coord": [
+			-74.133933,
+			40.849411
+		],
+		"title": {
+			"en": "PASSAIC"
+		}
+	},
+	{
+		"id": "NJT.116",
+		"railway": "NJT.5.b2",
+		"coord": [
+			-74.16733,
+			40.914887
+		],
+		"title": {
+			"en": "PATERSON"
 		}
 	},
 	{
@@ -8163,7 +8504,7 @@
 	},
 	{
 		"id": "NJT.122",
-		"railway": "NJT.12",
+		"railway": "NJT.11",
 		"coord": [
 			-74.048191,
 			40.092718
@@ -8225,6 +8566,17 @@
 		],
 		"title": {
 			"en": "RAHWAY"
+		}
+	},
+	{
+		"id": "NJT.128",
+		"railway": "NJT.5",
+		"coord": [
+			-74.141877,
+			41.056422
+		],
+		"title": {
+			"en": "RAMSEY"
 		}
 	},
 	{
@@ -8350,7 +8702,7 @@
 	},
 	{
 		"id": "NJT.141",
-		"railway": "NJT.12",
+		"railway": "NJT.11",
 		"coord": [
 			-74.035481,
 			40.150557
@@ -8383,7 +8735,7 @@
 	},
 	{
 		"id": "NJT.144",
-		"railway": "NJT.6",
+		"railway": "NJT.5",
 		"coord": [
 			-74.153442,
 			41.11354
@@ -8448,6 +8800,17 @@
 		}
 	},
 	{
+		"id": "NJT.150",
+		"railway": "NJT.2",
+		"coord": [
+			-74.209368,
+			40.842004
+		],
+		"title": {
+			"en": "UPPER MONTCLAIR"
+		}
+	},
+	{
 		"id": "NJT.151",
 		"railway": "NJT.5",
 		"coord": [
@@ -8456,6 +8819,17 @@
 		],
 		"title": {
 			"en": "WALDWICK"
+		}
+	},
+	{
+		"id": "NJT.152",
+		"railway": "NJT.2",
+		"coord": [
+			-74.20963,
+			40.817218
+		],
+		"title": {
+			"en": "WALNUT STREET"
 		}
 	},
 	{
@@ -8470,6 +8844,28 @@
 		}
 	},
 	{
+		"id": "NJT.154",
+		"railway": "NJT.2",
+		"coord": [
+			-74.198451,
+			40.782743
+		],
+		"title": {
+			"en": "WATSESSING AVENUE"
+		}
+	},
+	{
+		"id": "NJT.155",
+		"railway": "NJT.16",
+		"coord": [
+			-74.347629,
+			40.649448
+		],
+		"title": {
+			"en": "WESTFIELD"
+		}
+	},
+	{
 		"id": "NJT.156",
 		"railway": "NJT.14",
 		"coord": [
@@ -8478,6 +8874,17 @@
 		],
 		"title": {
 			"en": "WESTWOOD"
+		}
+	},
+	{
+		"id": "NJT.157",
+		"railway": "NJT.16",
+		"coord": [
+			-74.77066,
+			40.615611
+		],
+		"title": {
+			"en": "WHITE HOUSE"
 		}
 	},
 	{
@@ -8580,6 +8987,17 @@
 		}
 	},
 	{
+		"id": "NJT.9878",
+		"railway": "NJT.4",
+		"coord": [
+			-74.012921,
+			40.775919
+		],
+		"title": {
+			"en": "PORT IMPERIAL HBLR STATION"
+		}
+	},
+	{
 		"id": "NJT.14984",
 		"railway": "NJT.13",
 		"coord": [
@@ -8602,6 +9020,17 @@
 		}
 	},
 	{
+		"id": "NJT.17699",
+		"railway": "NJT.4",
+		"coord": [
+			-74.024,
+			40.761399
+		],
+		"title": {
+			"en": "LINCOLN HARBOR LIGHT RAIL STATION"
+		}
+	},
+	{
 		"id": "NJT.26316",
 		"railway": "NJT.13",
 		"coord": [
@@ -8613,6 +9042,28 @@
 		}
 	},
 	{
+		"id": "NJT.26326",
+		"railway": "NJT.13",
+		"coord": [
+			-74.163603,
+			40.73481
+		],
+		"title": {
+			"en": "PENN STATION LIGHT RAIL DEPARTURE"
+		}
+	},
+	{
+		"id": "NJT.31696",
+		"railway": "NJT.11",
+		"coord": [
+			-74.015172,
+			40.313425
+		],
+		"title": {
+			"en": "MONMOUTH PARK"
+		}
+	},
+	{
 		"id": "NJT.32905",
 		"railway": "NJT.10",
 		"coord": [
@@ -8621,6 +9072,17 @@
 		],
 		"title": {
 			"en": "HAMILTON"
+		}
+	},
+	{
+		"id": "NJT.32906",
+		"railway": "NJT.10",
+		"coord": [
+			-74.467363,
+			40.476912
+		],
+		"title": {
+			"en": "JERSEY AVE."
 		}
 	},
 	{
@@ -8679,8 +9141,41 @@
 		}
 	},
 	{
-		"id": "NJT.37002",
+		"id": "NJT.36999",
 		"railway": "NJT.4",
+		"coord": [
+			-74.07112,
+			40.710509
+		],
+		"title": {
+			"en": "GARFIELD AVENUE LIGHT RAIL STATION"
+		}
+	},
+	{
+		"id": "NJT.37000",
+		"railway": "NJT.4",
+		"coord": [
+			-74.077323,
+			40.712008
+		],
+		"title": {
+			"en": "MLK DRIVE LIGHT RAIL STATION"
+		}
+	},
+	{
+		"id": "NJT.37001",
+		"railway": "NJT.4",
+		"coord": [
+			-74.087581,
+			40.714548
+		],
+		"title": {
+			"en": "WEST SIDE AVENUE LIGHT RAIL STATION"
+		}
+	},
+	{
+		"id": "NJT.37002",
+		"railway": "NJT.4.b2",
 		"coord": [
 			-74.078643,
 			40.699118
@@ -8691,7 +9186,7 @@
 	},
 	{
 		"id": "NJT.37003",
-		"railway": "NJT.4",
+		"railway": "NJT.4.b2",
 		"coord": [
 			-74.087262,
 			40.692357
@@ -8702,7 +9197,7 @@
 	},
 	{
 		"id": "NJT.37004",
-		"railway": "NJT.4",
+		"railway": "NJT.4.b2",
 		"coord": [
 			-74.101673,
 			40.67867
@@ -8713,7 +9208,7 @@
 	},
 	{
 		"id": "NJT.37005",
-		"railway": "NJT.4",
+		"railway": "NJT.4.b2",
 		"coord": [
 			-74.107493,
 			40.671778
@@ -8823,7 +9318,7 @@
 	},
 	{
 		"id": "NJT.38174",
-		"railway": "NJT.6",
+		"railway": "NJT.5",
 		"coord": [
 			-74.075821,
 			40.761188
@@ -8845,7 +9340,7 @@
 	},
 	{
 		"id": "NJT.38229",
-		"railway": "NJT.4",
+		"railway": "NJT.4.b2",
 		"coord": [
 			-74.11641,
 			40.661277
@@ -8855,8 +9350,118 @@
 		}
 	},
 	{
-		"id": "NJT.39348",
+		"id": "NJT.38417",
+		"railway": "NJT.5",
+		"coord": [
+			-74.145485,
+			41.07513
+		],
+		"title": {
+			"en": "RAMSEY ROUTE 17 STATION"
+		}
+	},
+	{
+		"id": "NJT.38441",
 		"railway": "NJT.4",
+		"coord": [
+			-74.042821,
+			40.74174
+		],
+		"title": {
+			"en": "2ND STREET LIGHT RAIL STATION"
+		}
+	},
+	{
+		"id": "NJT.38442",
+		"railway": "NJT.4",
+		"coord": [
+			-74.038522,
+			40.748867
+		],
+		"title": {
+			"en": "9TH STREET LIGHT RAIL STATION"
+		}
+	},
+	{
+		"id": "NJT.38578",
+		"railway": "NJT.4",
+		"coord": [
+			-74.022271,
+			40.782225
+		],
+		"title": {
+			"en": "BERGENLINE AVE"
+		}
+	},
+	{
+		"id": "NJT.38579",
+		"railway": "NJT.4",
+		"coord": [
+			-74.031263,
+			40.78733
+		],
+		"title": {
+			"en": "TONNELLE AVENUE LIGHT RAIL STATION"
+		}
+	},
+	{
+		"id": "NJT.39130",
+		"railway": "NJT.13",
+		"coord": [
+			-74.17151,
+			40.747209
+		],
+		"title": {
+			"en": "BROAD STREET LIGHT RAIL STATION"
+		}
+	},
+	{
+		"id": "NJT.39131",
+		"railway": "NJT.13",
+		"coord": [
+			-74.169202,
+			40.74559
+		],
+		"title": {
+			"en": "RIVERFRONT STADIUM LIGHT RAIL STATION"
+		}
+	},
+	{
+		"id": "NJT.39132",
+		"railway": "NJT.13.b2",
+		"coord": [
+			-74.169853,
+			40.743938
+		],
+		"title": {
+			"en": "HARRIET TUBMAN SQUARE LIGHT RAIL STATION"
+		}
+	},
+	{
+		"id": "NJT.39133",
+		"railway": "NJT.13",
+		"coord": [
+			-74.168491,
+			40.74416
+		],
+		"title": {
+			"en": "ATLANTIC STREET LIGHT RAIL STATION"
+		}
+	},
+	{
+		"id": "NJT.39134",
+		"railway": "NJT.13",
+		"coord": [
+			-74.16558,
+			40.739498
+		],
+		"title": {
+			"en": "NJPAC/CENTRE STREET LIGHT RAIL STATION"
+		}
+	},
+	{
+		"id": "NJT.39348",
+		"railway": "NJT.4.b2",
 		"coord": [
 			-74.029192,
 			40.734059
@@ -8911,7 +9516,7 @@
 	},
 	{
 		"id": "NJT.42673",
-		"railway": "NJT.4",
+		"railway": "NJT.4.b2",
 		"coord": [
 			-74.129142,
 			40.654298
