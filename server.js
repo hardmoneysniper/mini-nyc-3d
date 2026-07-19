@@ -14,6 +14,28 @@ const MIME = {
     '.webmanifest': 'application/manifest+json'
 };
 
+// Load NJT credentials from .env then credentials.json at startup
+let _njtUsername = '', _njtPassword = '';
+(function loadNjtCreds() {
+    try {
+        const lines = fs.readFileSync(path.join(__dirname, '.env'), 'utf8').split(/\r?\n/);
+        for (const line of lines) {
+            const m = line.match(/^(NJT_USERNAME|NJT_PASSWORD)=(.+)$/);
+            if (!m) continue;
+            if (m[1] === 'NJT_USERNAME') _njtUsername = m[2].trim();
+            if (m[1] === 'NJT_PASSWORD') _njtPassword = m[2].trim();
+        }
+    } catch { /* no .env */ }
+    if (!_njtUsername || !_njtPassword) {
+        try {
+            const c = JSON.parse(fs.readFileSync(path.join(__dirname, 'credentials.json'), 'utf8'));
+            if (!_njtUsername) _njtUsername = c.njtUsername || '';
+            if (!_njtPassword) _njtPassword = c.njtPassword || '';
+        } catch { /* no credentials.json */ }
+    }
+    console.log(_njtUsername && _njtPassword ? '[njt] credentials loaded OK' : '[njt] credentials MISSING — /api/njt will fail');
+})();
+
 // ---------------------------------------------------------------------------
 // Aircraft proxy — mirrors api/aircraft.js for local dev
 //
@@ -386,12 +408,167 @@ async function handleAircraft(res) {
 }
 
 // ---------------------------------------------------------------------------
+// NJ Transit rail proxy — mirrors api/njt.js for local dev
+//
+//   • Auth:    username/password → token; 10/day combined getToken+isValidToken
+//              quota, so the token is cached ~20h and never validated defensively.
+//   • Feeds:   getTripUpdates, getVehiclePositions, getAlerts (GTFS-RT protobuf)
+// ---------------------------------------------------------------------------
+const GtfsRealtimeBindings = require('gtfs-realtime-bindings');
+
+const NJT_BASE = process.env.NJT_API_BASE || 'https://raildata.njtransit.com';
+const NJT_TOKEN_TTL_MS = 20 * 60 * 60 * 1000;
+const NJT_DIRECTIONS = ['Outbound', 'Inbound'];
+
+let _njtToken = null, _njtTokenObtainedAt = 0, _njtTokenPromise = null;
+
+function toNumber(val) {
+    if (val == null) return 0;
+    return typeof val.toNumber === 'function' ? val.toNumber() : Number(val);
+}
+
+async function njtPostForm(pathName, fields) {
+    const form = new FormData();
+    for (const [k, v] of Object.entries(fields)) form.append(k, v);
+    return fetch(`${NJT_BASE}${pathName}`, {method: 'POST', body: form});
+}
+
+async function fetchNjtToken() {
+    if (!_njtUsername || !_njtPassword) throw new Error('NJT credentials not configured');
+    const res = await njtPostForm('/api/GTFSRT/getToken', {username: _njtUsername, password: _njtPassword});
+    const body = await res.json().catch(() => null);
+    if (!body || body.Authenticated !== 'True' || !body.UserToken) {
+        throw new Error(`NJT getToken failed: ${body?.errorMessage || res.status}`);
+    }
+    console.log('  [njt] fetched new token');
+    return body.UserToken;
+}
+
+// `staleToken` is the token value the caller observed as rejected ("Invalid
+// token."). On a forced refresh, if `_njtToken` no longer matches it, a
+// sibling call already refreshed the cache in the meantime — reuse that
+// instead of burning another real getToken call against NJT's 10/day cap.
+async function getNjtToken(forceRefresh, staleToken) {
+    const now = Date.now();
+    if (!forceRefresh && _njtToken && now - _njtTokenObtainedAt < NJT_TOKEN_TTL_MS) return _njtToken;
+    if (forceRefresh && staleToken !== undefined && staleToken !== _njtToken) return _njtToken;
+    if (!_njtTokenPromise) {
+        _njtTokenPromise = fetchNjtToken()
+            .then(token => { _njtToken = token; _njtTokenObtainedAt = Date.now(); _njtTokenPromise = null; return token; })
+            .catch(err => { _njtTokenPromise = null; throw err; });
+    }
+    return _njtTokenPromise;
+}
+
+async function fetchNjtProto(pathName) {
+    let token = await getNjtToken(false);
+    let res = await njtPostForm(pathName, {token});
+
+    const contentType = res.headers.get('content-type') || '';
+    if (contentType.includes('application/json')) {
+        const body = await res.json().catch(() => null);
+        if (body?.errorMessage?.includes('Invalid token')) {
+            token = await getNjtToken(true, token);
+            res = await njtPostForm(pathName, {token});
+        } else {
+            throw new Error(`NJT ${pathName} failed: ${body?.errorMessage || res.status}`);
+        }
+    }
+
+    const buffer = await res.arrayBuffer();
+    // NJT returns a genuinely empty (0-byte) body for a feed with no active
+    // entities (observed live on getAlerts) rather than a minimal valid
+    // FeedMessage — decode() throws "missing required 'header'" on an empty
+    // buffer, so treat 0 bytes as an empty feed instead of an error.
+    if (buffer.byteLength === 0) return {entity: []};
+    return GtfsRealtimeBindings.transit_realtime.FeedMessage.decode(new Uint8Array(buffer));
+}
+
+function buildNjtTrainAndInfoData(tripUpdatesFeed, vehiclePositionsFeed, alertsFeed) {
+    const trainData = new Map();
+    const trainInfoData = [];
+    const now = new Date().toISOString().replace('T', ' ').slice(0, 19);
+
+    for (const entity of vehiclePositionsFeed.entity || []) {
+        const {trip, stopId, currentStatus, timestamp} = entity.vehicle || {};
+        if (!trip || !trip.tripId) continue;
+        const {tripId, routeId, directionId} = trip,
+            id = `NJT.${tripId}`,
+            stopRef = stopId ? `NJT.${stopId}` : undefined,
+            entry = trainData.get(id) || {id, o: 'NJT', r: `NJT.${routeId}`, n: tripId};
+
+        entry.d = NJT_DIRECTIONS[directionId === 0 ? 0 : 1];
+        entry.date = timestamp ? new Date(toNumber(timestamp) * 1000).toISOString().replace('T', ' ').slice(0, 19) : now;
+        if (stopRef) {
+            if (currentStatus === 1) entry.fs = stopRef;
+            else entry.ts = stopRef;
+        }
+        trainData.set(id, entry);
+    }
+
+    for (const entity of tripUpdatesFeed.entity || []) {
+        const {trip, stopTimeUpdate} = entity.tripUpdate || {};
+        if (!trip || !trip.tripId) continue;
+        const {tripId, routeId, directionId} = trip,
+            id = `NJT.${tripId}`,
+            entry = trainData.get(id) || {id, o: 'NJT', r: `NJT.${routeId}`, n: tripId};
+
+        entry.d = NJT_DIRECTIONS[directionId === 0 ? 0 : 1];
+        if (stopTimeUpdate && stopTimeUpdate.length > 0) {
+            const first = stopTimeUpdate[0], last = stopTimeUpdate[stopTimeUpdate.length - 1];
+            entry.os = [`NJT.${first.stopId}`];
+            entry.ds = [`NJT.${last.stopId}`];
+            const delaySec = toNumber((first.departure && first.departure.delay) ||
+                                       (first.arrival && first.arrival.delay) || 0);
+            entry.delay = delaySec * 1000;
+        }
+        if (!entry.date) entry.date = now;
+        trainData.set(id, entry);
+    }
+
+    for (const entity of alertsFeed.entity || []) {
+        const {informedEntity, headerText} = entity.alert || {};
+        if (!informedEntity || !headerText) continue;
+        const text = (headerText.translation && headerText.translation[0] && headerText.translation[0].text) || '';
+        for (const informed of informedEntity) {
+            if (informed.routeId) {
+                trainInfoData.push({
+                    operator: 'NJT', railway: `NJT.${informed.routeId}`,
+                    status: {en: text}, text: {en: text}
+                });
+            }
+        }
+    }
+
+    return {trainData: Array.from(trainData.values()), trainInfoData};
+}
+
+async function handleNjt(res) {
+    try {
+        const [tripUpdatesFeed, vehiclePositionsFeed, alertsFeed] = await Promise.all([
+            fetchNjtProto('/api/GTFSRT/getTripUpdates'),
+            fetchNjtProto('/api/GTFSRT/getVehiclePositions'),
+            fetchNjtProto('/api/GTFSRT/getAlerts')
+        ]);
+        const {trainData, trainInfoData} = buildNjtTrainAndInfoData(tripUpdatesFeed, vehiclePositionsFeed, alertsFeed);
+        res.writeHead(200, {'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'});
+        res.end(JSON.stringify({trainData, trainInfoData}));
+        console.log(`  /api/njt → ${trainData.length} trains | ${trainInfoData.length} alerts`);
+    } catch (err) {
+        console.error('  [njt] error:', err.message);
+        res.writeHead(200, {'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'});
+        res.end(JSON.stringify({trainData: [], trainInfoData: []}));
+    }
+}
+
+// ---------------------------------------------------------------------------
 // Static file server
 // ---------------------------------------------------------------------------
 
 http.createServer((req, res) => {
     const url = req.url.split('?')[0];
     if (url === '/api/aircraft') { handleAircraft(res); return; }
+    if (url === '/api/njt') { handleNjt(res); return; }
 
     let filePath = path.join(BUILD_DIR, url === '/' ? 'index.html' : url);
     if (!fs.existsSync(filePath)) filePath = path.join(BUILD_DIR, 'index.html');
