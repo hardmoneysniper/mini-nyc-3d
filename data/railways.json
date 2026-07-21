@@ -2888,9 +2888,8 @@
 		"stations": [],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#000000",
-		"carComposition": 6,
-		"trainColor": "#555555"
+		"color": "#555555",
+		"carComposition": 6
 	},
 	{
 		"id": "MTA.MNR.11",
@@ -2900,9 +2899,8 @@
 		"stations": [],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#000000",
-		"carComposition": 6,
-		"trainColor": "#009B3A"
+		"color": "#009B3A",
+		"carComposition": 6
 	},
 	{
 		"id": "MTA.MNR.12",
@@ -2912,9 +2910,8 @@
 		"stations": [],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#000000",
-		"carComposition": 6,
-		"trainColor": "#009B3A"
+		"color": "#009B3A",
+		"carComposition": 6
 	},
 	{
 		"id": "MTA.MNR.13",
@@ -2924,9 +2921,8 @@
 		"stations": [],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#000000",
-		"carComposition": 6,
-		"trainColor": "#009B3A"
+		"color": "#009B3A",
+		"carComposition": 6
 	},
 	{
 		"id": "MTA.MNR.14",
@@ -2936,9 +2932,8 @@
 		"stations": [],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#000000",
-		"carComposition": 6,
-		"trainColor": "#009B3A"
+		"color": "#009B3A",
+		"carComposition": 6
 	},
 	{
 		"id": "MTA.MNR.3",
@@ -2981,9 +2976,8 @@
 		],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#000000",
-		"carComposition": 6,
-		"trainColor": "#EE0034"
+		"color": "#EE0034",
+		"carComposition": 6
 	},
 	{
 		"id": "MTA.MNR.4",
@@ -3014,9 +3008,8 @@
 		],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#000000",
-		"carComposition": 6,
-		"trainColor": "#EE0034"
+		"color": "#EE0034",
+		"carComposition": 6
 	},
 	{
 		"id": "MTA.MNR.5",
@@ -3042,9 +3035,8 @@
 		],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#000000",
-		"carComposition": 6,
-		"trainColor": "#EE0034"
+		"color": "#EE0034",
+		"carComposition": 6
 	},
 	{
 		"id": "MTA.MNR.6",
@@ -3064,9 +3056,8 @@
 		],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#000000",
-		"carComposition": 6,
-		"trainColor": "#EE0034"
+		"color": "#EE0034",
+		"carComposition": 6
 	},
 	{
 		"id": "MTA.MNR.1",
@@ -3107,9 +3098,8 @@
 		],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#000000",
-		"carComposition": 6,
-		"trainColor": "#009B3A"
+		"color": "#009B3A",
+		"carComposition": 6
 	},
 	{
 		"id": "MTA.MNR.2",
@@ -3158,9 +3148,8 @@
 		],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#000000",
-		"carComposition": 6,
-		"trainColor": "#0039A6"
+		"color": "#0039A6",
+		"carComposition": 6
 	},
 	{
 		"id": "NJT.2",
