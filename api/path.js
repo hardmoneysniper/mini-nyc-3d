@@ -128,7 +128,7 @@ function buildTrainData(feed, railwaysByRoute) {
 
                         if (now < arrivalA || now >= arrivalB) continue; // not this leg's turn yet, or already past it
 
-                        const id = `PATH.${routeId}.${directionId}.${n + 1}`;
+                        const id = `PATH.${routeId}.${directionId}.${i}.${n + 1}`;
                         const entry = {id, o: 'PATH', r: railway.id, n: `${n + 1}`, d: directionId === 1 ? 'Inbound' : 'Outbound'};
 
                         if (now < dwellEnd) {
