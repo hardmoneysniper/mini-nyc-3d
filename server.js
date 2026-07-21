@@ -562,6 +562,137 @@ async function handleNjt(res) {
 }
 
 // ---------------------------------------------------------------------------
+// PATH train proxy — mirrors api/path.js for local dev
+//
+//   • Auth:   none — https://path.transitdata.nyc/gtfsrt is public.
+//   • Limits: the feed gives only single-stop arrival predictions with no
+//             trip continuity; see api/path.js's header comment for the
+//             full explanation of the position-estimation approach.
+// ---------------------------------------------------------------------------
+const PATH_GTFSRT_URL = 'https://path.transitdata.nyc/gtfsrt';
+const PATH_DWELL_MS = 20 * 1000; // assumed post-arrival dwell before a train departs toward the next station
+
+function pathNormStationId(rawStopId) {
+    return `PATH.${rawStopId}`;
+}
+
+// Loads PATH railways from data/railways.json and groups them by their raw
+// route_id (stripping the "PATH." prefix and any ".bN" branch suffix), so a
+// single real-time routeId can be checked against every branch railway that
+// shares it.
+function loadPathRailwaysByRoute() {
+    const railwaysPath = path.join(__dirname, 'data', 'railways.json');
+    const all = JSON.parse(fs.readFileSync(railwaysPath, 'utf8'));
+    const pathRailways = all.filter(r => r.id.startsWith('PATH.'));
+
+    const byRoute = new Map();
+    for (const railway of pathRailways) {
+        const m = railway.id.match(/^PATH\.([^.]+)(?:\.b\d+)?$/);
+        if (!m) continue;
+        const routeId = m[1];
+        if (!byRoute.has(routeId)) byRoute.set(routeId, []);
+        byRoute.get(routeId).push(railway);
+    }
+    return byRoute;
+}
+
+async function fetchPathFeed() {
+    const res = await fetch(PATH_GTFSRT_URL);
+    if (!res.ok) throw new Error(`PATH GTFS-RT fetch failed: HTTP ${res.status}`);
+    const buffer = await res.arrayBuffer();
+    return GtfsRealtimeBindings.transit_realtime.FeedMessage.decode(new Uint8Array(buffer));
+}
+
+// Groups feed entities into per-"routeId|directionId|stationId" queues of
+// arrival times (ms), sorted ascending (soonest first).
+function buildPathArrivalQueues(feed) {
+    const queues = new Map();
+    for (const entity of feed.entity || []) {
+        const {trip, stopTimeUpdate} = entity.tripUpdate || {};
+        if (!trip || !stopTimeUpdate || stopTimeUpdate.length === 0) continue;
+
+        const {routeId, directionId} = trip;
+        const update = stopTimeUpdate[0];
+        if (!update.arrival || update.arrival.time == null || !update.stopId) continue;
+
+        const stationId = pathNormStationId(update.stopId);
+        const key = `${routeId}|${directionId}|${stationId}`;
+        const arrivalMs = toNumber(update.arrival.time) * 1000;
+
+        if (!queues.has(key)) queues.set(key, []);
+        queues.get(key).push(arrivalMs);
+    }
+    for (const arr of queues.values()) arr.sort((a, b) => a - b);
+    return queues;
+}
+
+// For one railway entry, returns its stations in the traversal order for
+// the given directionId (0 = forward/ascending, 1 = reverse/descending) —
+// matching the same ascending/descending convention every other railway
+// in this app already uses.
+function pathStationsForDirection(railway, directionId) {
+    return directionId === 1 ? [...railway.stations].reverse() : railway.stations;
+}
+
+function buildPathTrainData(feed, railwaysByRoute) {
+    const queues = buildPathArrivalQueues(feed);
+    const now = Date.now();
+    const trainData = [];
+
+    for (const [routeId, railways] of railwaysByRoute) {
+        for (const directionId of [0, 1]) {
+            for (const railway of railways) {
+                const stations = pathStationsForDirection(railway, directionId);
+
+                for (let i = 0; i < stations.length - 1; i++) {
+                    const stationA = stations[i];
+                    const stationB = stations[i + 1];
+                    const queueA = queues.get(`${routeId}|${directionId}|${stationA}`) || [];
+                    const queueB = queues.get(`${routeId}|${directionId}|${stationB}`) || [];
+                    const pairCount = Math.min(queueA.length, queueB.length);
+
+                    for (let n = 0; n < pairCount; n++) {
+                        const arrivalA = queueA[n];
+                        const arrivalB = queueB[n];
+                        const dwellEnd = arrivalA + PATH_DWELL_MS;
+
+                        if (now < arrivalA || now >= arrivalB) continue; // not this leg's turn yet, or already past it
+
+                        const id = `PATH.${routeId}.${directionId}.${i}.${n + 1}`;
+                        const entry = {id, o: 'PATH', r: railway.id, n: `${n + 1}`, d: directionId === 1 ? 'Inbound' : 'Outbound'};
+
+                        if (now < dwellEnd) {
+                            entry.fs = stationA; // dwelling at the station it just reached
+                        } else {
+                            entry.ts = stationB; // en route toward the next station
+                        }
+
+                        trainData.push(entry);
+                    }
+                }
+            }
+        }
+    }
+
+    return trainData;
+}
+
+async function handlePath(res) {
+    try {
+        const railwaysByRoute = loadPathRailwaysByRoute();
+        const feed = await fetchPathFeed();
+        const trainData = buildPathTrainData(feed, railwaysByRoute);
+        res.writeHead(200, {'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'});
+        res.end(JSON.stringify({trainData, trainInfoData: []}));
+        console.log(`  /api/path → ${trainData.length} trains`);
+    } catch (err) {
+        console.error('  [path] error:', err.message);
+        res.writeHead(200, {'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'});
+        res.end(JSON.stringify({trainData: [], trainInfoData: []}));
+    }
+}
+
+// ---------------------------------------------------------------------------
 // Static file server
 // ---------------------------------------------------------------------------
 
@@ -569,6 +700,7 @@ http.createServer((req, res) => {
     const url = req.url.split('?')[0];
     if (url === '/api/aircraft') { handleAircraft(res); return; }
     if (url === '/api/njt') { handleNjt(res); return; }
+    if (url === '/api/path') { handlePath(res); return; }
 
     let filePath = path.join(BUILD_DIR, url === '/' ? 'index.html' : url);
     if (!fs.existsSync(filePath)) filePath = path.join(BUILD_DIR, 'index.html');
