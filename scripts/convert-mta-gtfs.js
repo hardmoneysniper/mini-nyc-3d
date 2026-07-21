@@ -78,6 +78,18 @@ const TRAIN_TYPE = {
     MNR:    'MTA.Regional'
 };
 
+// MNR's raw GTFS route_color varies per line (green/blue/red/grey — real MNR
+// branding) and doesn't match the rest of the map's MTA-blue-for-MTA-family
+// convention. Unify all MNR route/track colors to MTA's operator blue;
+// Subway/LIRR keep their own per-route GTFS colors (Subway's are meaningful
+// — different colors distinguish trunk lines — and LIRR's already read as a
+// consistent single blue in practice).
+const MTA_BLUE = '#0039A6';
+function railwayColor(service, route) {
+    if (service === 'MNR') return MTA_BLUE;
+    return route.route_color ? `#${route.route_color}` : '#888888';
+}
+
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
@@ -266,7 +278,7 @@ async function processFeed({service, url, localDir, carComposition}) {
                 stations:      [],
                 ascending:     dirs[0],
                 descending:    dirs[1],
-                color:         route.route_color ? `#${route.route_color}` : '#888888',
+                color:         railwayColor(service, route),
                 carComposition
             });
         }
@@ -284,7 +296,7 @@ async function processFeed({service, url, localDir, carComposition}) {
                 stations:      cand.stationList,
                 ascending:     dirs[0],
                 descending:    dirs[1],
-                color:         route.route_color ? `#${route.route_color}` : '#888888',
+                color:         railwayColor(service, route),
                 carComposition
             });
         });

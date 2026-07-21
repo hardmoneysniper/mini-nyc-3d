@@ -1,5 +1,510 @@
 [
 	{
+		"id": "NJT.2",
+		"title": {
+			"en": "Montclair-Boonton Line"
+		},
+		"stations": [
+			"NJT.90",
+			"NJT.89",
+			"NJT.97",
+			"NJT.161",
+			"NJT.165",
+			"NJT.163",
+			"NJT.15",
+			"NJT.50",
+			"NJT.19",
+			"NJT.166",
+			"NJT.111",
+			"NJT.145",
+			"NJT.109"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#E66859",
+		"carComposition": 8
+	},
+	{
+		"id": "NJT.2.b2",
+		"title": {
+			"en": "Montclair-Boonton Line (Hoboken)"
+		},
+		"stations": [
+			"NJT.15",
+			"NJT.50",
+			"NJT.19",
+			"NJT.166",
+			"NJT.111",
+			"NJT.63"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#E66859",
+		"carComposition": 8
+	},
+	{
+		"id": "NJT.5",
+		"title": {
+			"en": "Bergen County Line"
+		},
+		"stations": [
+			"NJT.130",
+			"NJT.118",
+			"NJT.85",
+			"NJT.26",
+			"NJT.143",
+			"NJT.57",
+			"NJT.159",
+			"NJT.147",
+			"NJT.154",
+			"NJT.78",
+			"NJT.136",
+			"NJT.135",
+			"NJT.3",
+			"NJT.139",
+			"NJT.133",
+			"NJT.142",
+			"NJT.144",
+			"NJT.63"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#FFD411",
+		"carComposition": 8
+	},
+	{
+		"id": "NJT.5.b2",
+		"title": {
+			"en": "Bergen County Line (Port Jervis)"
+		},
+		"stations": [
+			"NJT.63",
+			"NJT.144",
+			"NJT.142",
+			"NJT.128",
+			"NJT.25",
+			"NJT.133",
+			"NJT.51",
+			"NJT.139",
+			"NJT.136",
+			"NJT.154",
+			"NJT.147",
+			"NJT.159",
+			"NJT.57",
+			"NJT.143",
+			"NJT.26",
+			"NJT.85",
+			"NJT.118",
+			"NJT.130"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#FFD411",
+		"carComposition": 8
+	},
+	{
+		"id": "NJT.5.b3",
+		"title": {
+			"en": "Bergen County Line (Suffern)"
+		},
+		"stations": [
+			"NJT.63",
+			"NJT.144",
+			"NJT.142",
+			"NJT.168",
+			"NJT.46",
+			"NJT.128",
+			"NJT.25",
+			"NJT.133",
+			"NJT.51",
+			"NJT.139",
+			"NJT.64",
+			"NJT.162",
+			"NJT.3",
+			"NJT.135",
+			"NJT.136",
+			"NJT.78",
+			"NJT.154"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#FFD411",
+		"carComposition": 8
+	},
+	{
+		"id": "NJT.6",
+		"title": {
+			"en": "Main Line"
+		},
+		"stations": [
+			"NJT.154",
+			"NJT.78",
+			"NJT.136",
+			"NJT.135",
+			"NJT.3",
+			"NJT.162",
+			"NJT.64",
+			"NJT.139",
+			"NJT.52",
+			"NJT.58",
+			"NJT.121",
+			"NJT.29",
+			"NJT.120",
+			"NJT.32",
+			"NJT.75",
+			"NJT.144",
+			"NJT.63"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#FFD411",
+		"carComposition": 8
+	},
+	{
+		"id": "NJT.6.b2",
+		"title": {
+			"en": "Main Line (Port Jervis)"
+		},
+		"stations": [
+			"NJT.63",
+			"NJT.144",
+			"NJT.136",
+			"NJT.154",
+			"NJT.147",
+			"NJT.159",
+			"NJT.57",
+			"NJT.143",
+			"NJT.26",
+			"NJT.85",
+			"NJT.118",
+			"NJT.130"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#FFD411",
+		"carComposition": 8
+	},
+	{
+		"id": "NJT.7",
+		"title": {
+			"en": "Morris & Essex Line"
+		},
+		"stations": [
+			"NJT.63",
+			"NJT.111",
+			"NJT.36",
+			"NJT.23",
+			"NJT.117",
+			"NJT.61",
+			"NJT.99",
+			"NJT.150",
+			"NJT.80",
+			"NJT.155",
+			"NJT.27",
+			"NJT.77",
+			"NJT.30",
+			"NJT.93",
+			"NJT.92",
+			"NJT.96",
+			"NJT.33",
+			"NJT.34"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#08A652",
+		"carComposition": 8
+	},
+	{
+		"id": "NJT.7.b2",
+		"title": {
+			"en": "Morris & Essex Line (Penn Station New York)"
+		},
+		"stations": [
+			"NJT.34",
+			"NJT.33",
+			"NJT.92",
+			"NJT.93",
+			"NJT.30",
+			"NJT.77",
+			"NJT.27",
+			"NJT.155",
+			"NJT.146",
+			"NJT.86",
+			"NJT.80",
+			"NJT.150",
+			"NJT.117",
+			"NJT.23",
+			"NJT.111",
+			"NJT.109"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#08A652",
+		"carComposition": 8
+	},
+	{
+		"id": "NJT.7.b3",
+		"title": {
+			"en": "Morris & Essex Line (Dover)"
+		},
+		"stations": [
+			"NJT.109",
+			"NJT.145",
+			"NJT.111",
+			"NJT.146",
+			"NJT.155",
+			"NJT.27",
+			"NJT.77",
+			"NJT.30",
+			"NJT.93",
+			"NJT.92",
+			"NJT.33",
+			"NJT.34"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#08A652",
+		"carComposition": 8
+	},
+	{
+		"id": "NJT.8",
+		"title": {
+			"en": "Gladstone Branch"
+		},
+		"stations": [
+			"NJT.49",
+			"NJT.122",
+			"NJT.44",
+			"NJT.18",
+			"NJT.13",
+			"NJT.76",
+			"NJT.87",
+			"NJT.153",
+			"NJT.48",
+			"NJT.17",
+			"NJT.101",
+			"NJT.108",
+			"NJT.155",
+			"NJT.146",
+			"NJT.86",
+			"NJT.80",
+			"NJT.150",
+			"NJT.99",
+			"NJT.61",
+			"NJT.117",
+			"NJT.23",
+			"NJT.36",
+			"NJT.111",
+			"NJT.63"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#A4C9AA",
+		"carComposition": 8
+	},
+	{
+		"id": "NJT.8.b2",
+		"title": {
+			"en": "Gladstone Branch (Penn Station New York)"
+		},
+		"stations": [
+			"NJT.122",
+			"NJT.44",
+			"NJT.18",
+			"NJT.13",
+			"NJT.76",
+			"NJT.87",
+			"NJT.153",
+			"NJT.48",
+			"NJT.17",
+			"NJT.101",
+			"NJT.108",
+			"NJT.155",
+			"NJT.146",
+			"NJT.86",
+			"NJT.80",
+			"NJT.150",
+			"NJT.61",
+			"NJT.117",
+			"NJT.23",
+			"NJT.111",
+			"NJT.145",
+			"NJT.109"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#A4C9AA",
+		"carComposition": 8
+	},
+	{
+		"id": "NJT.9",
+		"title": {
+			"en": "Northeast Corridor"
+		},
+		"stations": [
+			"NJT.109",
+			"NJT.145",
+			"NJT.112",
+			"NJT.110",
+			"NJT.40",
+			"NJT.70",
+			"NJT.134",
+			"NJT.82",
+			"NJT.83",
+			"NJT.37",
+			"NJT.106",
+			"NJT.132",
+			"NJT.55",
+			"NJT.158"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#DD3439",
+		"carComposition": 8
+	},
+	{
+		"id": "NJT.10",
+		"title": {
+			"en": "North Jersey Coast Line"
+		},
+		"stations": [
+			"NJT.109",
+			"NJT.145",
+			"NJT.112",
+			"NJT.134",
+			"NJT.10",
+			"NJT.174",
+			"NJT.125",
+			"NJT.149",
+			"NJT.1",
+			"NJT.59",
+			"NJT.84",
+			"NJT.138",
+			"NJT.73",
+			"NJT.74",
+			"NJT.39",
+			"NJT.4",
+			"NJT.7",
+			"NJT.22",
+			"NJT.16",
+			"NJT.151",
+			"NJT.79",
+			"NJT.129",
+			"NJT.14"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#03A3DF",
+		"carComposition": 8
+	},
+	{
+		"id": "NJT.10.b2",
+		"title": {
+			"en": "North Jersey Coast Line (Penn Station New York)"
+		},
+		"stations": [
+			"NJT.74",
+			"NJT.73",
+			"NJT.138",
+			"NJT.84",
+			"NJT.59",
+			"NJT.1",
+			"NJT.149",
+			"NJT.125",
+			"NJT.174",
+			"NJT.10",
+			"NJT.134",
+			"NJT.70",
+			"NJT.40",
+			"NJT.114",
+			"NJT.110",
+			"NJT.112",
+			"NJT.145",
+			"NJT.109"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#03A3DF",
+		"carComposition": 8
+	},
+	{
+		"id": "NJT.13",
+		"title": {
+			"en": "Pascack Valley Line"
+		},
+		"stations": [
+			"NJT.63",
+			"NJT.144",
+			"NJT.176",
+			"NJT.156",
+			"NJT.42",
+			"NJT.5",
+			"NJT.105",
+			"NJT.140",
+			"NJT.116",
+			"NJT.41",
+			"NJT.170",
+			"NJT.62",
+			"NJT.175",
+			"NJT.119",
+			"NJT.91",
+			"NJT.123",
+			"NJT.102",
+			"NJT.152"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#94219A",
+		"carComposition": 8
+	},
+	{
+		"id": "NJT.14",
+		"title": {
+			"en": "Princeton Shuttle"
+		},
+		"stations": [
+			"NJT.132",
+			"NJT.131"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#E87725",
+		"carComposition": 8
+	},
+	{
+		"id": "NJT.15",
+		"title": {
+			"en": "Raritan Valley Line"
+		},
+		"stations": [
+			"NJT.109",
+			"NJT.145",
+			"NJT.112",
+			"NJT.160",
+			"NJT.141",
+			"NJT.31",
+			"NJT.47",
+			"NJT.169",
+			"NJT.43",
+			"NJT.104",
+			"NJT.127",
+			"NJT.35",
+			"NJT.21",
+			"NJT.24",
+			"NJT.148",
+			"NJT.137",
+			"NJT.113",
+			"NJT.171",
+			"NJT.68",
+			"NJT.6",
+			"NJT.60"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#F2A537",
+		"carComposition": 8
+	},
+	{
 		"id": "MTA.Subway.A",
 		"title": {
 			"en": "8 Avenue Express"
@@ -2888,7 +3393,7 @@
 		"stations": [],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#555555",
+		"color": "#0039A6",
 		"carComposition": 6
 	},
 	{
@@ -2899,7 +3404,7 @@
 		"stations": [],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#009B3A",
+		"color": "#0039A6",
 		"carComposition": 6
 	},
 	{
@@ -2910,7 +3415,7 @@
 		"stations": [],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#009B3A",
+		"color": "#0039A6",
 		"carComposition": 6
 	},
 	{
@@ -2921,7 +3426,7 @@
 		"stations": [],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#009B3A",
+		"color": "#0039A6",
 		"carComposition": 6
 	},
 	{
@@ -2932,7 +3437,7 @@
 		"stations": [],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#009B3A",
+		"color": "#0039A6",
 		"carComposition": 6
 	},
 	{
@@ -2976,7 +3481,7 @@
 		],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#EE0034",
+		"color": "#0039A6",
 		"carComposition": 6
 	},
 	{
@@ -3008,7 +3513,7 @@
 		],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#EE0034",
+		"color": "#0039A6",
 		"carComposition": 6
 	},
 	{
@@ -3035,7 +3540,7 @@
 		],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#EE0034",
+		"color": "#0039A6",
 		"carComposition": 6
 	},
 	{
@@ -3056,7 +3561,7 @@
 		],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#EE0034",
+		"color": "#0039A6",
 		"carComposition": 6
 	},
 	{
@@ -3098,7 +3603,7 @@
 		],
 		"ascending": "Outbound",
 		"descending": "Inbound",
-		"color": "#009B3A",
+		"color": "#0039A6",
 		"carComposition": 6
 	},
 	{
@@ -3150,510 +3655,5 @@
 		"descending": "Inbound",
 		"color": "#0039A6",
 		"carComposition": 6
-	},
-	{
-		"id": "NJT.2",
-		"title": {
-			"en": "Montclair-Boonton Line"
-		},
-		"stations": [
-			"NJT.90",
-			"NJT.89",
-			"NJT.97",
-			"NJT.161",
-			"NJT.165",
-			"NJT.163",
-			"NJT.15",
-			"NJT.50",
-			"NJT.19",
-			"NJT.166",
-			"NJT.111",
-			"NJT.145",
-			"NJT.109"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#E66859",
-		"carComposition": 8
-	},
-	{
-		"id": "NJT.2.b2",
-		"title": {
-			"en": "Montclair-Boonton Line (Hoboken)"
-		},
-		"stations": [
-			"NJT.15",
-			"NJT.50",
-			"NJT.19",
-			"NJT.166",
-			"NJT.111",
-			"NJT.63"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#E66859",
-		"carComposition": 8
-	},
-	{
-		"id": "NJT.5",
-		"title": {
-			"en": "Bergen County Line"
-		},
-		"stations": [
-			"NJT.130",
-			"NJT.118",
-			"NJT.85",
-			"NJT.26",
-			"NJT.143",
-			"NJT.57",
-			"NJT.159",
-			"NJT.147",
-			"NJT.154",
-			"NJT.78",
-			"NJT.136",
-			"NJT.135",
-			"NJT.3",
-			"NJT.139",
-			"NJT.133",
-			"NJT.142",
-			"NJT.144",
-			"NJT.63"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#FFD411",
-		"carComposition": 8
-	},
-	{
-		"id": "NJT.5.b2",
-		"title": {
-			"en": "Bergen County Line (Port Jervis)"
-		},
-		"stations": [
-			"NJT.63",
-			"NJT.144",
-			"NJT.142",
-			"NJT.128",
-			"NJT.25",
-			"NJT.133",
-			"NJT.51",
-			"NJT.139",
-			"NJT.136",
-			"NJT.154",
-			"NJT.147",
-			"NJT.159",
-			"NJT.57",
-			"NJT.143",
-			"NJT.26",
-			"NJT.85",
-			"NJT.118",
-			"NJT.130"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#FFD411",
-		"carComposition": 8
-	},
-	{
-		"id": "NJT.5.b3",
-		"title": {
-			"en": "Bergen County Line (Suffern)"
-		},
-		"stations": [
-			"NJT.63",
-			"NJT.144",
-			"NJT.142",
-			"NJT.168",
-			"NJT.46",
-			"NJT.128",
-			"NJT.25",
-			"NJT.133",
-			"NJT.51",
-			"NJT.139",
-			"NJT.64",
-			"NJT.162",
-			"NJT.3",
-			"NJT.135",
-			"NJT.136",
-			"NJT.78",
-			"NJT.154"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#FFD411",
-		"carComposition": 8
-	},
-	{
-		"id": "NJT.6",
-		"title": {
-			"en": "Main Line"
-		},
-		"stations": [
-			"NJT.154",
-			"NJT.78",
-			"NJT.136",
-			"NJT.135",
-			"NJT.3",
-			"NJT.162",
-			"NJT.64",
-			"NJT.139",
-			"NJT.52",
-			"NJT.58",
-			"NJT.121",
-			"NJT.29",
-			"NJT.120",
-			"NJT.32",
-			"NJT.75",
-			"NJT.144",
-			"NJT.63"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#FFD411",
-		"carComposition": 8
-	},
-	{
-		"id": "NJT.6.b2",
-		"title": {
-			"en": "Main Line (Port Jervis)"
-		},
-		"stations": [
-			"NJT.63",
-			"NJT.144",
-			"NJT.136",
-			"NJT.154",
-			"NJT.147",
-			"NJT.159",
-			"NJT.57",
-			"NJT.143",
-			"NJT.26",
-			"NJT.85",
-			"NJT.118",
-			"NJT.130"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#FFD411",
-		"carComposition": 8
-	},
-	{
-		"id": "NJT.7",
-		"title": {
-			"en": "Morris & Essex Line"
-		},
-		"stations": [
-			"NJT.63",
-			"NJT.111",
-			"NJT.36",
-			"NJT.23",
-			"NJT.117",
-			"NJT.61",
-			"NJT.99",
-			"NJT.150",
-			"NJT.80",
-			"NJT.155",
-			"NJT.27",
-			"NJT.77",
-			"NJT.30",
-			"NJT.93",
-			"NJT.92",
-			"NJT.96",
-			"NJT.33",
-			"NJT.34"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#08A652",
-		"carComposition": 8
-	},
-	{
-		"id": "NJT.7.b2",
-		"title": {
-			"en": "Morris & Essex Line (Penn Station New York)"
-		},
-		"stations": [
-			"NJT.34",
-			"NJT.33",
-			"NJT.92",
-			"NJT.93",
-			"NJT.30",
-			"NJT.77",
-			"NJT.27",
-			"NJT.155",
-			"NJT.146",
-			"NJT.86",
-			"NJT.80",
-			"NJT.150",
-			"NJT.117",
-			"NJT.23",
-			"NJT.111",
-			"NJT.109"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#08A652",
-		"carComposition": 8
-	},
-	{
-		"id": "NJT.7.b3",
-		"title": {
-			"en": "Morris & Essex Line (Dover)"
-		},
-		"stations": [
-			"NJT.109",
-			"NJT.145",
-			"NJT.111",
-			"NJT.146",
-			"NJT.155",
-			"NJT.27",
-			"NJT.77",
-			"NJT.30",
-			"NJT.93",
-			"NJT.92",
-			"NJT.33",
-			"NJT.34"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#08A652",
-		"carComposition": 8
-	},
-	{
-		"id": "NJT.8",
-		"title": {
-			"en": "Gladstone Branch"
-		},
-		"stations": [
-			"NJT.49",
-			"NJT.122",
-			"NJT.44",
-			"NJT.18",
-			"NJT.13",
-			"NJT.76",
-			"NJT.87",
-			"NJT.153",
-			"NJT.48",
-			"NJT.17",
-			"NJT.101",
-			"NJT.108",
-			"NJT.155",
-			"NJT.146",
-			"NJT.86",
-			"NJT.80",
-			"NJT.150",
-			"NJT.99",
-			"NJT.61",
-			"NJT.117",
-			"NJT.23",
-			"NJT.36",
-			"NJT.111",
-			"NJT.63"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#A4C9AA",
-		"carComposition": 8
-	},
-	{
-		"id": "NJT.8.b2",
-		"title": {
-			"en": "Gladstone Branch (Penn Station New York)"
-		},
-		"stations": [
-			"NJT.122",
-			"NJT.44",
-			"NJT.18",
-			"NJT.13",
-			"NJT.76",
-			"NJT.87",
-			"NJT.153",
-			"NJT.48",
-			"NJT.17",
-			"NJT.101",
-			"NJT.108",
-			"NJT.155",
-			"NJT.146",
-			"NJT.86",
-			"NJT.80",
-			"NJT.150",
-			"NJT.61",
-			"NJT.117",
-			"NJT.23",
-			"NJT.111",
-			"NJT.145",
-			"NJT.109"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#A4C9AA",
-		"carComposition": 8
-	},
-	{
-		"id": "NJT.9",
-		"title": {
-			"en": "Northeast Corridor"
-		},
-		"stations": [
-			"NJT.109",
-			"NJT.145",
-			"NJT.112",
-			"NJT.110",
-			"NJT.40",
-			"NJT.70",
-			"NJT.134",
-			"NJT.82",
-			"NJT.83",
-			"NJT.37",
-			"NJT.106",
-			"NJT.132",
-			"NJT.55",
-			"NJT.158"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#DD3439",
-		"carComposition": 8
-	},
-	{
-		"id": "NJT.10",
-		"title": {
-			"en": "North Jersey Coast Line"
-		},
-		"stations": [
-			"NJT.109",
-			"NJT.145",
-			"NJT.112",
-			"NJT.134",
-			"NJT.10",
-			"NJT.174",
-			"NJT.125",
-			"NJT.149",
-			"NJT.1",
-			"NJT.59",
-			"NJT.84",
-			"NJT.138",
-			"NJT.73",
-			"NJT.74",
-			"NJT.39",
-			"NJT.4",
-			"NJT.7",
-			"NJT.22",
-			"NJT.16",
-			"NJT.151",
-			"NJT.79",
-			"NJT.129",
-			"NJT.14"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#03A3DF",
-		"carComposition": 8
-	},
-	{
-		"id": "NJT.10.b2",
-		"title": {
-			"en": "North Jersey Coast Line (Penn Station New York)"
-		},
-		"stations": [
-			"NJT.74",
-			"NJT.73",
-			"NJT.138",
-			"NJT.84",
-			"NJT.59",
-			"NJT.1",
-			"NJT.149",
-			"NJT.125",
-			"NJT.174",
-			"NJT.10",
-			"NJT.134",
-			"NJT.70",
-			"NJT.40",
-			"NJT.114",
-			"NJT.110",
-			"NJT.112",
-			"NJT.145",
-			"NJT.109"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#03A3DF",
-		"carComposition": 8
-	},
-	{
-		"id": "NJT.13",
-		"title": {
-			"en": "Pascack Valley Line"
-		},
-		"stations": [
-			"NJT.63",
-			"NJT.144",
-			"NJT.176",
-			"NJT.156",
-			"NJT.42",
-			"NJT.5",
-			"NJT.105",
-			"NJT.140",
-			"NJT.116",
-			"NJT.41",
-			"NJT.170",
-			"NJT.62",
-			"NJT.175",
-			"NJT.119",
-			"NJT.91",
-			"NJT.123",
-			"NJT.102",
-			"NJT.152"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#94219A",
-		"carComposition": 8
-	},
-	{
-		"id": "NJT.14",
-		"title": {
-			"en": "Princeton Shuttle"
-		},
-		"stations": [
-			"NJT.132",
-			"NJT.131"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#E87725",
-		"carComposition": 8
-	},
-	{
-		"id": "NJT.15",
-		"title": {
-			"en": "Raritan Valley Line"
-		},
-		"stations": [
-			"NJT.109",
-			"NJT.145",
-			"NJT.112",
-			"NJT.160",
-			"NJT.141",
-			"NJT.31",
-			"NJT.47",
-			"NJT.169",
-			"NJT.43",
-			"NJT.104",
-			"NJT.127",
-			"NJT.35",
-			"NJT.21",
-			"NJT.24",
-			"NJT.148",
-			"NJT.137",
-			"NJT.113",
-			"NJT.171",
-			"NJT.68",
-			"NJT.6",
-			"NJT.60"
-		],
-		"ascending": "Outbound",
-		"descending": "Inbound",
-		"color": "#F2A537",
-		"carComposition": 8
 	}
 ]

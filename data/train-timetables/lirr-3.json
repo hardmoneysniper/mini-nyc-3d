@@ -2074,1105 +2074,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_6502.Holiday",
-		"t": "MTA.LIRR.GO201_26_6502",
-		"r": "MTA.LIRR.3",
-		"n": "6502",
-		"y": "MTA.Regional",
-		"d": "Outbound",
-		"os": [
-			"MTA.LIRR.102"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.102",
-				"d": "01:17"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "01:34"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "01:39"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "01:42"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "01:45"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "01:49"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "01:52"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "01:55"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "01:57"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "02:00"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "02:04"
-			},
-			{
-				"s": "MTA.LIRR.154",
-				"d": "02:16"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_6503.Holiday",
-		"t": "MTA.LIRR.GO201_26_6503",
-		"r": "MTA.LIRR.3",
-		"n": "6503",
-		"y": "MTA.Regional",
-		"d": "Inbound",
-		"os": [
-			"MTA.LIRR.154"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.154",
-				"d": "05:25"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "05:36"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "05:40"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "05:42"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "05:44"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "05:48"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "05:51"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "05:56"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "05:59"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "06:02"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "06:08"
-			},
-			{
-				"s": "MTA.LIRR.102",
-				"d": "06:24"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_6507.Holiday",
-		"t": "MTA.LIRR.GO201_26_6507",
-		"r": "MTA.LIRR.3",
-		"n": "6507",
-		"y": "MTA.Regional",
-		"d": "Inbound",
-		"os": [
-			"MTA.LIRR.154"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.154",
-				"d": "08:37"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "08:48"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "08:52"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "08:54"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "08:56"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "09:00"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "09:03"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "09:08"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "09:11"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "09:15"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "09:21"
-			},
-			{
-				"s": "MTA.LIRR.102",
-				"d": "09:35"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_6508.Holiday",
-		"t": "MTA.LIRR.GO201_26_6508",
-		"r": "MTA.LIRR.3",
-		"n": "6508",
-		"y": "MTA.Regional",
-		"d": "Outbound",
-		"os": [
-			"MTA.LIRR.102"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.102",
-				"d": "08:45"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "09:01"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "09:06"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "09:09"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "09:12"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "09:16"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "09:19"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "09:22"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "09:24"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "09:27"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "09:31"
-			},
-			{
-				"s": "MTA.LIRR.154",
-				"d": "09:43"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_6511.Holiday",
-		"t": "MTA.LIRR.GO201_26_6511",
-		"r": "MTA.LIRR.3",
-		"n": "6511",
-		"y": "MTA.Regional",
-		"d": "Inbound",
-		"os": [
-			"MTA.LIRR.154"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.154",
-				"d": "10:37"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "10:48"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "10:52"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "10:54"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "10:56"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "11:00"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "11:03"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "11:08"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "11:11"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "11:15"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "11:21"
-			},
-			{
-				"s": "MTA.LIRR.102",
-				"d": "11:35"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_6512.Holiday",
-		"t": "MTA.LIRR.GO201_26_6512",
-		"r": "MTA.LIRR.3",
-		"n": "6512",
-		"y": "MTA.Regional",
-		"d": "Outbound",
-		"os": [
-			"MTA.LIRR.102"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.102",
-				"d": "10:45"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "11:01"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "11:06"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "11:09"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "11:12"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "11:16"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "11:19"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "11:22"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "11:24"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "11:27"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "11:31"
-			},
-			{
-				"s": "MTA.LIRR.154",
-				"d": "11:43"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_6550.Holiday",
-		"t": "MTA.LIRR.GO201_26_6550",
-		"r": "MTA.LIRR.3",
-		"n": "6550",
-		"y": "MTA.Regional",
-		"d": "Outbound",
-		"os": [
-			"MTA.LIRR.102"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.102",
-				"d": "12:45"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "13:01"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "13:06"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "13:09"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "13:12"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "13:16"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "13:19"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "13:22"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "13:24"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "13:27"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "13:31"
-			},
-			{
-				"s": "MTA.LIRR.154",
-				"d": "13:43"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_6551.Holiday",
-		"t": "MTA.LIRR.GO201_26_6551",
-		"r": "MTA.LIRR.3",
-		"n": "6551",
-		"y": "MTA.Regional",
-		"d": "Inbound",
-		"os": [
-			"MTA.LIRR.154"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.154",
-				"d": "12:37"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "12:48"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "12:52"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "12:54"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "12:56"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "13:00"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "13:03"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "13:08"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "13:11"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "13:15"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "13:21"
-			},
-			{
-				"s": "MTA.LIRR.102",
-				"d": "13:35"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_6553.Holiday",
-		"t": "MTA.LIRR.GO201_26_6553",
-		"r": "MTA.LIRR.3",
-		"n": "6553",
-		"y": "MTA.Regional",
-		"d": "Inbound",
-		"os": [
-			"MTA.LIRR.154"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.154",
-				"d": "14:37"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "14:48"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "14:52"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "14:54"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "14:56"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "15:00"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "15:03"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "15:08"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "15:11"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "15:15"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "15:21"
-			},
-			{
-				"s": "MTA.LIRR.102",
-				"d": "15:35"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_6554.Holiday",
-		"t": "MTA.LIRR.GO201_26_6554",
-		"r": "MTA.LIRR.3",
-		"n": "6554",
-		"y": "MTA.Regional",
-		"d": "Outbound",
-		"os": [
-			"MTA.LIRR.102"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.102",
-				"d": "14:45"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "15:01"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "15:06"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "15:09"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "15:12"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "15:16"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "15:19"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "15:22"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "15:24"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "15:27"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "15:31"
-			},
-			{
-				"s": "MTA.LIRR.154",
-				"d": "15:43"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_6557.Holiday",
-		"t": "MTA.LIRR.GO201_26_6557",
-		"r": "MTA.LIRR.3",
-		"n": "6557",
-		"y": "MTA.Regional",
-		"d": "Inbound",
-		"os": [
-			"MTA.LIRR.154"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.154",
-				"d": "16:37"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "16:48"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "16:52"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "16:54"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "16:56"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "17:00"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "17:03"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "17:08"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "17:11"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "17:15"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "17:21"
-			},
-			{
-				"s": "MTA.LIRR.102",
-				"d": "17:35"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_6558.Holiday",
-		"t": "MTA.LIRR.GO201_26_6558",
-		"r": "MTA.LIRR.3",
-		"n": "6558",
-		"y": "MTA.Regional",
-		"d": "Outbound",
-		"os": [
-			"MTA.LIRR.102"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.102",
-				"d": "16:45"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "17:01"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "17:06"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "17:09"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "17:12"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "17:16"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "17:19"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "17:22"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "17:24"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "17:27"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "17:31"
-			},
-			{
-				"s": "MTA.LIRR.154",
-				"d": "17:43"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_6563.Holiday",
-		"t": "MTA.LIRR.GO201_26_6563",
-		"r": "MTA.LIRR.3",
-		"n": "6563",
-		"y": "MTA.Regional",
-		"d": "Inbound",
-		"os": [
-			"MTA.LIRR.154"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.154",
-				"d": "18:37"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "18:48"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "18:52"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "18:54"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "18:56"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "19:00"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "19:03"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "19:08"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "19:11"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "19:15"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "19:20"
-			},
-			{
-				"s": "MTA.LIRR.102",
-				"d": "19:35"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_6564.Holiday",
-		"t": "MTA.LIRR.GO201_26_6564",
-		"r": "MTA.LIRR.3",
-		"n": "6564",
-		"y": "MTA.Regional",
-		"d": "Outbound",
-		"os": [
-			"MTA.LIRR.102"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.102",
-				"d": "18:45"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "19:01"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "19:06"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "19:09"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "19:12"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "19:16"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "19:19"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "19:22"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "19:24"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "19:27"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "19:31"
-			},
-			{
-				"s": "MTA.LIRR.154",
-				"d": "19:43"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_6567.Holiday",
-		"t": "MTA.LIRR.GO201_26_6567",
-		"r": "MTA.LIRR.3",
-		"n": "6567",
-		"y": "MTA.Regional",
-		"d": "Inbound",
-		"os": [
-			"MTA.LIRR.154"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.154",
-				"d": "20:37"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "20:48"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "20:52"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "20:54"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "20:56"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "21:00"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "21:03"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "21:08"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "21:11"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "21:15"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "21:20"
-			},
-			{
-				"s": "MTA.LIRR.102",
-				"d": "21:35"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_6570.Holiday",
-		"t": "MTA.LIRR.GO201_26_6570",
-		"r": "MTA.LIRR.3",
-		"n": "6570",
-		"y": "MTA.Regional",
-		"d": "Outbound",
-		"os": [
-			"MTA.LIRR.102"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.102",
-				"d": "20:45"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "21:01"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "21:06"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "21:09"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "21:12"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "21:16"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "21:19"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "21:22"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "21:24"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "21:27"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "21:31"
-			},
-			{
-				"s": "MTA.LIRR.154",
-				"d": "21:43"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_6571.Holiday",
-		"t": "MTA.LIRR.GO201_26_6571",
-		"r": "MTA.LIRR.3",
-		"n": "6571",
-		"y": "MTA.Regional",
-		"d": "Inbound",
-		"os": [
-			"MTA.LIRR.154"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.154",
-				"d": "22:52"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "23:03"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "23:07"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "23:09"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "23:11"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "23:15"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "23:18"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "23:23"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "23:26"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "23:30"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "23:36"
-			},
-			{
-				"s": "MTA.LIRR.102",
-				"d": "23:51"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_6574.Holiday",
-		"t": "MTA.LIRR.GO201_26_6574",
-		"r": "MTA.LIRR.3",
-		"n": "6574",
-		"y": "MTA.Regional",
-		"d": "Outbound",
-		"os": [
-			"MTA.LIRR.102"
-		],
-		"tt": [
-			{
-				"s": "MTA.LIRR.102",
-				"d": "23:45"
-			},
-			{
-				"s": "MTA.LIRR.132",
-				"d": "24:01"
-			},
-			{
-				"s": "MTA.LIRR.52",
-				"d": "24:06"
-			},
-			{
-				"s": "MTA.LIRR.1",
-				"d": "24:09"
-			},
-			{
-				"s": "MTA.LIRR.182",
-				"d": "24:12"
-			},
-			{
-				"s": "MTA.LIRR.77",
-				"d": "24:16"
-			},
-			{
-				"s": "MTA.LIRR.71",
-				"d": "24:19"
-			},
-			{
-				"s": "MTA.LIRR.185",
-				"d": "24:22"
-			},
-			{
-				"s": "MTA.LIRR.76",
-				"d": "24:24"
-			},
-			{
-				"s": "MTA.LIRR.67",
-				"d": "24:27"
-			},
-			{
-				"s": "MTA.LIRR.123",
-				"d": "24:31"
-			},
-			{
-				"s": "MTA.LIRR.154",
-				"d": "24:43"
-			}
-		]
-	},
-	{
-		"id": "MTA.LIRR.GO201_26_16502.Saturday",
+		"id": "MTA.LIRR.GO201_26_16502.Holiday",
 		"t": "MTA.LIRR.GO201_26_16502",
 		"r": "MTA.LIRR.3",
 		"n": "16502",
@@ -3209,7 +2111,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_16503.Saturday",
+		"id": "MTA.LIRR.GO201_26_16503.Holiday",
 		"t": "MTA.LIRR.GO201_26_16503",
 		"r": "MTA.LIRR.3",
 		"n": "16503",
@@ -3246,7 +2148,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_16507.Saturday",
+		"id": "MTA.LIRR.GO201_26_16507.Holiday",
 		"t": "MTA.LIRR.GO201_26_16507",
 		"r": "MTA.LIRR.3",
 		"n": "16507",
@@ -3283,7 +2185,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_16508.Saturday",
+		"id": "MTA.LIRR.GO201_26_16508.Holiday",
 		"t": "MTA.LIRR.GO201_26_16508",
 		"r": "MTA.LIRR.3",
 		"n": "16508",
@@ -3320,7 +2222,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_16511.Saturday",
+		"id": "MTA.LIRR.GO201_26_16511.Holiday",
 		"t": "MTA.LIRR.GO201_26_16511",
 		"r": "MTA.LIRR.3",
 		"n": "16511",
@@ -3357,7 +2259,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_16512.Saturday",
+		"id": "MTA.LIRR.GO201_26_16512.Holiday",
 		"t": "MTA.LIRR.GO201_26_16512",
 		"r": "MTA.LIRR.3",
 		"n": "16512",
@@ -3394,7 +2296,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_16550.Saturday",
+		"id": "MTA.LIRR.GO201_26_16550.Holiday",
 		"t": "MTA.LIRR.GO201_26_16550",
 		"r": "MTA.LIRR.3",
 		"n": "16550",
@@ -3431,7 +2333,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_16551.Saturday",
+		"id": "MTA.LIRR.GO201_26_16551.Holiday",
 		"t": "MTA.LIRR.GO201_26_16551",
 		"r": "MTA.LIRR.3",
 		"n": "16551",
@@ -3468,7 +2370,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_16553.Saturday",
+		"id": "MTA.LIRR.GO201_26_16553.Holiday",
 		"t": "MTA.LIRR.GO201_26_16553",
 		"r": "MTA.LIRR.3",
 		"n": "16553",
@@ -3505,7 +2407,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_16554.Saturday",
+		"id": "MTA.LIRR.GO201_26_16554.Holiday",
 		"t": "MTA.LIRR.GO201_26_16554",
 		"r": "MTA.LIRR.3",
 		"n": "16554",
@@ -3542,7 +2444,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_16557.Saturday",
+		"id": "MTA.LIRR.GO201_26_16557.Holiday",
 		"t": "MTA.LIRR.GO201_26_16557",
 		"r": "MTA.LIRR.3",
 		"n": "16557",
@@ -3579,7 +2481,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_16558.Saturday",
+		"id": "MTA.LIRR.GO201_26_16558.Holiday",
 		"t": "MTA.LIRR.GO201_26_16558",
 		"r": "MTA.LIRR.3",
 		"n": "16558",
@@ -3616,7 +2518,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_16563.Saturday",
+		"id": "MTA.LIRR.GO201_26_16563.Holiday",
 		"t": "MTA.LIRR.GO201_26_16563",
 		"r": "MTA.LIRR.3",
 		"n": "16563",
@@ -3653,7 +2555,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_16564.Saturday",
+		"id": "MTA.LIRR.GO201_26_16564.Holiday",
 		"t": "MTA.LIRR.GO201_26_16564",
 		"r": "MTA.LIRR.3",
 		"n": "16564",
@@ -3690,7 +2592,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_16567.Saturday",
+		"id": "MTA.LIRR.GO201_26_16567.Holiday",
 		"t": "MTA.LIRR.GO201_26_16567",
 		"r": "MTA.LIRR.3",
 		"n": "16567",
@@ -3727,7 +2629,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_16570.Saturday",
+		"id": "MTA.LIRR.GO201_26_16570.Holiday",
 		"t": "MTA.LIRR.GO201_26_16570",
 		"r": "MTA.LIRR.3",
 		"n": "16570",
@@ -3764,7 +2666,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_16571.Saturday",
+		"id": "MTA.LIRR.GO201_26_16571.Holiday",
 		"t": "MTA.LIRR.GO201_26_16571",
 		"r": "MTA.LIRR.3",
 		"n": "16571",
@@ -3801,7 +2703,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_16574.Saturday",
+		"id": "MTA.LIRR.GO201_26_16574.Holiday",
 		"t": "MTA.LIRR.GO201_26_16574",
 		"r": "MTA.LIRR.3",
 		"n": "16574",
@@ -3838,7 +2740,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_19500.Saturday",
+		"id": "MTA.LIRR.GO201_26_19500.Holiday",
 		"t": "MTA.LIRR.GO201_26_19500",
 		"r": "MTA.LIRR.3",
 		"n": "19500",
@@ -3875,7 +2777,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26502.Saturday",
+		"id": "MTA.LIRR.GO201_26_26502.Holiday",
 		"t": "MTA.LIRR.GO201_26_26502",
 		"r": "MTA.LIRR.3",
 		"n": "26502",
@@ -3920,7 +2822,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26503.Saturday",
+		"id": "MTA.LIRR.GO201_26_26503.Holiday",
 		"t": "MTA.LIRR.GO201_26_26503",
 		"r": "MTA.LIRR.3",
 		"n": "26503",
@@ -3965,7 +2867,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26507.Saturday",
+		"id": "MTA.LIRR.GO201_26_26507.Holiday",
 		"t": "MTA.LIRR.GO201_26_26507",
 		"r": "MTA.LIRR.3",
 		"n": "26507",
@@ -4010,7 +2912,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26508.Saturday",
+		"id": "MTA.LIRR.GO201_26_26508.Holiday",
 		"t": "MTA.LIRR.GO201_26_26508",
 		"r": "MTA.LIRR.3",
 		"n": "26508",
@@ -4055,7 +2957,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26511.Saturday",
+		"id": "MTA.LIRR.GO201_26_26511.Holiday",
 		"t": "MTA.LIRR.GO201_26_26511",
 		"r": "MTA.LIRR.3",
 		"n": "26511",
@@ -4100,7 +3002,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26512.Saturday",
+		"id": "MTA.LIRR.GO201_26_26512.Holiday",
 		"t": "MTA.LIRR.GO201_26_26512",
 		"r": "MTA.LIRR.3",
 		"n": "26512",
@@ -4145,7 +3047,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26550.Saturday",
+		"id": "MTA.LIRR.GO201_26_26550.Holiday",
 		"t": "MTA.LIRR.GO201_26_26550",
 		"r": "MTA.LIRR.3",
 		"n": "26550",
@@ -4190,7 +3092,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26551.Saturday",
+		"id": "MTA.LIRR.GO201_26_26551.Holiday",
 		"t": "MTA.LIRR.GO201_26_26551",
 		"r": "MTA.LIRR.3",
 		"n": "26551",
@@ -4235,7 +3137,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26553.Saturday",
+		"id": "MTA.LIRR.GO201_26_26553.Holiday",
 		"t": "MTA.LIRR.GO201_26_26553",
 		"r": "MTA.LIRR.3",
 		"n": "26553",
@@ -4280,7 +3182,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26554.Saturday",
+		"id": "MTA.LIRR.GO201_26_26554.Holiday",
 		"t": "MTA.LIRR.GO201_26_26554",
 		"r": "MTA.LIRR.3",
 		"n": "26554",
@@ -4325,7 +3227,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26557.Saturday",
+		"id": "MTA.LIRR.GO201_26_26557.Holiday",
 		"t": "MTA.LIRR.GO201_26_26557",
 		"r": "MTA.LIRR.3",
 		"n": "26557",
@@ -4370,7 +3272,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26558.Saturday",
+		"id": "MTA.LIRR.GO201_26_26558.Holiday",
 		"t": "MTA.LIRR.GO201_26_26558",
 		"r": "MTA.LIRR.3",
 		"n": "26558",
@@ -4415,7 +3317,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26563.Saturday",
+		"id": "MTA.LIRR.GO201_26_26563.Holiday",
 		"t": "MTA.LIRR.GO201_26_26563",
 		"r": "MTA.LIRR.3",
 		"n": "26563",
@@ -4460,7 +3362,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26564.Saturday",
+		"id": "MTA.LIRR.GO201_26_26564.Holiday",
 		"t": "MTA.LIRR.GO201_26_26564",
 		"r": "MTA.LIRR.3",
 		"n": "26564",
@@ -4505,7 +3407,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26567.Saturday",
+		"id": "MTA.LIRR.GO201_26_26567.Holiday",
 		"t": "MTA.LIRR.GO201_26_26567",
 		"r": "MTA.LIRR.3",
 		"n": "26567",
@@ -4550,7 +3452,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26570.Saturday",
+		"id": "MTA.LIRR.GO201_26_26570.Holiday",
 		"t": "MTA.LIRR.GO201_26_26570",
 		"r": "MTA.LIRR.3",
 		"n": "26570",
@@ -4595,7 +3497,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26571.Saturday",
+		"id": "MTA.LIRR.GO201_26_26571.Holiday",
 		"t": "MTA.LIRR.GO201_26_26571",
 		"r": "MTA.LIRR.3",
 		"n": "26571",
@@ -4640,7 +3542,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_26574.Saturday",
+		"id": "MTA.LIRR.GO201_26_26574.Holiday",
 		"t": "MTA.LIRR.GO201_26_26574",
 		"r": "MTA.LIRR.3",
 		"n": "26574",
@@ -4685,7 +3587,7 @@
 		]
 	},
 	{
-		"id": "MTA.LIRR.GO201_26_29500.Saturday",
+		"id": "MTA.LIRR.GO201_26_29500.Holiday",
 		"t": "MTA.LIRR.GO201_26_29500",
 		"r": "MTA.LIRR.3",
 		"n": "29500",
