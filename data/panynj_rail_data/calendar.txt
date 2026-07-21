@@ -1,0 +1,58 @@
+service_id,service_name,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
+c_71142_b_84435_d_64,Year Round Starting 3/16/2025 (Sunday only),0,0,0,0,0,0,1,20250316,20260601
+c_71142_b_84435_d_32,Year Round Starting 3/16/2025 (Saturday only),0,0,0,0,0,1,0,20250316,20260601
+c_71142_b_84435_d_31,Year Round Starting 3/16/2025 (Weekday),1,1,1,1,1,0,0,20250316,20260601
+c_71336_b_none_d_0,NWK Roof & GRV Platform Work – Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_71335_b_none_d_0,NWK Roof & GRV Platform Work – Saturday,0,0,0,0,0,0,0,20250316,20260601
+c_71212_b_none_d_0,No Service Between Harrison & Grove St. – Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_71211_b_none_d_0,No Service Between Harrison & Grove St. – Saturday,0,0,0,0,0,0,0,20250316,20260601
+c_71210_b_none_d_0,No Service Between Harrison & Grove St. – Friday,0,0,0,0,0,0,0,20250316,20260601
+c_71094_b_none_d_0,NWK-WTC Weekend Construction Schedule V5 – Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_71093_b_none_d_0,NWK-WTC Weekend Construction Schedule V5 – Saturday,0,0,0,0,0,0,0,20250316,20260601
+c_71086_b_none_d_0,2025 Hoboken Station Reopening Transition,0,0,0,0,0,0,0,20250316,20260601
+c_71014_b_none_d_0,2025 Hoboken Station Closure – Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_71013_b_none_d_0,2025 Hoboken Station Closure – Saturday,0,0,0,0,0,0,0,20250316,20260601
+c_71012_b_none_d_0,2025 Hoboken Station Closure – Weekdays,0,0,0,0,0,0,0,20250316,20260601
+c_70966_b_none_d_0,NWK-WTC Weekend Construction Schedule V4 – Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_70965_b_none_d_0,NWK-WTC Weekend Construction Schedule V4 – Saturday,0,0,0,0,0,0,0,20250316,20260601
+c_70939_b_none_d_0,NWK-WTC Weekend Construction Schedule V3 – Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_70938_b_none_d_0,NWK-WTC Weekend Construction Schedule V3 – Saturday,0,0,0,0,0,0,0,20250316,20260601
+c_70919_b_none_d_0,ATW Schedule B + 9 & 23 Open – Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_70822_b_none_d_0,9 & 23 Open - Weekday,0,0,0,0,0,0,0,20250316,20260601
+c_70695_b_none_d_0,WTC 5-Min Holds – Weekday,0,0,0,0,0,0,0,20250316,20260601
+c_70595_b_none_d_0,July 4th,0,0,0,0,0,0,0,20250316,20260601
+c_70589_b_none_d_0,NWK-WTC 40-Min Schedule + 9 & 23 Open – Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_70588_b_none_d_0,NWK-WTC 40-Min Schedule + 9 & 23 Open – Saturday,0,0,0,0,0,0,0,20250316,20260601
+c_70363_b_none_d_0,NWK-WTC 40-Min Schedule + Grove Bypasses East – Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_70362_b_none_d_0,NWK-WTC 40-Min Schedule + Grove Bypasses East – Saturday,0,0,0,0,0,0,0,20250316,20260601
+c_70217_b_none_d_0,Grove Bypasses West - Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_70216_b_none_d_0,Grove Bypasses West - Saturday,0,0,0,0,0,0,0,20250316,20260601
+c_70211_b_none_d_0,Weekend Construction - 10-min JSQ Holds + Grove Bypasses West - Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_70210_b_none_d_0,Weekend Construction - 10-min JSQ Holds + Grove Bypasses West - Saturday,0,0,0,0,0,0,0,20250316,20260601
+c_70209_b_none_d_0,Weekend Construction - 5-min JSQ Holds + Grove Bypasses West - Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_70208_b_none_d_0,Weekend Construction -  5-min JSQ Holds + Grove Bypasses West - Saturday,0,0,0,0,0,0,0,20250316,20260601
+c_70207_b_none_d_0,No Service Between JSQ & Harrison + Grove Bypasses West - Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_70142_b_none_d_0,New Year's Day,0,0,0,0,0,0,0,20250316,20260601
+c_70141_b_none_d_0,New Year's Eve,0,0,0,0,0,0,0,20250316,20260601
+c_70070_b_none_d_0,NWK-WTC 25-Min Schedule- Sunday ,0,0,0,0,0,0,0,20250316,20260601
+c_70040_b_none_d_0,Day After Thanksgiving,0,0,0,0,0,0,0,20250316,20260601
+c_69971_b_none_d_0,NWK-WTC 40-Min Schedule – Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_69712_b_none_d_0,NWK-WTC 40-Min Schedule – Saturday,0,0,0,0,0,0,0,20250316,20260601
+c_69701_b_none_d_0,No Service Between JSQ & Harrison – Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_69225_b_none_d_0,Presidents Day,0,0,0,0,0,0,0,20250316,20260601
+c_69176_b_none_d_0,MLK Jr Day,0,0,0,0,0,0,0,20250316,20260601
+c_69113_b_none_d_0,Major Holiday Schedule,0,0,0,0,0,0,0,20250316,20260601
+c_67781_b_none_d_0,9 & 23 Open - Saturday additional trips,0,0,0,0,0,0,0,20250316,20260601
+c_67702_b_none_d_0,Weekend Construction - 5-min JSQ Holds – Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_67701_b_none_d_0,Weekend Construction - 5-min JSQ Holds – Saturday,0,0,0,0,0,0,0,20250316,20260601
+c_67352_b_none_d_0,Weekend Construction & WTC 5-Min Early Departures – Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_67351_b_none_d_0,Weekend Construction & WTC 5-Min Early Departures – Saturday,0,0,0,0,0,0,0,20250316,20260601
+c_67317_b_none_d_0,WTC 5-Min Early Departures - Saturday,0,0,0,0,0,0,0,20250316,20260601
+c_67316_b_none_d_0,Weekend Construction - 10-min JSQ Holds – Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_67315_b_none_d_0,Weekend Construction - 10-min JSQ Holds – Saturday,0,0,0,0,0,0,0,20250316,20260601
+c_67314_b_none_d_0,Weekday Construction - JSQ-NWK Impact,0,0,0,0,0,0,0,20250316,20260601
+c_67259_b_none_d_0,WTC 5-Min Early Departures - Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_45752_b_none_d_0,9 & 23 Open - Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_45748_b_none_d_0,9 & 23 Open - Saturday,0,0,0,0,0,0,0,20250316,20260601
+c_45358_b_none_d_0,20-Min ATW Svc - Sunday,0,0,0,0,0,0,0,20250316,20260601
+c_24582_b_none_d_0,JSQ-33 Direct & NWPT-HOB Shuttle - Sunday,0,0,0,0,0,0,0,20250316,20260601

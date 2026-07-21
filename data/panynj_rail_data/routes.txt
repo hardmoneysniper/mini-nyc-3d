@@ -1,0 +1,8 @@
+agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off,tts_route_short_name,tts_route_long_name
+151,859,PATH,Hoboken - 33rd Street,,2,http://www.panynj.gov/path/pdf/path-map-schedule-english_dec25.pdf,4d92fb,000000,0,6,0,1,1,,
+151,860,PATH,Hoboken - World Trade Center,,2,http://www.panynj.gov/path/pdf/path-map-schedule-english_dec25.pdf,65c100,000000,1,6,0,1,1,,
+151,862,PATH,Newark - World Trade Center,"Weekend Service Changes Through 2020: World Trade Center Station CLOSED WEEKENDS, excluding major holidays, to replace equipment damaged during Superstorm Sandy. WTC station reopens Mondays at 5:00 a.m. More at http://www.panynj.gov/StayOnTrack",2,http://www.panynj.gov/path/pdf/path-map-schedule-english_dec25.pdf,d93a30,ffffff,2,4,0,1,1,,
+151,861,PATH,Journal Square - 33rd Street,,2,http://www.panynj.gov/path/pdf/path-map-schedule-english_dec25.pdf,ff9900,000000,3,4,0,1,1,,
+151,1024,PATH,Journal Square - 33rd Street (via Hoboken),,2,http://www.panynj.gov/path/pdf/path-map-schedule-english_dec25.pdf,ff9900,000000,4,10,0,1,1,,
+151,74320,PATH,Newark - Harrison Shuttle Train,,2,,8c3c96,ffffff,5,20,0,1,1,,
+151,77285,PATH,World Trade Center - 33rd Street,,2,,65c100,ffffff,6,8,0,1,1,,

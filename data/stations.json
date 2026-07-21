@@ -9634,5 +9634,148 @@
 		"title": {
 			"en": "Belmont"
 		}
+	},
+	{
+		"id": "PATH.26722",
+		"railway": "PATH.859",
+		"coord": [
+			-73.99684,
+			40.73735
+		],
+		"title": {
+			"en": "14th Street"
+		}
+	},
+	{
+		"id": "PATH.26723",
+		"railway": "PATH.859",
+		"coord": [
+			-73.99278,
+			40.7429
+		],
+		"title": {
+			"en": "23rd Street"
+		}
+	},
+	{
+		"id": "PATH.26724",
+		"railway": "PATH.859",
+		"coord": [
+			-73.98827,
+			40.74912
+		],
+		"title": {
+			"en": "33rd Street"
+		}
+	},
+	{
+		"id": "PATH.26725",
+		"railway": "PATH.859",
+		"coord": [
+			-73.9991,
+			40.73424
+		],
+		"title": {
+			"en": "9th Street"
+		}
+	},
+	{
+		"id": "PATH.26726",
+		"railway": "PATH.859",
+		"coord": [
+			-74.00707,
+			40.73295
+		],
+		"title": {
+			"en": "Christopher Street"
+		}
+	},
+	{
+		"id": "PATH.26727",
+		"railway": "PATH.860",
+		"coord": [
+			-74.03238,
+			40.71676
+		],
+		"title": {
+			"en": "Exchange Place"
+		}
+	},
+	{
+		"id": "PATH.26728",
+		"railway": "PATH.862",
+		"coord": [
+			-74.04245,
+			40.71966
+		],
+		"title": {
+			"en": "Grove Street"
+		}
+	},
+	{
+		"id": "PATH.26729",
+		"railway": "PATH.862",
+		"coord": [
+			-74.15587,
+			40.73942
+		],
+		"title": {
+			"en": "Harrison"
+		}
+	},
+	{
+		"id": "PATH.26730",
+		"railway": "PATH.859",
+		"coord": [
+			-74.02922,
+			40.73586
+		],
+		"title": {
+			"en": "Hoboken"
+		}
+	},
+	{
+		"id": "PATH.26731",
+		"railway": "PATH.862",
+		"coord": [
+			-74.06289,
+			40.73301
+		],
+		"title": {
+			"en": "Journal Square"
+		}
+	},
+	{
+		"id": "PATH.26732",
+		"railway": "PATH.860",
+		"coord": [
+			-74.03383,
+			40.72699
+		],
+		"title": {
+			"en": "Newport"
+		}
+	},
+	{
+		"id": "PATH.26733",
+		"railway": "PATH.862",
+		"coord": [
+			-74.16375,
+			40.73454
+		],
+		"title": {
+			"en": "Newark"
+		}
+	},
+	{
+		"id": "PATH.26734",
+		"railway": "PATH.860",
+		"coord": [
+			-74.01193,
+			40.71271
+		],
+		"title": {
+			"en": "World Trade Center"
+		}
 	}
 ]

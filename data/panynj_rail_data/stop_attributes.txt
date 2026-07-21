@@ -1,0 +1,65 @@
+stop_id,stop_city
+782501,Jersey City
+782500,Hoboken
+781734,New York
+782490,Newark
+781725,Jersey City
+26726,New York
+781726,Jersey City
+781739,New York
+782507,Manhattan Community Board 5
+782492,Harrison
+781718,Newark
+781721,Harrison
+781715,Hoboken
+781729,Jersey City
+781737,New York
+794724,New York
+781722,Jersey City
+26731,Jersey City
+781719,Newark
+781740,New York
+782509,Manhattan Community Board 5
+781731,Jersey City
+781717,Hoboken
+26728,Jersey City
+781723,Jersey City
+26722,Manhattan Community Board 2
+26730,Hoboken
+26734,Manhattan Community Board 1
+26725,Manhattan Community Board 2
+782497,Jersey City
+781738,New York
+782491,Newark
+781724,Jersey City
+782510,Manhattan Community Board 5
+782506,Manhattan Community Board 2
+782511,Manhattan Community Board 5
+4249031,Jersey City
+781728,Jersey City
+781741,New York
+782503,New York
+782498,Jersey City
+782504,New York
+26723,Manhattan Community Board 5
+782512,Manhattan Community Board 1
+781735,New York
+781716,Hoboken
+781732,New York
+26729,Harrison
+782499,Hoboken
+781720,Harrison
+26732,Jersey City
+782496,Jersey City
+781727,Jersey City
+781730,Jersey City
+26724,Manhattan Community Board 5
+782493,Harrison
+26733,Newark
+781736,New York
+781733,New York
+782505,Manhattan Community Board 2
+26727,Jersey City
+782508,Manhattan Community Board 5
+782494,Jersey City
+781763,New York

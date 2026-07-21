@@ -3655,5 +3655,132 @@
 		"descending": "Inbound",
 		"color": "#0039A6",
 		"carComposition": 6
+	},
+	{
+		"id": "PATH.859",
+		"title": {
+			"en": "Hoboken - 33rd Street"
+		},
+		"stations": [
+			"PATH.26724",
+			"PATH.26723",
+			"PATH.26722",
+			"PATH.26725",
+			"PATH.26726",
+			"PATH.26730"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#4d92fb",
+		"carComposition": 8
+	},
+	{
+		"id": "PATH.860",
+		"title": {
+			"en": "Hoboken - World Trade Center"
+		},
+		"stations": [
+			"PATH.26734",
+			"PATH.26727",
+			"PATH.26732",
+			"PATH.26730"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#65c100",
+		"carComposition": 8
+	},
+	{
+		"id": "PATH.862",
+		"title": {
+			"en": "Newark - World Trade Center"
+		},
+		"stations": [
+			"PATH.26734",
+			"PATH.26727",
+			"PATH.26728",
+			"PATH.26731",
+			"PATH.26729",
+			"PATH.26733"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#d93a30",
+		"carComposition": 8
+	},
+	{
+		"id": "PATH.861",
+		"title": {
+			"en": "Journal Square - 33rd Street"
+		},
+		"stations": [
+			"PATH.26724",
+			"PATH.26723",
+			"PATH.26722",
+			"PATH.26725",
+			"PATH.26726",
+			"PATH.26732",
+			"PATH.26728",
+			"PATH.26731"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#ff9900",
+		"carComposition": 8
+	},
+	{
+		"id": "PATH.1024",
+		"title": {
+			"en": "Journal Square - 33rd Street (via Hoboken)"
+		},
+		"stations": [
+			"PATH.26724",
+			"PATH.26723",
+			"PATH.26722",
+			"PATH.26725",
+			"PATH.26726",
+			"PATH.26730",
+			"PATH.26732",
+			"PATH.26728",
+			"PATH.26731"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#ff9900",
+		"carComposition": 8
+	},
+	{
+		"id": "PATH.74320",
+		"title": {
+			"en": "Newark - Harrison Shuttle Train"
+		},
+		"stations": [
+			"PATH.26729",
+			"PATH.26733"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#8c3c96",
+		"carComposition": 8
+	},
+	{
+		"id": "PATH.77285",
+		"title": {
+			"en": "World Trade Center - 33rd Street"
+		},
+		"stations": [
+			"PATH.26724",
+			"PATH.26723",
+			"PATH.26722",
+			"PATH.26725",
+			"PATH.26726",
+			"PATH.26732",
+			"PATH.26727",
+			"PATH.26734"
+		],
+		"ascending": "Outbound",
+		"descending": "Inbound",
+		"color": "#65c100",
+		"carComposition": 8
 	}
 ]

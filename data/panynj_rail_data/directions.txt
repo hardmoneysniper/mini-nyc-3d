@@ -1,0 +1,17 @@
+route_id,direction_id,direction
+77285,1,To 33rd
+77285,0,To WTC
+74320,1,To Harrison
+74320,0,To Newark
+1024,1,To 33rd
+1024,0,To Journal Sq
+1024,0,To Grove St
+862,1,To WTC
+862,0,To Newark
+862,0,To Grove St
+861,1,To 33rd
+861,0,To Journal Sq
+860,1,To WTC
+860,0,To Hoboken
+859,1,To 33rd
+859,0,To Hoboken
