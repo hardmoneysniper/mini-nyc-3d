@@ -149,10 +149,25 @@ function main() {
     for (const route of routes) {
         const routeTrips = tripsByRoute.get(route.route_id) || [];
 
+        // Multiple trips can share one shape_id (same physical track) while
+        // stopping at very different subsets of its stations — e.g. a
+        // Hackettstown-Hoboken local and a short-turn Bay Street-Hoboken
+        // trip can both use shape_id "2" on NJT's Montclair-Boonton Line,
+        // 26 stops vs 6. Picking an arbitrary trip per shape_id silently
+        // drops whichever stations only appear on a longer trip sharing
+        // that shape. Keep the trip with the most stop_times rows instead
+        // — the fullest/local pattern is a superset of every shorter trip
+        // on the same shape in practice, so this maximizes real station
+        // coverage without changing which shape's geometry gets used.
         const repTripByShape = new Map();
+        const repTripStopCount = new Map();
         for (const trip of routeTrips) {
-            if (!trip.shape_id || repTripByShape.has(trip.shape_id)) continue;
-            repTripByShape.set(trip.shape_id, trip);
+            if (!trip.shape_id) continue;
+            const stopCount = (stsByTrip.get(trip.trip_id) || []).length;
+            if (stopCount > (repTripStopCount.get(trip.shape_id) || 0)) {
+                repTripByShape.set(trip.shape_id, trip);
+                repTripStopCount.set(trip.shape_id, stopCount);
+            }
         }
 
         const candidates = [];

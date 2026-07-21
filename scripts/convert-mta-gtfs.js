@@ -250,10 +250,29 @@ async function processFeed({service, url, localDir, carComposition}) {
     for (const route of routes) {
         const routeTrips = tripsByRoute.get(route.route_id) || [];
 
+        // Multiple trips can share one shape_id (same physical track) while
+        // stopping at very different subsets of its stations (e.g. an
+        // express vs. a local using the same geometry, or a short-turn
+        // trip vs. a full-length one) — picking an arbitrary trip per
+        // shape_id silently drops whichever stations only appear on a
+        // longer trip sharing that shape. Keep the trip with the most
+        // stop_times rows instead — the fullest/local pattern is a
+        // superset of every shorter trip on the same shape in practice, so
+        // this maximizes real station coverage without changing which
+        // shape's geometry gets used. (Found and fixed here after this
+        // exact bug was found dropping real NJT stations in
+        // scripts/convert-njt-gtfs.js — not yet re-verified against a
+        // fresh MTA regeneration given this data's history of regressions;
+        // see the restoration pipeline this script's data still depends on.)
         const repTripByShape = new Map();
+        const repTripStopCount = new Map();
         for (const trip of routeTrips) {
-            if (!trip.shape_id || repTripByShape.has(trip.shape_id)) continue;
-            repTripByShape.set(trip.shape_id, trip);
+            if (!trip.shape_id) continue;
+            const stopCount = (stsByTrip.get(trip.trip_id) || []).length;
+            if (stopCount > (repTripStopCount.get(trip.shape_id) || 0)) {
+                repTripByShape.set(trip.shape_id, trip);
+                repTripStopCount.set(trip.shape_id, stopCount);
+            }
         }
 
         const candidates = [];
