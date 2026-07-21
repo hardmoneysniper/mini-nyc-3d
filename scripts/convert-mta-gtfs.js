@@ -84,10 +84,21 @@ const TRAIN_TYPE = {
 // Subway/LIRR keep their own per-route GTFS colors (Subway's are meaningful
 // — different colors distinguish trunk lines — and LIRR's already read as a
 // consistent single blue in practice).
-const MTA_BLUE = '#0039A6';
+//
+// MNR renders the track/route line in black (matching the visual weight of
+// MTA Subway's own schematic overlay) while the train marker uses each
+// line's real GTFS route_color (Hudson green, Harlem blue, New Haven red)
+// via the separate `trainColor` field — see its consumer in src/map.js's
+// colorData construction, which falls back to `color` when `trainColor` is
+// absent (every other operator here has no trainColor and is unaffected).
+const MNR_ROUTE_COLOR = '#000000';
 function railwayColor(service, route) {
-    if (service === 'MNR') return MTA_BLUE;
+    if (service === 'MNR') return MNR_ROUTE_COLOR;
     return route.route_color ? `#${route.route_color}` : '#888888';
+}
+function railwayTrainColor(service, route) {
+    if (service === 'MNR') return route.route_color ? `#${route.route_color}` : MNR_ROUTE_COLOR;
+    return undefined;
 }
 
 // ---------------------------------------------------------------------------
@@ -279,6 +290,7 @@ async function processFeed({service, url, localDir, carComposition}) {
                 ascending:     dirs[0],
                 descending:    dirs[1],
                 color:         railwayColor(service, route),
+                trainColor:    railwayTrainColor(service, route),
                 carComposition
             });
         }
@@ -297,6 +309,7 @@ async function processFeed({service, url, localDir, carComposition}) {
                 ascending:     dirs[0],
                 descending:    dirs[1],
                 color:         railwayColor(service, route),
+                trainColor:    railwayTrainColor(service, route),
                 carComposition
             });
         });
