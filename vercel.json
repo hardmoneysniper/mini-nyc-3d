@@ -5,6 +5,9 @@
     "functions": {
         "api/*.js": {
             "maxDuration": 30
+        },
+        "api/path.js": {
+            "includeFiles": "data/railways.json"
         }
     },
     "headers": [
