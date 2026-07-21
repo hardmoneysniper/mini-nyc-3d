@@ -17,12 +17,34 @@
  *   CORS_ORIGIN                 — optional, restricts which origin may call this endpoint
  */
 
+const fs = require('fs');
+const path = require('path');
 const GtfsRealtimeBindings = require('gtfs-realtime-bindings');
 
 const NJT_BASE = process.env.NJT_API_BASE || 'https://raildata.njtransit.com';
 const TOKEN_TTL_MS = 20 * 60 * 60 * 1000; // assumed ~20h lifetime, no published TTL
 
 const DIRECTION_LABELS = ['Outbound', 'Inbound'];
+
+// NJT's live feed reports trains on routes we deliberately don't include in
+// our static data (e.g. Atlantic City Rail Line, route_id "1" — light rail
+// and non-heavy-rail routes are out of scope for now). A train whose railway
+// id doesn't resolve in data/railways.json becomes `undefined` on the
+// client (Train constructor: `refs.railways.get(r)`), and later code
+// dereferences it without a null check (e.g. `railway.status`), throwing
+// and aborting the rest of that refresh cycle's train updates — silently
+// freezing/hiding trains on OTHER routes too. Filter to only routes we
+// actually publish.
+function loadIncludedRouteIds() {
+    const railwaysPath = path.join(__dirname, '..', 'data', 'railways.json');
+    const all = JSON.parse(fs.readFileSync(railwaysPath, 'utf8'));
+    const ids = new Set();
+    for (const railway of all) {
+        const m = railway.id.match(/^NJT\.([^.]+)(?:\.b\d+)?$/);
+        if (m) ids.add(m[1]);
+    }
+    return ids;
+}
 
 let _token = null, _tokenObtainedAt = 0, _tokenPromise = null;
 
@@ -94,7 +116,7 @@ function toNumber(val) {
     return typeof val.toNumber === 'function' ? val.toNumber() : Number(val);
 }
 
-function buildTrainAndInfoData(tripUpdatesFeed, vehiclePositionsFeed, alertsFeed) {
+function buildTrainAndInfoData(tripUpdatesFeed, vehiclePositionsFeed, alertsFeed, includedRouteIds) {
     const trainData = new Map();
     const trainInfoData = [];
     const now = new Date().toISOString().replace('T', ' ').slice(0, 19);
@@ -102,6 +124,7 @@ function buildTrainAndInfoData(tripUpdatesFeed, vehiclePositionsFeed, alertsFeed
     for (const entity of vehiclePositionsFeed.entity || []) {
         const {trip, stopId, currentStatus, timestamp} = entity.vehicle || {};
         if (!trip || !trip.tripId) continue;
+        if (!includedRouteIds.has(trip.routeId)) continue;
 
         const {tripId, routeId, directionId} = trip,
             id = `NJT.${tripId}`,
@@ -122,6 +145,7 @@ function buildTrainAndInfoData(tripUpdatesFeed, vehiclePositionsFeed, alertsFeed
     for (const entity of tripUpdatesFeed.entity || []) {
         const {trip, stopTimeUpdate} = entity.tripUpdate || {};
         if (!trip || !trip.tripId) continue;
+        if (!includedRouteIds.has(trip.routeId)) continue;
 
         const {tripId, routeId, directionId} = trip,
             id = `NJT.${tripId}`,
@@ -152,7 +176,7 @@ function buildTrainAndInfoData(tripUpdatesFeed, vehiclePositionsFeed, alertsFeed
         const text = (headerText.translation && headerText.translation[0] && headerText.translation[0].text) || '';
 
         for (const informed of informedEntity) {
-            if (informed.routeId) {
+            if (informed.routeId && includedRouteIds.has(informed.routeId)) {
                 trainInfoData.push({
                     operator: 'NJT',
                     railway: `NJT.${informed.routeId}`,
@@ -185,7 +209,8 @@ module.exports = async function handler(req, res) {
             fetchProto('/api/GTFSRT/getAlerts')
         ]);
 
-        const {trainData, trainInfoData} = buildTrainAndInfoData(tripUpdatesFeed, vehiclePositionsFeed, alertsFeed);
+        const includedRouteIds = loadIncludedRouteIds();
+        const {trainData, trainInfoData} = buildTrainAndInfoData(tripUpdatesFeed, vehiclePositionsFeed, alertsFeed, includedRouteIds);
         res.status(200).json({trainData, trainInfoData});
         console.log(`  /api/njt → ${trainData.length} trains | ${trainInfoData.length} alerts`);
     } catch (err) {

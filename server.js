@@ -484,7 +484,23 @@ async function fetchNjtProto(pathName) {
     return GtfsRealtimeBindings.transit_realtime.FeedMessage.decode(new Uint8Array(buffer));
 }
 
-function buildNjtTrainAndInfoData(tripUpdatesFeed, vehiclePositionsFeed, alertsFeed) {
+// NJT's live feed reports trains on routes not in our static data (e.g.
+// Atlantic City Rail Line, route_id "1"); an unmatched railway id resolves
+// to undefined client-side and later code dereferences it without a null
+// check, throwing and aborting the rest of that refresh cycle's train
+// updates — see api/njt.js's matching comment for the full explanation.
+function loadNjtIncludedRouteIds() {
+    const railwaysPath = path.join(__dirname, 'data', 'railways.json');
+    const all = JSON.parse(fs.readFileSync(railwaysPath, 'utf8'));
+    const ids = new Set();
+    for (const railway of all) {
+        const m = railway.id.match(/^NJT\.([^.]+)(?:\.b\d+)?$/);
+        if (m) ids.add(m[1]);
+    }
+    return ids;
+}
+
+function buildNjtTrainAndInfoData(tripUpdatesFeed, vehiclePositionsFeed, alertsFeed, includedRouteIds) {
     const trainData = new Map();
     const trainInfoData = [];
     const now = new Date().toISOString().replace('T', ' ').slice(0, 19);
@@ -492,6 +508,7 @@ function buildNjtTrainAndInfoData(tripUpdatesFeed, vehiclePositionsFeed, alertsF
     for (const entity of vehiclePositionsFeed.entity || []) {
         const {trip, stopId, currentStatus, timestamp} = entity.vehicle || {};
         if (!trip || !trip.tripId) continue;
+        if (!includedRouteIds.has(trip.routeId)) continue;
         const {tripId, routeId, directionId} = trip,
             id = `NJT.${tripId}`,
             stopRef = stopId ? `NJT.${stopId}` : undefined,
@@ -509,6 +526,7 @@ function buildNjtTrainAndInfoData(tripUpdatesFeed, vehiclePositionsFeed, alertsF
     for (const entity of tripUpdatesFeed.entity || []) {
         const {trip, stopTimeUpdate} = entity.tripUpdate || {};
         if (!trip || !trip.tripId) continue;
+        if (!includedRouteIds.has(trip.routeId)) continue;
         const {tripId, routeId, directionId} = trip,
             id = `NJT.${tripId}`,
             entry = trainData.get(id) || {id, o: 'NJT', r: `NJT.${routeId}`, n: tripId};
@@ -531,7 +549,7 @@ function buildNjtTrainAndInfoData(tripUpdatesFeed, vehiclePositionsFeed, alertsF
         if (!informedEntity || !headerText) continue;
         const text = (headerText.translation && headerText.translation[0] && headerText.translation[0].text) || '';
         for (const informed of informedEntity) {
-            if (informed.routeId) {
+            if (informed.routeId && includedRouteIds.has(informed.routeId)) {
                 trainInfoData.push({
                     operator: 'NJT', railway: `NJT.${informed.routeId}`,
                     status: {en: text}, text: {en: text}
@@ -550,7 +568,8 @@ async function handleNjt(res) {
             fetchNjtProto('/api/GTFSRT/getVehiclePositions'),
             fetchNjtProto('/api/GTFSRT/getAlerts')
         ]);
-        const {trainData, trainInfoData} = buildNjtTrainAndInfoData(tripUpdatesFeed, vehiclePositionsFeed, alertsFeed);
+        const includedRouteIds = loadNjtIncludedRouteIds();
+        const {trainData, trainInfoData} = buildNjtTrainAndInfoData(tripUpdatesFeed, vehiclePositionsFeed, alertsFeed, includedRouteIds);
         res.writeHead(200, {'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'});
         res.end(JSON.stringify({trainData, trainInfoData}));
         console.log(`  /api/njt → ${trainData.length} trains | ${trainInfoData.length} alerts`);
