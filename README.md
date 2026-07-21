@@ -48,7 +48,7 @@ Transit data is sourced from the [MTA open data feeds](https://api.mta.info/) â€
 
 NJ Transit rail data (real-time positions, delays, and service alerts) is provided by [NJ Transit's GTFS/GTFSRT Web API](https://developer.njtransit.com/registration), which requires a free developer account.
 
-> **Planned for v2:** PATH real-time data via the [511NY Open Data API](https://511ny.org/developers).
+PATH train data (real-time position estimates, since PATH's public GTFS-RT feed provides only single-stop arrival predictions with no trip continuity) is provided by [PATH's GTFS-RT feed](https://path.transitdata.nyc/gtfsrt), which needs no authentication.
 
 ## How to Build
 
