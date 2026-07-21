@@ -1,2194 +1,5 @@
 [
 	{
-		"id": "NJT.3",
-		"railway": "NJT.5",
-		"coord": [
-			-74.130957,
-			41.030902
-		],
-		"title": {
-			"en": "ALLENDALE"
-		}
-	},
-	{
-		"id": "NJT.4",
-		"railway": "NJT.11",
-		"coord": [
-			-74.006769,
-			40.237659
-		],
-		"title": {
-			"en": "ALLENHURST"
-		}
-	},
-	{
-		"id": "NJT.5",
-		"railway": "NJT.14",
-		"coord": [
-			-74.043781,
-			40.894458
-		],
-		"title": {
-			"en": "ANDERSON STREET"
-		}
-	},
-	{
-		"id": "NJT.6",
-		"railway": "NJT.16",
-		"coord": [
-			-74.878569,
-			40.645173
-		],
-		"title": {
-			"en": "ANNANDALE"
-		}
-	},
-	{
-		"id": "NJT.8",
-		"railway": "NJT.11",
-		"coord": [
-			-74.014786,
-			40.215359
-		],
-		"title": {
-			"en": "ASBURY PARK"
-		}
-	},
-	{
-		"id": "NJT.11",
-		"railway": "NJT.11",
-		"coord": [
-			-74.27753,
-			40.57762
-		],
-		"title": {
-			"en": "AVENEL"
-		}
-	},
-	{
-		"id": "NJT.12",
-		"railway": "NJT.8",
-		"coord": [
-			-74.55527,
-			40.711378
-		],
-		"title": {
-			"en": "BASKING RIDGE"
-		}
-	},
-	{
-		"id": "NJT.13",
-		"railway": "NJT.11",
-		"coord": [
-			-74.046183,
-			40.077178
-		],
-		"title": {
-			"en": "BAY HEAD"
-		}
-	},
-	{
-		"id": "NJT.14",
-		"railway": "NJT.2",
-		"coord": [
-			-74.208681,
-			40.808178
-		],
-		"title": {
-			"en": "BAY STREET"
-		}
-	},
-	{
-		"id": "NJT.15",
-		"railway": "NJT.11",
-		"coord": [
-			-74.027301,
-			40.18059
-		],
-		"title": {
-			"en": "BELMAR"
-		}
-	},
-	{
-		"id": "NJT.17",
-		"railway": "NJT.8",
-		"coord": [
-			-74.442649,
-			40.682345
-		],
-		"title": {
-			"en": "BERKELEY HEIGHTS"
-		}
-	},
-	{
-		"id": "NJT.18",
-		"railway": "NJT.8",
-		"coord": [
-			-74.571023,
-			40.716845
-		],
-		"title": {
-			"en": "BERNARDSVILLE"
-		}
-	},
-	{
-		"id": "NJT.19",
-		"railway": "NJT.2",
-		"coord": [
-			-74.200043,
-			40.792709
-		],
-		"title": {
-			"en": "BLOOMFIELD"
-		}
-	},
-	{
-		"id": "NJT.20",
-		"railway": "NJT.2",
-		"coord": [
-			-74.407736,
-			40.903378
-		],
-		"title": {
-			"en": "BOONTON"
-		}
-	},
-	{
-		"id": "NJT.21",
-		"railway": "NJT.16",
-		"coord": [
-			-74.530617,
-			40.560929
-		],
-		"title": {
-			"en": "BOUND BROOK"
-		}
-	},
-	{
-		"id": "NJT.22",
-		"railway": "NJT.11",
-		"coord": [
-			-74.018891,
-			40.203751
-		],
-		"title": {
-			"en": "BRADLEY BEACH"
-		}
-	},
-	{
-		"id": "NJT.23",
-		"railway": "NJT.7",
-		"coord": [
-			-74.218612,
-			40.765134
-		],
-		"title": {
-			"en": "BRICK CHURCH"
-		}
-	},
-	{
-		"id": "NJT.24",
-		"railway": "NJT.16",
-		"coord": [
-			-74.551741,
-			40.559904
-		],
-		"title": {
-			"en": "BRIDGEWATER"
-		}
-	},
-	{
-		"id": "NJT.25",
-		"railway": "NJT.5",
-		"coord": [
-			-74.115236,
-			40.922505
-		],
-		"title": {
-			"en": "BROADWAY"
-		}
-	},
-	{
-		"id": "NJT.26",
-		"railway": "NJT.6",
-		"coord": [
-			-74.266554,
-			41.450917
-		],
-		"title": {
-			"en": "CAMPBELL HALL"
-		}
-	},
-	{
-		"id": "NJT.27",
-		"railway": "NJT.7",
-		"coord": [
-			-74.384812,
-			40.740137
-		],
-		"title": {
-			"en": "CHATHAM"
-		}
-	},
-	{
-		"id": "NJT.29",
-		"railway": "NJT.5.b2",
-		"coord": [
-			-74.153206,
-			40.867998
-		],
-		"title": {
-			"en": "CLIFTON"
-		}
-	},
-	{
-		"id": "NJT.30",
-		"railway": "NJT.7",
-		"coord": [
-			-74.443435,
-			40.779038
-		],
-		"title": {
-			"en": "CONVENT"
-		}
-	},
-	{
-		"id": "NJT.31",
-		"railway": "NJT.16",
-		"coord": [
-			-74.266323,
-			40.66715
-		],
-		"title": {
-			"en": "ROSELLE PARK"
-		}
-	},
-	{
-		"id": "NJT.32",
-		"railway": "NJT.16",
-		"coord": [
-			-74.303226,
-			40.655523
-		],
-		"title": {
-			"en": "CRANFORD"
-		}
-	},
-	{
-		"id": "NJT.33",
-		"railway": "NJT.5.b2",
-		"coord": [
-			-74.131262,
-			40.831369
-		],
-		"title": {
-			"en": "DELAWANNA"
-		}
-	},
-	{
-		"id": "NJT.34",
-		"railway": "NJT.2",
-		"coord": [
-			-74.481513,
-			40.8839
-		],
-		"title": {
-			"en": "DENVILLE"
-		}
-	},
-	{
-		"id": "NJT.35",
-		"railway": "NJT.2",
-		"coord": [
-			-74.555887,
-			40.883415
-		],
-		"title": {
-			"en": "DOVER"
-		}
-	},
-	{
-		"id": "NJT.36",
-		"railway": "NJT.16",
-		"coord": [
-			-74.463043,
-			40.590869
-		],
-		"title": {
-			"en": "DUNELLEN"
-		}
-	},
-	{
-		"id": "NJT.37",
-		"railway": "NJT.7",
-		"coord": [
-			-74.210464,
-			40.760977
-		],
-		"title": {
-			"en": "EAST ORANGE"
-		}
-	},
-	{
-		"id": "NJT.38",
-		"railway": "NJT.10",
-		"coord": [
-			-74.410972,
-			40.519148
-		],
-		"title": {
-			"en": "EDISON STATION"
-		}
-	},
-	{
-		"id": "NJT.40",
-		"railway": "NJT.11",
-		"coord": [
-			-73.99762,
-			40.265292
-		],
-		"title": {
-			"en": "ELBERON"
-		}
-	},
-	{
-		"id": "NJT.41",
-		"railway": "NJT.10",
-		"coord": [
-			-74.215174,
-			40.667857
-		],
-		"title": {
-			"en": "ELIZABETH"
-		}
-	},
-	{
-		"id": "NJT.42",
-		"railway": "NJT.14",
-		"coord": [
-			-74.027474,
-			40.975036
-		],
-		"title": {
-			"en": "EMERSON"
-		}
-	},
-	{
-		"id": "NJT.43",
-		"railway": "NJT.14",
-		"coord": [
-			-74.051893,
-			40.878973
-		],
-		"title": {
-			"en": "ESSEX STREET"
-		}
-	},
-	{
-		"id": "NJT.44",
-		"railway": "NJT.16",
-		"coord": [
-			-74.385003,
-			40.64106
-		],
-		"title": {
-			"en": "FANWOOD"
-		}
-	},
-	{
-		"id": "NJT.45",
-		"railway": "NJT.8",
-		"coord": [
-			-74.633734,
-			40.68571
-		],
-		"title": {
-			"en": "FAR HILLS"
-		}
-	},
-	{
-		"id": "NJT.46",
-		"railway": "NJT.5",
-		"coord": [
-			-74.10556,
-			40.866669
-		],
-		"title": {
-			"en": "GARFIELD"
-		}
-	},
-	{
-		"id": "NJT.47",
-		"railway": "NJT.16",
-		"coord": [
-			-74.324794,
-			40.652569
-		],
-		"title": {
-			"en": "GARWOOD"
-		}
-	},
-	{
-		"id": "NJT.48",
-		"railway": "NJT.8",
-		"coord": [
-			-74.468317,
-			40.678251
-		],
-		"title": {
-			"en": "GILLETTE"
-		}
-	},
-	{
-		"id": "NJT.49",
-		"railway": "NJT.8",
-		"coord": [
-			-74.666371,
-			40.720284
-		],
-		"title": {
-			"en": "GLADSTONE"
-		}
-	},
-	{
-		"id": "NJT.50",
-		"railway": "NJT.2",
-		"coord": [
-			-74.204655,
-			40.80059
-		],
-		"title": {
-			"en": "GLEN RIDGE"
-		}
-	},
-	{
-		"id": "NJT.51",
-		"railway": "NJT.5",
-		"coord": [
-			-74.1293,
-			40.96137
-		],
-		"title": {
-			"en": "GLEN ROCK BORO HALL"
-		}
-	},
-	{
-		"id": "NJT.52",
-		"railway": "NJT.5.b2",
-		"coord": [
-			-74.133485,
-			40.962206
-		],
-		"title": {
-			"en": "GLEN ROCK MAIN LINE"
-		}
-	},
-	{
-		"id": "NJT.54",
-		"railway": "NJT.2",
-		"coord": [
-			-74.835352,
-			40.851444
-		],
-		"title": {
-			"en": "HACKETTSTOWN"
-		}
-	},
-	{
-		"id": "NJT.57",
-		"railway": "NJT.6",
-		"coord": [
-			-74.13987,
-			41.293354
-		],
-		"title": {
-			"en": "HARRIMAN"
-		}
-	},
-	{
-		"id": "NJT.58",
-		"railway": "NJT.5.b2",
-		"coord": [
-			-74.152411,
-			40.942539
-		],
-		"title": {
-			"en": "HAWTHORNE"
-		}
-	},
-	{
-		"id": "NJT.59",
-		"railway": "NJT.11",
-		"coord": [
-			-74.190393,
-			40.415385
-		],
-		"title": {
-			"en": "HAZLET"
-		}
-	},
-	{
-		"id": "NJT.60",
-		"railway": "NJT.16",
-		"coord": [
-			-74.895863,
-			40.666884
-		],
-		"title": {
-			"en": "HIGH BRIDGE"
-		}
-	},
-	{
-		"id": "NJT.61",
-		"railway": "NJT.7",
-		"coord": [
-			-74.243744,
-			40.766863
-		],
-		"title": {
-			"en": "HIGHLAND AVENUE"
-		}
-	},
-	{
-		"id": "NJT.62",
-		"railway": "NJT.14",
-		"coord": [
-			-74.041033,
-			41.002414
-		],
-		"title": {
-			"en": "HILLSDALE"
-		}
-	},
-	{
-		"id": "NJT.63",
-		"railway": "NJT.2",
-		"coord": [
-			-74.028046,
-			40.734843
-		],
-		"title": {
-			"en": "HOBOKEN"
-		}
-	},
-	{
-		"id": "NJT.64",
-		"railway": "NJT.5",
-		"coord": [
-			-74.113521,
-			40.997369
-		],
-		"title": {
-			"en": "HOHOKUS"
-		}
-	},
-	{
-		"id": "NJT.67",
-		"railway": "NJT.2",
-		"coord": [
-			-74.665697,
-			40.904219
-		],
-		"title": {
-			"en": "LAKE HOPATCONG"
-		}
-	},
-	{
-		"id": "NJT.68",
-		"railway": "NJT.16",
-		"coord": [
-			-74.835766,
-			40.636903
-		],
-		"title": {
-			"en": "LEBANON"
-		}
-	},
-	{
-		"id": "NJT.69",
-		"railway": "NJT.2",
-		"coord": [
-			-74.301826,
-			40.924138
-		],
-		"title": {
-			"en": "LINCOLN PARK"
-		}
-	},
-	{
-		"id": "NJT.70",
-		"railway": "NJT.10",
-		"coord": [
-			-74.251772,
-			40.629485
-		],
-		"title": {
-			"en": "LINDEN"
-		}
-	},
-	{
-		"id": "NJT.72",
-		"railway": "NJT.2",
-		"coord": [
-			-74.235372,
-			40.880669
-		],
-		"title": {
-			"en": "LITTLE FALLS"
-		}
-	},
-	{
-		"id": "NJT.73",
-		"railway": "NJT.11",
-		"coord": [
-			-74.041054,
-			40.326715
-		],
-		"title": {
-			"en": "LITTLE SILVER"
-		}
-	},
-	{
-		"id": "NJT.74",
-		"railway": "NJT.11",
-		"coord": [
-			-73.988331,
-			40.297145
-		],
-		"title": {
-			"en": "LONG BRANCH"
-		}
-	},
-	{
-		"id": "NJT.75",
-		"railway": "NJT.5.b2",
-		"coord": [
-			-74.122696,
-			40.814165
-		],
-		"title": {
-			"en": "LYNDHURST"
-		}
-	},
-	{
-		"id": "NJT.76",
-		"railway": "NJT.8",
-		"coord": [
-			-74.54947,
-			40.684844
-		],
-		"title": {
-			"en": "LYONS"
-		}
-	},
-	{
-		"id": "NJT.77",
-		"railway": "NJT.7",
-		"coord": [
-			-74.415105,
-			40.757028
-		],
-		"title": {
-			"en": "MADISON"
-		}
-	},
-	{
-		"id": "NJT.78",
-		"railway": "NJT.5",
-		"coord": [
-			-74.14662,
-			41.094416
-		],
-		"title": {
-			"en": "MAHWAH"
-		}
-	},
-	{
-		"id": "NJT.79",
-		"railway": "NJT.11",
-		"coord": [
-			-74.047688,
-			40.120573
-		],
-		"title": {
-			"en": "MANASQUAN"
-		}
-	},
-	{
-		"id": "NJT.81",
-		"railway": "NJT.7",
-		"coord": [
-			-74.275427,
-			40.731149
-		],
-		"title": {
-			"en": "MAPLEWOOD"
-		}
-	},
-	{
-		"id": "NJT.83",
-		"railway": "NJT.10",
-		"coord": [
-			-74.329394,
-			40.56864
-		],
-		"title": {
-			"en": "METROPARK"
-		}
-	},
-	{
-		"id": "NJT.84",
-		"railway": "NJT.10",
-		"coord": [
-			-74.360671,
-			40.540736
-		],
-		"title": {
-			"en": "METUCHEN"
-		}
-	},
-	{
-		"id": "NJT.85",
-		"railway": "NJT.11",
-		"coord": [
-			-74.116131,
-			40.38978
-		],
-		"title": {
-			"en": "MIDDLETOWN NJ"
-		}
-	},
-	{
-		"id": "NJT.86",
-		"railway": "NJT.6",
-		"coord": [
-			-74.37039,
-			41.457488
-		],
-		"title": {
-			"en": "MIDDLETOWN NY"
-		}
-	},
-	{
-		"id": "NJT.87",
-		"railway": "NJT.7",
-		"coord": [
-			-74.303755,
-			40.725622
-		],
-		"title": {
-			"en": "MILLBURN"
-		}
-	},
-	{
-		"id": "NJT.88",
-		"railway": "NJT.8",
-		"coord": [
-			-74.523606,
-			40.673513
-		],
-		"title": {
-			"en": "MILLINGTON"
-		}
-	},
-	{
-		"id": "NJT.89",
-		"railway": "NJT.2",
-		"coord": [
-			-74.2025,
-			40.857536
-		],
-		"title": {
-			"en": "MONTCLAIR HEIGHTS"
-		}
-	},
-	{
-		"id": "NJT.90",
-		"railway": "NJT.14",
-		"coord": [
-			-74.029152,
-			41.040879
-		],
-		"title": {
-			"en": "MONTVALE"
-		}
-	},
-	{
-		"id": "NJT.91",
-		"railway": "NJT.7",
-		"coord": [
-			-74.478197,
-			40.828637
-		],
-		"title": {
-			"en": "MORRIS PLAINS"
-		}
-	},
-	{
-		"id": "NJT.92",
-		"railway": "NJT.7",
-		"coord": [
-			-74.474086,
-			40.797113
-		],
-		"title": {
-			"en": "MORRISTOWN"
-		}
-	},
-	{
-		"id": "NJT.93",
-		"railway": "NJT.2",
-		"coord": [
-			-74.730653,
-			40.907376
-		],
-		"title": {
-			"en": "MOUNT OLIVE"
-		}
-	},
-	{
-		"id": "NJT.94",
-		"railway": "NJT.7",
-		"coord": [
-			-74.481915,
-			40.875904
-		],
-		"title": {
-			"en": "MOUNT TABOR"
-		}
-	},
-	{
-		"id": "NJT.95",
-		"railway": "NJT.2",
-		"coord": [
-			-74.205306,
-			40.848715
-		],
-		"title": {
-			"en": "MOUNTAIN AVENUE"
-		}
-	},
-	{
-		"id": "NJT.96",
-		"railway": "NJT.2",
-		"coord": [
-			-74.433604,
-			40.885947
-		],
-		"title": {
-			"en": "MOUNTAIN LAKES"
-		}
-	},
-	{
-		"id": "NJT.97",
-		"railway": "NJT.7",
-		"coord": [
-			-74.253024,
-			40.755365
-		],
-		"title": {
-			"en": "MOUNTAIN STATION"
-		}
-	},
-	{
-		"id": "NJT.98",
-		"railway": "NJT.2",
-		"coord": [
-			-74.268158,
-			40.914402
-		],
-		"title": {
-			"en": "MOUNTAIN VIEW"
-		}
-	},
-	{
-		"id": "NJT.99",
-		"railway": "NJT.8",
-		"coord": [
-			-74.403134,
-			40.695068
-		],
-		"title": {
-			"en": "MURRAY HILL"
-		}
-	},
-	{
-		"id": "NJT.100",
-		"railway": "NJT.14",
-		"coord": [
-			-74.014794,
-			41.090015
-		],
-		"title": {
-			"en": "NANUET"
-		}
-	},
-	{
-		"id": "NJT.101",
-		"railway": "NJT.2",
-		"coord": [
-			-74.707317,
-			40.897552
-		],
-		"title": {
-			"en": "NETCONG"
-		}
-	},
-	{
-		"id": "NJT.102",
-		"railway": "NJT.16",
-		"coord": [
-			-74.403455,
-			40.629148
-		],
-		"title": {
-			"en": "NETHERWOOD"
-		}
-	},
-	{
-		"id": "NJT.103",
-		"railway": "NJT.10",
-		"coord": [
-			-74.445751,
-			40.497278
-		],
-		"title": {
-			"en": "NEW BRUNSWICK"
-		}
-	},
-	{
-		"id": "NJT.104",
-		"railway": "NJT.8",
-		"coord": [
-			-74.386501,
-			40.712022
-		],
-		"title": {
-			"en": "NEW PROVIDENCE"
-		}
-	},
-	{
-		"id": "NJT.105",
-		"railway": "NJT.3",
-		"coord": [
-			-73.992358,
-			40.750046
-		],
-		"title": {
-			"en": "NEW YORK PENN STATION"
-		}
-	},
-	{
-		"id": "NJT.106",
-		"railway": "NJT.2",
-		"coord": [
-			-74.171943,
-			40.747621
-		],
-		"title": {
-			"en": "NEWARK BROAD ST"
-		}
-	},
-	{
-		"id": "NJT.107",
-		"railway": "NJT.10",
-		"coord": [
-			-74.164554,
-			40.734221
-		],
-		"title": {
-			"en": "NEWARK PENN STATION"
-		}
-	},
-	{
-		"id": "NJT.108",
-		"railway": "NJT.16",
-		"coord": [
-			-74.683802,
-			40.59202
-		],
-		"title": {
-			"en": "NORTH BRANCH"
-		}
-	},
-	{
-		"id": "NJT.109",
-		"railway": "NJT.10",
-		"coord": [
-			-74.206165,
-			40.680265
-		],
-		"title": {
-			"en": "NORTH ELIZABETH"
-		}
-	},
-	{
-		"id": "NJT.110",
-		"railway": "NJT.14",
-		"coord": [
-			-74.035044,
-			40.910856
-		],
-		"title": {
-			"en": "NEW BRIDGE LANDING"
-		}
-	},
-	{
-		"id": "NJT.111",
-		"railway": "NJT.14",
-		"coord": [
-			-74.029983,
-			40.953478
-		],
-		"title": {
-			"en": "ORADELL"
-		}
-	},
-	{
-		"id": "NJT.112",
-		"railway": "NJT.7",
-		"coord": [
-			-74.233103,
-			40.771883
-		],
-		"title": {
-			"en": "ORANGE"
-		}
-	},
-	{
-		"id": "NJT.113",
-		"railway": "NJT.6",
-		"coord": [
-			-74.529212,
-			41.471784
-		],
-		"title": {
-			"en": "OTISVILLE"
-		}
-	},
-	{
-		"id": "NJT.114",
-		"railway": "NJT.14",
-		"coord": [
-			-74.036164,
-			41.032305
-		],
-		"title": {
-			"en": "PARK RIDGE"
-		}
-	},
-	{
-		"id": "NJT.115",
-		"railway": "NJT.5.b2",
-		"coord": [
-			-74.133933,
-			40.849411
-		],
-		"title": {
-			"en": "PASSAIC"
-		}
-	},
-	{
-		"id": "NJT.116",
-		"railway": "NJT.5.b2",
-		"coord": [
-			-74.16733,
-			40.914887
-		],
-		"title": {
-			"en": "PATERSON"
-		}
-	},
-	{
-		"id": "NJT.117",
-		"railway": "NJT.8",
-		"coord": [
-			-74.658469,
-			40.708794
-		],
-		"title": {
-			"en": "PEAPACK"
-		}
-	},
-	{
-		"id": "NJT.118",
-		"railway": "NJT.14",
-		"coord": [
-			-74.02232,
-			41.058181
-		],
-		"title": {
-			"en": "PEARL RIVER"
-		}
-	},
-	{
-		"id": "NJT.119",
-		"railway": "NJT.11",
-		"coord": [
-			-74.273752,
-			40.509398
-		],
-		"title": {
-			"en": "PERTH AMBOY"
-		}
-	},
-	{
-		"id": "NJT.120",
-		"railway": "NJT.16",
-		"coord": [
-			-74.420163,
-			40.618425
-		],
-		"title": {
-			"en": "PLAINFIELD"
-		}
-	},
-	{
-		"id": "NJT.121",
-		"railway": "NJT.5",
-		"coord": [
-			-74.102695,
-			40.884916
-		],
-		"title": {
-			"en": "PLAUDERVILLE"
-		}
-	},
-	{
-		"id": "NJT.122",
-		"railway": "NJT.11",
-		"coord": [
-			-74.048191,
-			40.092718
-		],
-		"title": {
-			"en": "POINT PLEASANT"
-		}
-	},
-	{
-		"id": "NJT.123",
-		"railway": "NJT.6",
-		"coord": [
-			-74.694622,
-			41.374899
-		],
-		"title": {
-			"en": "PORT JERVIS"
-		}
-	},
-	{
-		"id": "NJT.124",
-		"railway": "NJT.15",
-		"coord": [
-			-74.65887,
-			40.342088
-		],
-		"title": {
-			"en": "PRINCETON"
-		}
-	},
-	{
-		"id": "NJT.125",
-		"railway": "NJT.10",
-		"coord": [
-			-74.623753,
-			40.316316
-		],
-		"title": {
-			"en": "PRINCETON JCT."
-		}
-	},
-	{
-		"id": "NJT.126",
-		"railway": "NJT.5",
-		"coord": [
-			-74.121617,
-			40.939914
-		],
-		"title": {
-			"en": "RADBURN"
-		}
-	},
-	{
-		"id": "NJT.127",
-		"railway": "NJT.10",
-		"coord": [
-			-74.276692,
-			40.606338
-		],
-		"title": {
-			"en": "RAHWAY"
-		}
-	},
-	{
-		"id": "NJT.128",
-		"railway": "NJT.5",
-		"coord": [
-			-74.141877,
-			41.056422
-		],
-		"title": {
-			"en": "RAMSEY"
-		}
-	},
-	{
-		"id": "NJT.129",
-		"railway": "NJT.16",
-		"coord": [
-			-74.634364,
-			40.571005
-		],
-		"title": {
-			"en": "RARITAN"
-		}
-	},
-	{
-		"id": "NJT.130",
-		"railway": "NJT.11",
-		"coord": [
-			-74.074538,
-			40.348284
-		],
-		"title": {
-			"en": "RED BANK"
-		}
-	},
-	{
-		"id": "NJT.131",
-		"railway": "NJT.5",
-		"coord": [
-			-74.120592,
-			40.980629
-		],
-		"title": {
-			"en": "RIDGEWOOD"
-		}
-	},
-	{
-		"id": "NJT.132",
-		"railway": "NJT.14",
-		"coord": [
-			-74.02914,
-			40.935146
-		],
-		"title": {
-			"en": "RIVER EDGE"
-		}
-	},
-	{
-		"id": "NJT.134",
-		"railway": "NJT.5",
-		"coord": [
-			-74.100563,
-			40.828248
-		],
-		"title": {
-			"en": "RUTHERFORD"
-		}
-	},
-	{
-		"id": "NJT.135",
-		"railway": "NJT.6",
-		"coord": [
-			-74.101871,
-			41.437073
-		],
-		"title": {
-			"en": "SALISBURY MILLS-CORNWALL"
-		}
-	},
-	{
-		"id": "NJT.136",
-		"railway": "NJT.7",
-		"coord": [
-			-74.323754,
-			40.725249
-		],
-		"title": {
-			"en": "SHORT HILLS"
-		}
-	},
-	{
-		"id": "NJT.137",
-		"railway": "NJT.6",
-		"coord": [
-			-74.191307,
-			41.157138
-		],
-		"title": {
-			"en": "SLOATSBURG"
-		}
-	},
-	{
-		"id": "NJT.138",
-		"railway": "NJT.16",
-		"coord": [
-			-74.61397,
-			40.566075
-		],
-		"title": {
-			"en": "SOMERVILLE"
-		}
-	},
-	{
-		"id": "NJT.139",
-		"railway": "NJT.11",
-		"coord": [
-			-74.28014,
-			40.484308
-		],
-		"title": {
-			"en": "SOUTH AMBOY"
-		}
-	},
-	{
-		"id": "NJT.140",
-		"railway": "NJT.7",
-		"coord": [
-			-74.260538,
-			40.745952
-		],
-		"title": {
-			"en": "SOUTH ORANGE"
-		}
-	},
-	{
-		"id": "NJT.141",
-		"railway": "NJT.11",
-		"coord": [
-			-74.035481,
-			40.150557
-		],
-		"title": {
-			"en": "SPRING LAKE"
-		}
-	},
-	{
-		"id": "NJT.142",
-		"railway": "NJT.14",
-		"coord": [
-			-74.043991,
-			41.111978
-		],
-		"title": {
-			"en": "SPRING VALLEY"
-		}
-	},
-	{
-		"id": "NJT.143",
-		"railway": "NJT.8",
-		"coord": [
-			-74.493723,
-			40.674579
-		],
-		"title": {
-			"en": "STIRLING"
-		}
-	},
-	{
-		"id": "NJT.144",
-		"railway": "NJT.5",
-		"coord": [
-			-74.153442,
-			41.11354
-		],
-		"title": {
-			"en": "SUFFERN"
-		}
-	},
-	{
-		"id": "NJT.145",
-		"railway": "NJT.7",
-		"coord": [
-			-74.357807,
-			40.716549
-		],
-		"title": {
-			"en": "SUMMIT"
-		}
-	},
-	{
-		"id": "NJT.146",
-		"railway": "NJT.14",
-		"coord": [
-			-74.062676,
-			40.864858
-		],
-		"title": {
-			"en": "TETERBORO"
-		}
-	},
-	{
-		"id": "NJT.147",
-		"railway": "NJT.2",
-		"coord": [
-			-74.343842,
-			40.922809
-		],
-		"title": {
-			"en": "TOWACO"
-		}
-	},
-	{
-		"id": "NJT.148",
-		"railway": "NJT.10",
-		"coord": [
-			-74.753926,
-			40.218515
-		],
-		"title": {
-			"en": "TRENTON TRANSIT CENTER"
-		}
-	},
-	{
-		"id": "NJT.149",
-		"railway": "NJT.6",
-		"coord": [
-			-74.18446,
-			41.194208
-		],
-		"title": {
-			"en": "TUXEDO"
-		}
-	},
-	{
-		"id": "NJT.150",
-		"railway": "NJT.2",
-		"coord": [
-			-74.209368,
-			40.842004
-		],
-		"title": {
-			"en": "UPPER MONTCLAIR"
-		}
-	},
-	{
-		"id": "NJT.151",
-		"railway": "NJT.5",
-		"coord": [
-			-74.123412,
-			41.012734
-		],
-		"title": {
-			"en": "WALDWICK"
-		}
-	},
-	{
-		"id": "NJT.152",
-		"railway": "NJT.2",
-		"coord": [
-			-74.20963,
-			40.817218
-		],
-		"title": {
-			"en": "WALNUT STREET"
-		}
-	},
-	{
-		"id": "NJT.153",
-		"railway": "NJT.2",
-		"coord": [
-			-74.206934,
-			40.829514
-		],
-		"title": {
-			"en": "WATCHUNG AVENUE"
-		}
-	},
-	{
-		"id": "NJT.154",
-		"railway": "NJT.2",
-		"coord": [
-			-74.198451,
-			40.782743
-		],
-		"title": {
-			"en": "WATSESSING AVENUE"
-		}
-	},
-	{
-		"id": "NJT.155",
-		"railway": "NJT.16",
-		"coord": [
-			-74.347629,
-			40.649448
-		],
-		"title": {
-			"en": "WESTFIELD"
-		}
-	},
-	{
-		"id": "NJT.156",
-		"railway": "NJT.14",
-		"coord": [
-			-74.032696,
-			40.990817
-		],
-		"title": {
-			"en": "WESTWOOD"
-		}
-	},
-	{
-		"id": "NJT.157",
-		"railway": "NJT.16",
-		"coord": [
-			-74.77066,
-			40.615611
-		],
-		"title": {
-			"en": "WHITE HOUSE"
-		}
-	},
-	{
-		"id": "NJT.158",
-		"railway": "NJT.11",
-		"coord": [
-			-74.277751,
-			40.55661
-		],
-		"title": {
-			"en": "WOODBRIDGE"
-		}
-	},
-	{
-		"id": "NJT.159",
-		"railway": "NJT.14",
-		"coord": [
-			-74.040775,
-			41.021078
-		],
-		"title": {
-			"en": "WOODCLIFF LAKE"
-		}
-	},
-	{
-		"id": "NJT.160",
-		"railway": "NJT.14",
-		"coord": [
-			-74.078719,
-			40.843974
-		],
-		"title": {
-			"en": "WOOD-RIDGE"
-		}
-	},
-	{
-		"id": "NJT.6900",
-		"railway": "NJT.13",
-		"coord": [
-			-74.170883,
-			40.737449
-		],
-		"title": {
-			"en": "MILITARY PARK LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.6907",
-		"railway": "NJT.13",
-		"coord": [
-			-74.178272,
-			40.77239
-		],
-		"title": {
-			"en": "DAVENPORT AVENUE LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.6957",
-		"railway": "NJT.13",
-		"coord": [
-			-74.183033,
-			40.745319
-		],
-		"title": {
-			"en": "NORFOLK STREET LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.6966",
-		"railway": "NJT.13",
-		"coord": [
-			-74.184941,
-			40.75856
-		],
-		"title": {
-			"en": "PARK AVENUE NEWARK LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.6995",
-		"railway": "NJT.13",
-		"coord": [
-			-74.181183,
-			40.742439
-		],
-		"title": {
-			"en": "WARREN STREET LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.6997",
-		"railway": "NJT.13",
-		"coord": [
-			-74.174081,
-			40.738347
-		],
-		"title": {
-			"en": "WASHINGTON STREET LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.9878",
-		"railway": "NJT.4",
-		"coord": [
-			-74.012921,
-			40.775919
-		],
-		"title": {
-			"en": "PORT IMPERIAL HBLR STATION"
-		}
-	},
-	{
-		"id": "NJT.14984",
-		"railway": "NJT.13",
-		"coord": [
-			-74.179863,
-			40.76546
-		],
-		"title": {
-			"en": "BLOOMFIELD AVENUE LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.14986",
-		"railway": "NJT.13",
-		"coord": [
-			-74.184951,
-			40.750629
-		],
-		"title": {
-			"en": "ORANGE STREET LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.17699",
-		"railway": "NJT.4",
-		"coord": [
-			-74.024,
-			40.761399
-		],
-		"title": {
-			"en": "LINCOLN HARBOR LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.26316",
-		"railway": "NJT.13",
-		"coord": [
-			-74.174752,
-			40.779638
-		],
-		"title": {
-			"en": "BRANCH BROOK PARK LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.26326",
-		"railway": "NJT.13",
-		"coord": [
-			-74.163603,
-			40.73481
-		],
-		"title": {
-			"en": "PENN STATION LIGHT RAIL DEPARTURE"
-		}
-	},
-	{
-		"id": "NJT.31696",
-		"railway": "NJT.11",
-		"coord": [
-			-74.015172,
-			40.313425
-		],
-		"title": {
-			"en": "MONMOUTH PARK"
-		}
-	},
-	{
-		"id": "NJT.32905",
-		"railway": "NJT.10",
-		"coord": [
-			-74.70412,
-			40.255309
-		],
-		"title": {
-			"en": "HAMILTON"
-		}
-	},
-	{
-		"id": "NJT.32906",
-		"railway": "NJT.10",
-		"coord": [
-			-74.467363,
-			40.476912
-		],
-		"title": {
-			"en": "JERSEY AVE."
-		}
-	},
-	{
-		"id": "NJT.36994",
-		"railway": "NJT.4",
-		"coord": [
-			-74.034092,
-			40.716009
-		],
-		"title": {
-			"en": "EXCHANGE PLACE LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.36995",
-		"railway": "NJT.4",
-		"coord": [
-			-74.036082,
-			40.712838
-		],
-		"title": {
-			"en": "ESSEX STREET LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.36996",
-		"railway": "NJT.4",
-		"coord": [
-			-74.043241,
-			40.714428
-		],
-		"title": {
-			"en": "MARIN BOULEVARD LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.36997",
-		"railway": "NJT.4",
-		"coord": [
-			-74.048491,
-			40.714978
-		],
-		"title": {
-			"en": "JERSEY AVENUE LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.36998",
-		"railway": "NJT.4",
-		"coord": [
-			-74.055812,
-			40.710378
-		],
-		"title": {
-			"en": "LIBERTY STATE PARK-RIDE LIGHT RAIL STA"
-		}
-	},
-	{
-		"id": "NJT.36999",
-		"railway": "NJT.4",
-		"coord": [
-			-74.07112,
-			40.710509
-		],
-		"title": {
-			"en": "GARFIELD AVENUE LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.37000",
-		"railway": "NJT.4",
-		"coord": [
-			-74.077323,
-			40.712008
-		],
-		"title": {
-			"en": "MLK DRIVE LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.37001",
-		"railway": "NJT.4",
-		"coord": [
-			-74.087581,
-			40.714548
-		],
-		"title": {
-			"en": "WEST SIDE AVENUE LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.37002",
-		"railway": "NJT.4.b2",
-		"coord": [
-			-74.078643,
-			40.699118
-		],
-		"title": {
-			"en": "RICHARD STREET LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.37003",
-		"railway": "NJT.4.b2",
-		"coord": [
-			-74.087262,
-			40.692357
-		],
-		"title": {
-			"en": "DANFORTH AVENUE LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.37004",
-		"railway": "NJT.4.b2",
-		"coord": [
-			-74.101673,
-			40.67867
-		],
-		"title": {
-			"en": "45TH STREET LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.37005",
-		"railway": "NJT.4.b2",
-		"coord": [
-			-74.107493,
-			40.671778
-		],
-		"title": {
-			"en": "34TH STREET LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.37169",
-		"railway": "NJT.11",
-		"coord": [
-			-74.223702,
-			40.420161
-		],
-		"title": {
-			"en": "ABERDEEN-MATAWAN"
-		}
-	},
-	{
-		"id": "NJT.37376",
-		"railway": "NJT.4",
-		"coord": [
-			-74.034003,
-			40.719519
-		],
-		"title": {
-			"en": "HARBORSIDE LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.37377",
-		"railway": "NJT.4",
-		"coord": [
-			-74.037281,
-			40.722668
-		],
-		"title": {
-			"en": "HARSIMUS COVE LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.37378",
-		"railway": "NJT.4",
-		"coord": [
-			-74.036233,
-			40.726819
-		],
-		"title": {
-			"en": "NEWPORT LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.37953",
-		"railway": "NJT.10",
-		"coord": [
-			-74.190717,
-			40.704415
-		],
-		"title": {
-			"en": "NEWARK AIRPORT RAILROAD STATION"
-		}
-	},
-	{
-		"id": "NJT.38064",
-		"railway": "NJT.13",
-		"coord": [
-			-74.180343,
-			40.780287
-		],
-		"title": {
-			"en": "SILVER LAKE LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.38065",
-		"railway": "NJT.13",
-		"coord": [
-			-74.187931,
-			40.780317
-		],
-		"title": {
-			"en": "GROVE STREET LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.38081",
-		"railway": "NJT.2",
-		"coord": [
-			-74.197439,
-			40.869782
-		],
-		"title": {
-			"en": "MSU"
-		}
-	},
-	{
-		"id": "NJT.38105",
-		"railway": "NJT.16",
-		"coord": [
-			-74.238605,
-			40.683663
-		],
-		"title": {
-			"en": "UNION"
-		}
-	},
-	{
-		"id": "NJT.38174",
-		"railway": "NJT.5",
-		"coord": [
-			-74.075821,
-			40.761188
-		],
-		"title": {
-			"en": "SECAUCUS LOWER LEVEL"
-		}
-	},
-	{
-		"id": "NJT.38187",
-		"railway": "NJT.3",
-		"coord": [
-			-74.075821,
-			40.761188
-		],
-		"title": {
-			"en": "SECAUCUS UPPER LEVEL"
-		}
-	},
-	{
-		"id": "NJT.38229",
-		"railway": "NJT.4.b2",
-		"coord": [
-			-74.11641,
-			40.661277
-		],
-		"title": {
-			"en": "22ND STREET LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.38417",
-		"railway": "NJT.5",
-		"coord": [
-			-74.145485,
-			41.07513
-		],
-		"title": {
-			"en": "RAMSEY ROUTE 17 STATION"
-		}
-	},
-	{
-		"id": "NJT.38441",
-		"railway": "NJT.4",
-		"coord": [
-			-74.042821,
-			40.74174
-		],
-		"title": {
-			"en": "2ND STREET LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.38442",
-		"railway": "NJT.4",
-		"coord": [
-			-74.038522,
-			40.748867
-		],
-		"title": {
-			"en": "9TH STREET LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.38578",
-		"railway": "NJT.4",
-		"coord": [
-			-74.022271,
-			40.782225
-		],
-		"title": {
-			"en": "BERGENLINE AVE"
-		}
-	},
-	{
-		"id": "NJT.38579",
-		"railway": "NJT.4",
-		"coord": [
-			-74.031263,
-			40.78733
-		],
-		"title": {
-			"en": "TONNELLE AVENUE LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.39130",
-		"railway": "NJT.13",
-		"coord": [
-			-74.17151,
-			40.747209
-		],
-		"title": {
-			"en": "BROAD STREET LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.39131",
-		"railway": "NJT.13",
-		"coord": [
-			-74.169202,
-			40.74559
-		],
-		"title": {
-			"en": "RIVERFRONT STADIUM LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.39132",
-		"railway": "NJT.13.b2",
-		"coord": [
-			-74.169853,
-			40.743938
-		],
-		"title": {
-			"en": "HARRIET TUBMAN SQUARE LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.39133",
-		"railway": "NJT.13",
-		"coord": [
-			-74.168491,
-			40.74416
-		],
-		"title": {
-			"en": "ATLANTIC STREET LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.39134",
-		"railway": "NJT.13",
-		"coord": [
-			-74.16558,
-			40.739498
-		],
-		"title": {
-			"en": "NJPAC/CENTRE STREET LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.39348",
-		"railway": "NJT.4.b2",
-		"coord": [
-			-74.029192,
-			40.734059
-		],
-		"title": {
-			"en": "HOBOKEN TERMINAL LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.39472",
-		"railway": "NJT.2",
-		"coord": [
-			-74.632731,
-			40.89659
-		],
-		"title": {
-			"en": "MOUNT ARLINGTON"
-		}
-	},
-	{
-		"id": "NJT.39635",
-		"railway": "NJT.2",
-		"coord": [
-			-74.256971,
-			40.900254
-		],
-		"title": {
-			"en": "WAYNE/ROUTE 23 TRANSIT CENTER [RR]"
-		}
-	},
-	{
-		"id": "NJT.40570",
-		"railway": "NJT.9",
-		"coord": [
-			-74.072114,
-			40.813053
-		],
-		"title": {
-			"en": "NYNJ STADIUM"
-		}
-	},
-	{
-		"id": "NJT.42545",
-		"railway": "NJT.13",
-		"coord": [
-			-74.163603,
-			40.73481
-		],
-		"title": {
-			"en": "PENN STATION LIGHT RAIL ARRIVAL"
-		}
-	},
-	{
-		"id": "NJT.42673",
-		"railway": "NJT.4.b2",
-		"coord": [
-			-74.129142,
-			40.654298
-		],
-		"title": {
-			"en": "8TH STREET LIGHT RAIL STATION"
-		}
-	},
-	{
-		"id": "NJT.43599",
-		"railway": "NJT.5",
-		"coord": [
-			-74.096951,
-			40.854979
-		],
-		"title": {
-			"en": "WESMONT"
-		}
-	},
-	{
 		"id": "MTA.Subway.101",
 		"railway": "MTA.Subway.1",
 		"coord": [
@@ -10260,6 +8071,1568 @@
 		],
 		"title": {
 			"en": "Belmont"
+		}
+	},
+	{
+		"id": "NJT.1",
+		"railway": "NJT.10",
+		"coord": [
+			-74.223702,
+			40.420161
+		],
+		"title": {
+			"en": "Aberdeen-Matawan"
+		}
+	},
+	{
+		"id": "NJT.3",
+		"railway": "NJT.5",
+		"coord": [
+			-74.130957,
+			41.030902
+		],
+		"title": {
+			"en": "Allendale"
+		}
+	},
+	{
+		"id": "NJT.4",
+		"railway": "NJT.10",
+		"coord": [
+			-74.006769,
+			40.237659
+		],
+		"title": {
+			"en": "Allenhurst"
+		}
+	},
+	{
+		"id": "NJT.5",
+		"railway": "NJT.13",
+		"coord": [
+			-74.043781,
+			40.894458
+		],
+		"title": {
+			"en": "Anderson Street"
+		}
+	},
+	{
+		"id": "NJT.6",
+		"railway": "NJT.15",
+		"coord": [
+			-74.878569,
+			40.645173
+		],
+		"title": {
+			"en": "Annandale"
+		}
+	},
+	{
+		"id": "NJT.7",
+		"railway": "NJT.10",
+		"coord": [
+			-74.014786,
+			40.215359
+		],
+		"title": {
+			"en": "Asbury Park"
+		}
+	},
+	{
+		"id": "NJT.10",
+		"railway": "NJT.10",
+		"coord": [
+			-74.27753,
+			40.57762
+		],
+		"title": {
+			"en": "Avenel"
+		}
+	},
+	{
+		"id": "NJT.13",
+		"railway": "NJT.8",
+		"coord": [
+			-74.55527,
+			40.711378
+		],
+		"title": {
+			"en": "Basking Ridge"
+		}
+	},
+	{
+		"id": "NJT.14",
+		"railway": "NJT.10",
+		"coord": [
+			-74.046183,
+			40.077178
+		],
+		"title": {
+			"en": "Bay Head"
+		}
+	},
+	{
+		"id": "NJT.15",
+		"railway": "NJT.2",
+		"coord": [
+			-74.208681,
+			40.808178
+		],
+		"title": {
+			"en": "Bay Street (Montclair)"
+		}
+	},
+	{
+		"id": "NJT.16",
+		"railway": "NJT.10",
+		"coord": [
+			-74.027301,
+			40.18059
+		],
+		"title": {
+			"en": "Belmar"
+		}
+	},
+	{
+		"id": "NJT.17",
+		"railway": "NJT.8",
+		"coord": [
+			-74.442649,
+			40.682345
+		],
+		"title": {
+			"en": "Berkeley Heights"
+		}
+	},
+	{
+		"id": "NJT.18",
+		"railway": "NJT.8",
+		"coord": [
+			-74.571023,
+			40.716845
+		],
+		"title": {
+			"en": "Bernardsville"
+		}
+	},
+	{
+		"id": "NJT.19",
+		"railway": "NJT.2",
+		"coord": [
+			-74.200043,
+			40.792709
+		],
+		"title": {
+			"en": "Bloomfield"
+		}
+	},
+	{
+		"id": "NJT.21",
+		"railway": "NJT.15",
+		"coord": [
+			-74.530617,
+			40.560929
+		],
+		"title": {
+			"en": "Bound Brook"
+		}
+	},
+	{
+		"id": "NJT.22",
+		"railway": "NJT.10",
+		"coord": [
+			-74.018891,
+			40.203751
+		],
+		"title": {
+			"en": "Bradley Beach"
+		}
+	},
+	{
+		"id": "NJT.23",
+		"railway": "NJT.7",
+		"coord": [
+			-74.218612,
+			40.765134
+		],
+		"title": {
+			"en": "Brick Church"
+		}
+	},
+	{
+		"id": "NJT.24",
+		"railway": "NJT.15",
+		"coord": [
+			-74.551741,
+			40.559906
+		],
+		"title": {
+			"en": "Bridgewater"
+		}
+	},
+	{
+		"id": "NJT.25",
+		"railway": "NJT.5.b2",
+		"coord": [
+			-74.115236,
+			40.922505
+		],
+		"title": {
+			"en": "Broadway"
+		}
+	},
+	{
+		"id": "NJT.26",
+		"railway": "NJT.5",
+		"coord": [
+			-74.266554,
+			41.450917
+		],
+		"title": {
+			"en": "Campbell Hall"
+		}
+	},
+	{
+		"id": "NJT.27",
+		"railway": "NJT.7",
+		"coord": [
+			-74.384812,
+			40.740137
+		],
+		"title": {
+			"en": "Chatham"
+		}
+	},
+	{
+		"id": "NJT.29",
+		"railway": "NJT.6",
+		"coord": [
+			-74.153203,
+			40.867998
+		],
+		"title": {
+			"en": "Clifton"
+		}
+	},
+	{
+		"id": "NJT.30",
+		"railway": "NJT.7",
+		"coord": [
+			-74.443435,
+			40.779038
+		],
+		"title": {
+			"en": "Convent"
+		}
+	},
+	{
+		"id": "NJT.31",
+		"railway": "NJT.15",
+		"coord": [
+			-74.303226,
+			40.655523
+		],
+		"title": {
+			"en": "Cranford"
+		}
+	},
+	{
+		"id": "NJT.32",
+		"railway": "NJT.6",
+		"coord": [
+			-74.131262,
+			40.831369
+		],
+		"title": {
+			"en": "Delawanna"
+		}
+	},
+	{
+		"id": "NJT.33",
+		"railway": "NJT.7",
+		"coord": [
+			-74.481513,
+			40.8839
+		],
+		"title": {
+			"en": "Denville"
+		}
+	},
+	{
+		"id": "NJT.34",
+		"railway": "NJT.7",
+		"coord": [
+			-74.555887,
+			40.883415
+		],
+		"title": {
+			"en": "Dover"
+		}
+	},
+	{
+		"id": "NJT.35",
+		"railway": "NJT.15",
+		"coord": [
+			-74.463043,
+			40.590869
+		],
+		"title": {
+			"en": "Dunellen"
+		}
+	},
+	{
+		"id": "NJT.36",
+		"railway": "NJT.7",
+		"coord": [
+			-74.210464,
+			40.760977
+		],
+		"title": {
+			"en": "East Orange"
+		}
+	},
+	{
+		"id": "NJT.37",
+		"railway": "NJT.9",
+		"coord": [
+			-74.410972,
+			40.519148
+		],
+		"title": {
+			"en": "Edison"
+		}
+	},
+	{
+		"id": "NJT.39",
+		"railway": "NJT.10",
+		"coord": [
+			-73.99762,
+			40.265292
+		],
+		"title": {
+			"en": "Elberon"
+		}
+	},
+	{
+		"id": "NJT.40",
+		"railway": "NJT.9",
+		"coord": [
+			-74.215174,
+			40.667857
+		],
+		"title": {
+			"en": "Elizabeth"
+		}
+	},
+	{
+		"id": "NJT.41",
+		"railway": "NJT.13",
+		"coord": [
+			-74.027471,
+			40.975036
+		],
+		"title": {
+			"en": "Emerson"
+		}
+	},
+	{
+		"id": "NJT.42",
+		"railway": "NJT.13",
+		"coord": [
+			-74.051893,
+			40.878973
+		],
+		"title": {
+			"en": "Essex Street"
+		}
+	},
+	{
+		"id": "NJT.43",
+		"railway": "NJT.15",
+		"coord": [
+			-74.385003,
+			40.64106
+		],
+		"title": {
+			"en": "Fanwood"
+		}
+	},
+	{
+		"id": "NJT.44",
+		"railway": "NJT.8",
+		"coord": [
+			-74.633734,
+			40.685712
+		],
+		"title": {
+			"en": "Far Hills"
+		}
+	},
+	{
+		"id": "NJT.46",
+		"railway": "NJT.5.b3",
+		"coord": [
+			-74.10556,
+			40.866669
+		],
+		"title": {
+			"en": "Garfield"
+		}
+	},
+	{
+		"id": "NJT.47",
+		"railway": "NJT.15",
+		"coord": [
+			-74.324794,
+			40.652569
+		],
+		"title": {
+			"en": "Garwood"
+		}
+	},
+	{
+		"id": "NJT.48",
+		"railway": "NJT.8",
+		"coord": [
+			-74.468317,
+			40.678253
+		],
+		"title": {
+			"en": "Gillette"
+		}
+	},
+	{
+		"id": "NJT.49",
+		"railway": "NJT.8",
+		"coord": [
+			-74.666371,
+			40.720284
+		],
+		"title": {
+			"en": "Gladstone"
+		}
+	},
+	{
+		"id": "NJT.50",
+		"railway": "NJT.2",
+		"coord": [
+			-74.204655,
+			40.80059
+		],
+		"title": {
+			"en": "Glen Ridge"
+		}
+	},
+	{
+		"id": "NJT.51",
+		"railway": "NJT.5.b2",
+		"coord": [
+			-74.1293,
+			40.96137
+		],
+		"title": {
+			"en": "Glen Rock (Boro Hall)"
+		}
+	},
+	{
+		"id": "NJT.52",
+		"railway": "NJT.6",
+		"coord": [
+			-74.133485,
+			40.962206
+		],
+		"title": {
+			"en": "Glen Rock (Main Line)"
+		}
+	},
+	{
+		"id": "NJT.55",
+		"railway": "NJT.9",
+		"coord": [
+			-74.70412,
+			40.255309
+		],
+		"title": {
+			"en": "Hamilton"
+		}
+	},
+	{
+		"id": "NJT.57",
+		"railway": "NJT.5",
+		"coord": [
+			-74.13987,
+			41.293354
+		],
+		"title": {
+			"en": "Harriman Station"
+		}
+	},
+	{
+		"id": "NJT.58",
+		"railway": "NJT.6",
+		"coord": [
+			-74.152411,
+			40.942539
+		],
+		"title": {
+			"en": "Hawthorne"
+		}
+	},
+	{
+		"id": "NJT.59",
+		"railway": "NJT.10",
+		"coord": [
+			-74.190393,
+			40.415385
+		],
+		"title": {
+			"en": "Hazlet"
+		}
+	},
+	{
+		"id": "NJT.60",
+		"railway": "NJT.15",
+		"coord": [
+			-74.895863,
+			40.666884
+		],
+		"title": {
+			"en": "High Bridge"
+		}
+	},
+	{
+		"id": "NJT.61",
+		"railway": "NJT.7",
+		"coord": [
+			-74.243741,
+			40.766863
+		],
+		"title": {
+			"en": "Highland Ave."
+		}
+	},
+	{
+		"id": "NJT.62",
+		"railway": "NJT.13",
+		"coord": [
+			-74.041033,
+			41.002414
+		],
+		"title": {
+			"en": "Hillsdale"
+		}
+	},
+	{
+		"id": "NJT.64",
+		"railway": "NJT.5.b3",
+		"coord": [
+			-74.113521,
+			40.997369
+		],
+		"title": {
+			"en": "Ho-Ho-Kus"
+		}
+	},
+	{
+		"id": "NJT.63",
+		"railway": "NJT.2.b2",
+		"coord": [
+			-74.028046,
+			40.734843
+		],
+		"title": {
+			"en": "Hoboken"
+		}
+	},
+	{
+		"id": "NJT.68",
+		"railway": "NJT.15",
+		"coord": [
+			-74.835766,
+			40.636905
+		],
+		"title": {
+			"en": "Lebanon"
+		}
+	},
+	{
+		"id": "NJT.70",
+		"railway": "NJT.9",
+		"coord": [
+			-74.251772,
+			40.629485
+		],
+		"title": {
+			"en": "Linden"
+		}
+	},
+	{
+		"id": "NJT.73",
+		"railway": "NJT.10",
+		"coord": [
+			-74.041054,
+			40.326715
+		],
+		"title": {
+			"en": "Little Silver"
+		}
+	},
+	{
+		"id": "NJT.74",
+		"railway": "NJT.10",
+		"coord": [
+			-73.988331,
+			40.297145
+		],
+		"title": {
+			"en": "Long Branch"
+		}
+	},
+	{
+		"id": "NJT.75",
+		"railway": "NJT.6",
+		"coord": [
+			-74.124164,
+			40.816475
+		],
+		"title": {
+			"en": "Lyndhurst"
+		}
+	},
+	{
+		"id": "NJT.76",
+		"railway": "NJT.8",
+		"coord": [
+			-74.54947,
+			40.684844
+		],
+		"title": {
+			"en": "Lyons"
+		}
+	},
+	{
+		"id": "NJT.77",
+		"railway": "NJT.7",
+		"coord": [
+			-74.415105,
+			40.757028
+		],
+		"title": {
+			"en": "Madison"
+		}
+	},
+	{
+		"id": "NJT.78",
+		"railway": "NJT.5",
+		"coord": [
+			-74.14662,
+			41.094416
+		],
+		"title": {
+			"en": "Mahwah"
+		}
+	},
+	{
+		"id": "NJT.79",
+		"railway": "NJT.10",
+		"coord": [
+			-74.047688,
+			40.120573
+		],
+		"title": {
+			"en": "Manasquan"
+		}
+	},
+	{
+		"id": "NJT.80",
+		"railway": "NJT.7",
+		"coord": [
+			-74.275427,
+			40.731149
+		],
+		"title": {
+			"en": "Maplewood"
+		}
+	},
+	{
+		"id": "NJT.82",
+		"railway": "NJT.9",
+		"coord": [
+			-74.329391,
+			40.56864
+		],
+		"title": {
+			"en": "Metropark"
+		}
+	},
+	{
+		"id": "NJT.83",
+		"railway": "NJT.9",
+		"coord": [
+			-74.360671,
+			40.540736
+		],
+		"title": {
+			"en": "Metuchen"
+		}
+	},
+	{
+		"id": "NJT.84",
+		"railway": "NJT.10",
+		"coord": [
+			-74.116131,
+			40.38978
+		],
+		"title": {
+			"en": "Middletown"
+		}
+	},
+	{
+		"id": "NJT.85",
+		"railway": "NJT.5",
+		"coord": [
+			-74.37039,
+			41.457488
+		],
+		"title": {
+			"en": "Middletown, NY"
+		}
+	},
+	{
+		"id": "NJT.86",
+		"railway": "NJT.7.b2",
+		"coord": [
+			-74.303755,
+			40.725622
+		],
+		"title": {
+			"en": "Millburn"
+		}
+	},
+	{
+		"id": "NJT.87",
+		"railway": "NJT.8",
+		"coord": [
+			-74.523606,
+			40.673515
+		],
+		"title": {
+			"en": "Millington"
+		}
+	},
+	{
+		"id": "NJT.89",
+		"railway": "NJT.2",
+		"coord": [
+			-74.2025,
+			40.857536
+		],
+		"title": {
+			"en": "Montclair Heights"
+		}
+	},
+	{
+		"id": "NJT.90",
+		"railway": "NJT.2",
+		"coord": [
+			-74.197439,
+			40.869782
+		],
+		"title": {
+			"en": "Montclair State University"
+		}
+	},
+	{
+		"id": "NJT.91",
+		"railway": "NJT.13",
+		"coord": [
+			-74.029152,
+			41.040879
+		],
+		"title": {
+			"en": "Montvale"
+		}
+	},
+	{
+		"id": "NJT.92",
+		"railway": "NJT.7",
+		"coord": [
+			-74.478197,
+			40.828639
+		],
+		"title": {
+			"en": "Morris Plains"
+		}
+	},
+	{
+		"id": "NJT.93",
+		"railway": "NJT.7",
+		"coord": [
+			-74.474086,
+			40.797113
+		],
+		"title": {
+			"en": "Morristown"
+		}
+	},
+	{
+		"id": "NJT.96",
+		"railway": "NJT.7",
+		"coord": [
+			-74.481915,
+			40.875904
+		],
+		"title": {
+			"en": "Mount Tabor"
+		}
+	},
+	{
+		"id": "NJT.97",
+		"railway": "NJT.2",
+		"coord": [
+			-74.205306,
+			40.848715
+		],
+		"title": {
+			"en": "Mountain Ave."
+		}
+	},
+	{
+		"id": "NJT.99",
+		"railway": "NJT.7",
+		"coord": [
+			-74.253024,
+			40.755367
+		],
+		"title": {
+			"en": "Mountain Sta."
+		}
+	},
+	{
+		"id": "NJT.101",
+		"railway": "NJT.8",
+		"coord": [
+			-74.403134,
+			40.69507
+		],
+		"title": {
+			"en": "Murray Hill"
+		}
+	},
+	{
+		"id": "NJT.102",
+		"railway": "NJT.13",
+		"coord": [
+			-74.014794,
+			41.090015
+		],
+		"title": {
+			"en": "Nanuet"
+		}
+	},
+	{
+		"id": "NJT.104",
+		"railway": "NJT.15",
+		"coord": [
+			-74.403455,
+			40.629148
+		],
+		"title": {
+			"en": "Netherwood"
+		}
+	},
+	{
+		"id": "NJT.105",
+		"railway": "NJT.13",
+		"coord": [
+			-74.035044,
+			40.910856
+		],
+		"title": {
+			"en": "New Bridge Landing"
+		}
+	},
+	{
+		"id": "NJT.106",
+		"railway": "NJT.9",
+		"coord": [
+			-74.445751,
+			40.497278
+		],
+		"title": {
+			"en": "New Brunswick"
+		}
+	},
+	{
+		"id": "NJT.108",
+		"railway": "NJT.8",
+		"coord": [
+			-74.386501,
+			40.712022
+		],
+		"title": {
+			"en": "New Providence"
+		}
+	},
+	{
+		"id": "NJT.111",
+		"railway": "NJT.2",
+		"coord": [
+			-74.171943,
+			40.747621
+		],
+		"title": {
+			"en": "Newark Broad St."
+		}
+	},
+	{
+		"id": "NJT.110",
+		"railway": "NJT.9",
+		"coord": [
+			-74.190717,
+			40.704415
+		],
+		"title": {
+			"en": "Newark Int'l Airport"
+		}
+	},
+	{
+		"id": "NJT.112",
+		"railway": "NJT.9",
+		"coord": [
+			-74.164557,
+			40.734221
+		],
+		"title": {
+			"en": "Newark Penn Station"
+		}
+	},
+	{
+		"id": "NJT.113",
+		"railway": "NJT.15",
+		"coord": [
+			-74.683802,
+			40.59202
+		],
+		"title": {
+			"en": "North Branch"
+		}
+	},
+	{
+		"id": "NJT.114",
+		"railway": "NJT.10.b2",
+		"coord": [
+			-74.206165,
+			40.680265
+		],
+		"title": {
+			"en": "North Elizabeth"
+		}
+	},
+	{
+		"id": "NJT.116",
+		"railway": "NJT.13",
+		"coord": [
+			-74.029983,
+			40.953478
+		],
+		"title": {
+			"en": "Oradell"
+		}
+	},
+	{
+		"id": "NJT.117",
+		"railway": "NJT.7",
+		"coord": [
+			-74.233103,
+			40.771883
+		],
+		"title": {
+			"en": "Orange"
+		}
+	},
+	{
+		"id": "NJT.118",
+		"railway": "NJT.5",
+		"coord": [
+			-74.529212,
+			41.471784
+		],
+		"title": {
+			"en": "Otisville"
+		}
+	},
+	{
+		"id": "NJT.119",
+		"railway": "NJT.13",
+		"coord": [
+			-74.036164,
+			41.032305
+		],
+		"title": {
+			"en": "Park Ridge"
+		}
+	},
+	{
+		"id": "NJT.120",
+		"railway": "NJT.6",
+		"coord": [
+			-74.13393,
+			40.849413
+		],
+		"title": {
+			"en": "Passaic"
+		}
+	},
+	{
+		"id": "NJT.121",
+		"railway": "NJT.6",
+		"coord": [
+			-74.16733,
+			40.914887
+		],
+		"title": {
+			"en": "Paterson"
+		}
+	},
+	{
+		"id": "NJT.122",
+		"railway": "NJT.8",
+		"coord": [
+			-74.658469,
+			40.708794
+		],
+		"title": {
+			"en": "Peapack"
+		}
+	},
+	{
+		"id": "NJT.123",
+		"railway": "NJT.13",
+		"coord": [
+			-74.02232,
+			41.058181
+		],
+		"title": {
+			"en": "Pearl River"
+		}
+	},
+	{
+		"id": "NJT.109",
+		"railway": "NJT.2",
+		"coord": [
+			-73.992358,
+			40.750048
+		],
+		"title": {
+			"en": "Penn Station New York"
+		}
+	},
+	{
+		"id": "NJT.125",
+		"railway": "NJT.10",
+		"coord": [
+			-74.273752,
+			40.509398
+		],
+		"title": {
+			"en": "Perth Amboy"
+		}
+	},
+	{
+		"id": "NJT.127",
+		"railway": "NJT.15",
+		"coord": [
+			-74.420163,
+			40.618425
+		],
+		"title": {
+			"en": "Plainfield"
+		}
+	},
+	{
+		"id": "NJT.128",
+		"railway": "NJT.5.b2",
+		"coord": [
+			-74.102695,
+			40.884916
+		],
+		"title": {
+			"en": "Plauderville"
+		}
+	},
+	{
+		"id": "NJT.129",
+		"railway": "NJT.10",
+		"coord": [
+			-74.048191,
+			40.092718
+		],
+		"title": {
+			"en": "Point Pleasant"
+		}
+	},
+	{
+		"id": "NJT.130",
+		"railway": "NJT.5",
+		"coord": [
+			-74.694622,
+			41.374899
+		],
+		"title": {
+			"en": "Port Jervis"
+		}
+	},
+	{
+		"id": "NJT.132",
+		"railway": "NJT.9",
+		"coord": [
+			-74.623753,
+			40.316316
+		],
+		"title": {
+			"en": "Princeton Junction"
+		}
+	},
+	{
+		"id": "NJT.131",
+		"railway": "NJT.14",
+		"coord": [
+			-74.65887,
+			40.342088
+		],
+		"title": {
+			"en": "Princeton Station"
+		}
+	},
+	{
+		"id": "NJT.133",
+		"railway": "NJT.5",
+		"coord": [
+			-74.121992,
+			40.938889
+		],
+		"title": {
+			"en": "Radburn"
+		}
+	},
+	{
+		"id": "NJT.134",
+		"railway": "NJT.9",
+		"coord": [
+			-74.276692,
+			40.606338
+		],
+		"title": {
+			"en": "Rahway"
+		}
+	},
+	{
+		"id": "NJT.135",
+		"railway": "NJT.5",
+		"coord": [
+			-74.141877,
+			41.056422
+		],
+		"title": {
+			"en": "Ramsey"
+		}
+	},
+	{
+		"id": "NJT.137",
+		"railway": "NJT.15",
+		"coord": [
+			-74.634364,
+			40.571007
+		],
+		"title": {
+			"en": "Raritan"
+		}
+	},
+	{
+		"id": "NJT.138",
+		"railway": "NJT.10",
+		"coord": [
+			-74.074538,
+			40.348284
+		],
+		"title": {
+			"en": "Red Bank"
+		}
+	},
+	{
+		"id": "NJT.139",
+		"railway": "NJT.5",
+		"coord": [
+			-74.120592,
+			40.980629
+		],
+		"title": {
+			"en": "Ridgewood"
+		}
+	},
+	{
+		"id": "NJT.140",
+		"railway": "NJT.13",
+		"coord": [
+			-74.02914,
+			40.935146
+		],
+		"title": {
+			"en": "River Edge"
+		}
+	},
+	{
+		"id": "NJT.141",
+		"railway": "NJT.15",
+		"coord": [
+			-74.26632,
+			40.667152
+		],
+		"title": {
+			"en": "Roselle Park"
+		}
+	},
+	{
+		"id": "NJT.136",
+		"railway": "NJT.5",
+		"coord": [
+			-74.145485,
+			41.07513
+		],
+		"title": {
+			"en": "Route 17 Station"
+		}
+	},
+	{
+		"id": "NJT.142",
+		"railway": "NJT.5",
+		"coord": [
+			-74.100563,
+			40.828248
+		],
+		"title": {
+			"en": "Rutherford"
+		}
+	},
+	{
+		"id": "NJT.143",
+		"railway": "NJT.5",
+		"coord": [
+			-74.101871,
+			41.437073
+		],
+		"title": {
+			"en": "Salisbury Mills"
+		}
+	},
+	{
+		"id": "NJT.144",
+		"railway": "NJT.5",
+		"coord": [
+			-74.075821,
+			40.761188
+		],
+		"title": {
+			"en": "Secaucus Junction"
+		}
+	},
+	{
+		"id": "NJT.145",
+		"railway": "NJT.2",
+		"coord": [
+			-74.075821,
+			40.761188
+		],
+		"title": {
+			"en": "Secaucus Station"
+		}
+	},
+	{
+		"id": "NJT.146",
+		"railway": "NJT.7.b2",
+		"coord": [
+			-74.323754,
+			40.725249
+		],
+		"title": {
+			"en": "Short Hills"
+		}
+	},
+	{
+		"id": "NJT.147",
+		"railway": "NJT.5",
+		"coord": [
+			-74.191307,
+			41.157138
+		],
+		"title": {
+			"en": "Sloatsburg"
+		}
+	},
+	{
+		"id": "NJT.148",
+		"railway": "NJT.15",
+		"coord": [
+			-74.61397,
+			40.566075
+		],
+		"title": {
+			"en": "Somerville"
+		}
+	},
+	{
+		"id": "NJT.149",
+		"railway": "NJT.10",
+		"coord": [
+			-74.28014,
+			40.484308
+		],
+		"title": {
+			"en": "South Amboy"
+		}
+	},
+	{
+		"id": "NJT.150",
+		"railway": "NJT.7",
+		"coord": [
+			-74.261564,
+			40.744538
+		],
+		"title": {
+			"en": "South Orange"
+		}
+	},
+	{
+		"id": "NJT.151",
+		"railway": "NJT.10",
+		"coord": [
+			-74.035481,
+			40.150557
+		],
+		"title": {
+			"en": "Spring Lake"
+		}
+	},
+	{
+		"id": "NJT.152",
+		"railway": "NJT.13",
+		"coord": [
+			-74.043991,
+			41.111978
+		],
+		"title": {
+			"en": "Spring Valley"
+		}
+	},
+	{
+		"id": "NJT.153",
+		"railway": "NJT.8",
+		"coord": [
+			-74.493723,
+			40.674581
+		],
+		"title": {
+			"en": "Stirling"
+		}
+	},
+	{
+		"id": "NJT.154",
+		"railway": "NJT.5",
+		"coord": [
+			-74.153442,
+			41.11354
+		],
+		"title": {
+			"en": "Suffern"
+		}
+	},
+	{
+		"id": "NJT.155",
+		"railway": "NJT.7",
+		"coord": [
+			-74.357807,
+			40.716549
+		],
+		"title": {
+			"en": "Summit"
+		}
+	},
+	{
+		"id": "NJT.156",
+		"railway": "NJT.13",
+		"coord": [
+			-74.062676,
+			40.864858
+		],
+		"title": {
+			"en": "Teterboro"
+		}
+	},
+	{
+		"id": "NJT.158",
+		"railway": "NJT.9",
+		"coord": [
+			-74.753926,
+			40.218515
+		],
+		"title": {
+			"en": "Trenton Station"
+		}
+	},
+	{
+		"id": "NJT.159",
+		"railway": "NJT.5",
+		"coord": [
+			-74.18446,
+			41.194208
+		],
+		"title": {
+			"en": "Tuxedo"
+		}
+	},
+	{
+		"id": "NJT.160",
+		"railway": "NJT.15",
+		"coord": [
+			-74.238605,
+			40.683663
+		],
+		"title": {
+			"en": "Union Station"
+		}
+	},
+	{
+		"id": "NJT.161",
+		"railway": "NJT.2",
+		"coord": [
+			-74.209368,
+			40.842004
+		],
+		"title": {
+			"en": "Upper Montclair"
+		}
+	},
+	{
+		"id": "NJT.162",
+		"railway": "NJT.5.b3",
+		"coord": [
+			-74.123412,
+			41.012734
+		],
+		"title": {
+			"en": "Waldwick"
+		}
+	},
+	{
+		"id": "NJT.163",
+		"railway": "NJT.2",
+		"coord": [
+			-74.20963,
+			40.817218
+		],
+		"title": {
+			"en": "Walnut Street (Montclair)"
+		}
+	},
+	{
+		"id": "NJT.165",
+		"railway": "NJT.2",
+		"coord": [
+			-74.206934,
+			40.829516
+		],
+		"title": {
+			"en": "Watchung Avenue"
+		}
+	},
+	{
+		"id": "NJT.166",
+		"railway": "NJT.2",
+		"coord": [
+			-74.198451,
+			40.782743
+		],
+		"title": {
+			"en": "Watsessing Avenue (Bloomfield)"
+		}
+	},
+	{
+		"id": "NJT.168",
+		"railway": "NJT.5.b3",
+		"coord": [
+			-74.096951,
+			40.854979
+		],
+		"title": {
+			"en": "Wesmont"
+		}
+	},
+	{
+		"id": "NJT.169",
+		"railway": "NJT.15",
+		"coord": [
+			-74.347629,
+			40.649448
+		],
+		"title": {
+			"en": "Westfield"
+		}
+	},
+	{
+		"id": "NJT.170",
+		"railway": "NJT.13",
+		"coord": [
+			-74.032696,
+			40.990817
+		],
+		"title": {
+			"en": "Westwood"
+		}
+	},
+	{
+		"id": "NJT.171",
+		"railway": "NJT.15",
+		"coord": [
+			-74.77066,
+			40.615613
+		],
+		"title": {
+			"en": "White House"
+		}
+	},
+	{
+		"id": "NJT.176",
+		"railway": "NJT.13",
+		"coord": [
+			-74.078719,
+			40.843974
+		],
+		"title": {
+			"en": "Wood-Ridge"
+		}
+	},
+	{
+		"id": "NJT.174",
+		"railway": "NJT.10",
+		"coord": [
+			-74.277754,
+			40.55661
+		],
+		"title": {
+			"en": "Woodbridge"
+		}
+	},
+	{
+		"id": "NJT.175",
+		"railway": "NJT.13",
+		"coord": [
+			-74.040775,
+			41.021078
+		],
+		"title": {
+			"en": "Woodcliff Lake"
 		}
 	}
 ]

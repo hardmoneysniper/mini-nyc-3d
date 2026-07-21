@@ -2,20 +2,25 @@
 /**
  * scripts/convert-njt-gtfs.js
  *
- * Converts the NJ Transit rail static GTFS feed already downloaded into
- * data/njt_rail_data/ into the mini-nyc-3d data format, merging into the
- * existing data/railways.json, data/stations.json, data/coordinates.json,
- * and data/train-timetables/ alongside MTA's data (see scripts/lib/gtfs-merge.js).
+ * Converts NJ Transit's rail static GTFS data (in data/njt_rail_data/) into
+ * the mini-nyc-3d data format, merging into the existing data/railways.json,
+ * data/stations.json, data/coordinates.json, and data/train-timetables/
+ * alongside MTA's data (see scripts/lib/gtfs-merge.js).
  *
- * NJ Transit's rail GTFS/GTFSRT Web API requires an authenticated token to
- * download (see data/NJTRANSIT_Rail_GTFSRT_V1.pdf), and the daily token
- * quota is scarce (10 getToken/isValidToken calls/day total). Since rail
- * schedules change rarely, this script reads the already-downloaded local
- * CSVs directly rather than calling getGTFS on every run. To refresh:
- * download a fresh zip via NJT's developer portal, unzip it into
- * data/njt_rail_data/, and rerun this script.
+ * data/njt_rail_data/ is populated by scripts/pull-njt-gtfs.js, which pulls
+ * live from NJT's authenticated getGTFS endpoint (see
+ * data/NJTRANSIT_Rail_GTFSRT_V1.pdf) — the live feed is the official source
+ * of truth here, not a bundled local snapshot. Run pull-njt-gtfs.js first,
+ * then this script. The token quota is scarce (10 getToken/isValidToken
+ * calls/day total), so don't run pull-njt-gtfs.js more than needed.
+ *
+ * NJT's authenticated "Rail" feed only covers heavy/commuter rail — it does
+ * not include light rail (Hudson-Bergen Light Rail, Newark Light Rail) at
+ * all, confirmed by inspecting a live pull's routes.txt. Light rail is
+ * intentionally out of scope here until its actual data source is known.
  *
  * Usage:
+ *   node scripts/pull-njt-gtfs.js
  *   node scripts/convert-njt-gtfs.js
  *
  * Outputs (merge-written — MTA's entries are preserved, only NJT.* entries
@@ -37,14 +42,27 @@ const {buildServiceCalendar} = require('./lib/gtfs-calendar');
 
 const DATA_DIR = path.join('data', 'njt_rail_data');
 
-// Routes that actually serve the NYC area (terminate at NY Penn or Hoboken).
-// Excludes ATLC (Atlantic City Line) and RVLN (River Line), which run
-// Philadelphia/Camden <-> Trenton/Atlantic City and never reach NYC.
+// Heavy/commuter rail routes that actually serve the NYC area (terminate at
+// NY Penn or Hoboken). Excludes ACRL (Atlantic City Rail Line), which runs
+// Philadelphia <-> Atlantic City and never reaches NYC.
+//
+// Light rail (Hudson-Bergen Light Rail, Newark Light Rail) is intentionally
+// excluded here: NJT's authenticated getGTFS "Rail" endpoint (see
+// scripts/pull-njt-gtfs.js) only returns heavy/commuter rail routes — light
+// rail isn't in this feed at all, confirmed by pulling live data and finding
+// no HBLR/NLR route_ids present. Re-add light rail once its actual data
+// source is available.
+//
+// Route short names changed when this script switched from a bundled local
+// GTFS snapshot to the live API pull: BNTN/BNTNM merged into MNBTN; MNBN/
+// MNBNP split into BERG (Bergen County Line) and MAIN (Main Line, which
+// absorbed what used to be the separate Port Jervis Line — verified both
+// still serve Port Jervis and Suffern); NJCL/NJCLL's confusing same-titled
+// duplicate consolidated into a single NJCL.
 const INCLUDED_ROUTES = new Set([
-    'NEC', 'NJCL', 'NJCLL', 'MNE', 'MNEG', 'BNTN', 'BNTNM',
-    'MNBN', 'MNBNP', 'PASC', 'RARV', 'MRL', 'PRIN', 'HBLR', 'NLR'
+    'NEC', 'NJCL', 'MNE', 'MNEG', 'MNBTN',
+    'BERG', 'MAIN', 'PASC', 'RARV', 'MRL', 'PRIN'
 ]);
-const LIGHT_RAIL_ROUTES = new Set(['HBLR', 'NLR']);
 
 const DIRECTIONS = ['Outbound', 'Inbound'];
 
@@ -130,7 +148,6 @@ function main() {
 
     for (const route of routes) {
         const routeTrips = tripsByRoute.get(route.route_id) || [];
-        const isLightRail = LIGHT_RAIL_ROUTES.has(route.route_short_name);
 
         const repTripByShape = new Map();
         for (const trip of routeTrips) {
@@ -159,7 +176,7 @@ function main() {
 
         selected.forEach((cand, i) => {
             const railwayId = i === 0 ? normRoute(route.route_id) : `${normRoute(route.route_id)}.b${i + 1}`;
-            const branchLabel = i > 0 && cand.headsign ? ` (${cand.headsign.replace(/^HBLR |^NLR /, '')})` : '';
+            const branchLabel = i > 0 && cand.headsign ? ` (${cand.headsign})` : '';
 
             routeStations.set(railwayId, cand.stationList);
             routeShapeSelections.set(railwayId, cand.shapeId);
@@ -171,7 +188,7 @@ function main() {
                 ascending: DIRECTIONS[0],
                 descending: DIRECTIONS[1],
                 color: route.route_color ? `#${route.route_color}` : '#888888',
-                carComposition: isLightRail ? 2 : 8
+                carComposition: 8
             });
         });
     }
@@ -206,8 +223,6 @@ function main() {
         const routeId = normRoute(trip.route_id);
         const tripId = normTrip(trip.trip_id);
         const dir = DIRECTIONS[trip.direction_id === '1' ? 1 : 0];
-        const route = routes.find(r => r.route_id === trip.route_id);
-        const isLightRail = LIGHT_RAIL_ROUTES.has(route?.route_short_name);
 
         const tt = sts.map(st => ({
             s: normStop(st.stop_id),
@@ -219,7 +234,7 @@ function main() {
             t: tripId,
             r: routeId,
             n: trip.trip_id,
-            y: isLightRail ? 'NJT.LightRail' : 'NJT.Regional',
+            y: 'NJT.Regional',
             d: dir,
             os: [tt[0].s],
             tt
