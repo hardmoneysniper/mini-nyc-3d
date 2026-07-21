@@ -78,14 +78,29 @@ const TRAIN_TYPE = {
     MNR:    'MTA.Regional'
 };
 
-// Subway/LIRR/MNR all use their own real per-route GTFS color for both the
-// route line and the train marker (single `color` field) — Subway's are
-// meaningful (different colors distinguish trunk lines), LIRR's already
-// read as a consistent single blue in practice, and MNR's are Hudson
-// green/Harlem blue/New Haven red, matching this app's pre-existing
-// convention across every operator.
+// Subway/LIRR keep their own real per-route GTFS color for both the route
+// line and the train marker (single `color` field) — Subway's are
+// meaningful (different colors distinguish trunk lines) and LIRR's already
+// read as a consistent single blue in practice.
+//
+// MNR renders the track/route line in black while the train marker uses
+// each line's real GTFS route_color (Hudson green, Harlem blue, New Haven
+// red) via the separate `trainColor` field — see its consumer in
+// src/map.js's colorData construction, which falls back to `color` when
+// `trainColor` is absent (every other operator here has no trainColor and
+// is unaffected). `trainColor` must also be threaded through
+// src/data-classes/railway.js's constructor, which otherwise silently
+// drops any field it doesn't explicitly know about — this bit a first
+// attempt at this feature, where the field never reached runtime and MNR
+// trains rendered black (the `color` fallback) instead of their real color.
+const MNR_ROUTE_COLOR = '#000000';
 function railwayColor(service, route) {
+    if (service === 'MNR') return MNR_ROUTE_COLOR;
     return route.route_color ? `#${route.route_color}` : '#888888';
+}
+function railwayTrainColor(service, route) {
+    if (service === 'MNR') return route.route_color ? `#${route.route_color}` : MNR_ROUTE_COLOR;
+    return undefined;
 }
 
 // ---------------------------------------------------------------------------
@@ -296,6 +311,7 @@ async function processFeed({service, url, localDir, carComposition}) {
                 ascending:     dirs[0],
                 descending:    dirs[1],
                 color:         railwayColor(service, route),
+                trainColor:    railwayTrainColor(service, route),
                 carComposition
             });
         }
@@ -314,6 +330,7 @@ async function processFeed({service, url, localDir, carComposition}) {
                 ascending:     dirs[0],
                 descending:    dirs[1],
                 color:         railwayColor(service, route),
+                trainColor:    railwayTrainColor(service, route),
                 carComposition
             });
         });

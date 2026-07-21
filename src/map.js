@@ -868,13 +868,17 @@ export default class extends Evented {
         const routeData = [],
             colorData = [];
 
-        for (const {id, color} of me.railways.getAll()) {
+        for (const {id, color, trainColor} of me.railways.getAll()) {
             const features = [13, 14, 15, 16, 17, 18].map(zoom => me.featureLookup.get(`${id}.${zoom}`));
 
             if (features.some(f => f)) {
                 routeData.push({id, feature: features});
             }
-            colorData.push({id, color});
+            // trainColor lets a railway's train marker differ from its
+            // route/track line color (used by MNR: black track, real
+            // per-line train color) — falls back to `color` when absent,
+            // matching every other operator's existing single-color look.
+            colorData.push({id, color: trainColor || color});
         }
         for (const [id, feature] of me.featureLookup) {
             if (feature.properties.altitude > 0) {
@@ -1915,7 +1919,8 @@ export default class extends Evented {
         const me = this,
             {lang, dict} = me,
             {r: railway, ad, departureTime, arrivalStation} = train,
-            color = (ad && ad.color) || (train.v || railway).color,
+            colorSource = train.v || railway,
+            color = (ad && ad.color) || colorSource.trainColor || colorSource.color,
             delay = train.delay || 0,
             arrivalTime = helpers.valueOrDefault(train.arrivalTime, train.nextDepartureTime),
             status = railway.status;

@@ -56,6 +56,14 @@ export default class {
          */
         me.color = params.color;
 
+        if (params.trainColor) {
+            /**
+             * Train marker color, if it differs from the route/track color.
+             * @type {string}
+             */
+            me.trainColor = params.trainColor;
+        }
+
         /**
          * Railway car composition.
          * @type {number}
