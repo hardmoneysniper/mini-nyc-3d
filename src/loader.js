@@ -248,6 +248,24 @@ export function loadDynamicNjtTrainData() {
 }
 
 /**
+ * Load the dynamic data for PATH trains via the position-estimation proxy
+ * (PATH's GTFS-RT feed has no trip continuity — see api/path.js).
+ * @returns {Object} Loaded data — same shape as loadDynamicTrainData()
+ */
+export function loadDynamicPathTrainData() {
+    if (!configs.pathUrl) {
+        return Promise.resolve({trainData: [], trainInfoData: []});
+    }
+    return loadJSON(configs.pathUrl).then(data => ({
+        trainData: data.trainData || [],
+        trainInfoData: data.trainInfoData || []
+    })).catch(err => {
+        console.warn('Failed to load PATH train data:', err);
+        return {trainData: [], trainInfoData: []};
+    });
+}
+
+/**
  * Load the dynamic data for flights via the aircraft proxy (adsb.lol,
  * no authentication required). Returns empty stubs if configs.flightUrl
  * is not configured.

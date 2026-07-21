@@ -13,7 +13,7 @@ import {pickObject} from './helpers/helpers-deck';
 import * as helpersGeojson from './helpers/helpers-geojson';
 import * as helpersMapbox from './helpers/helpers-mapbox';
 import {GeoJsonLayer, ThreeLayer, Tile3DLayer, TrafficLayer} from './layers';
-import {loadBusData, loadDynamicBusData, loadDynamicFlightData, loadDynamicNjtTrainData, loadDynamicTrainData, loadStaticData, loadTimetableData, updateOdptUrl} from './loader';
+import {loadBusData, loadDynamicBusData, loadDynamicFlightData, loadDynamicNjtTrainData, loadDynamicPathTrainData, loadDynamicTrainData, loadStaticData, loadTimetableData, updateOdptUrl} from './loader';
 import {AboutPanel, BusPanel, FlightPanel, LayerPanel, SharePanel, StationPanel, TrackingModePanel, TrainPanel} from './panels';
 import Plugin from './plugin';
 import nearestCloserPointOnLine from './turf/nearest-closer-point-on-line';
@@ -2393,9 +2393,9 @@ export default class extends Evented {
     refreshRealtimeTrainData() {
         const me = this;
 
-        Promise.all([loadDynamicTrainData(), loadDynamicNjtTrainData()]).then(([mta, njt]) => {
-            const trainData = [...mta.trainData, ...njt.trainData],
-                trainInfoData = [...mta.trainInfoData, ...njt.trainInfoData];
+        Promise.all([loadDynamicTrainData(), loadDynamicNjtTrainData(), loadDynamicPathTrainData()]).then(([mta, njt, path]) => {
+            const trainData = [...mta.trainData, ...njt.trainData, ...path.trainData],
+                trainInfoData = [...mta.trainInfoData, ...njt.trainInfoData, ...path.trainInfoData];
             const {activeTrainLookup, standbyTrainLookup, realtimeTrains, dataReferences} = me,
                 now = me.clock.getTimeOffset();
 

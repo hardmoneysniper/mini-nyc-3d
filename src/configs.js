@@ -154,6 +154,11 @@ const configs = {
     // feeds and returns {trainData, trainInfoData} (same shape as MTA's realtime data)
     njtUrl: 'https://mini-nyc-3d.vercel.app/api/njt',
 
+    // PATH train proxy — Vercel function that fetches PATH's public GTFS-RT
+    // feed and estimates train positions (the feed has no trip continuity —
+    // see api/path.js's header comment); returns {trainData, trainInfoData}
+    pathUrl: 'https://mini-nyc-3d.vercel.app/api/path',
+
     // Default data URL — served from GitHub Pages (same origin, no CORS issues)
     dataUrl: 'https://hardmoneysniper.github.io/mini-nyc-3d/data',
 
